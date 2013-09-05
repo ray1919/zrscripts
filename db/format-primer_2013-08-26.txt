@@ -1,0 +1,7 @@
+organism	type	gene_name	gene_id	primer_id	use_well	use_plate	barcode	100um_f	POSf	100um_r	POSr	dryf	IDf1	IDf2	dryr	IDr1	IDr2	comment	QC
+10090	gene	Cd40lg	21947	2566166				7-b-F	I1	7-b-R	I2	M-10-F	25		M-10-R	26			
+10090	gene	Ffar1	233081	2013032301				7-b-F	I3	7-b-R	I4	M-10-F	27		M-10-R	28			
+10090	gene	Ffar3	233080	2056144				7-b-F	I5	7-b-R	I6	M-10-F	29		M-10-R	30			
+10090	gene	Ffar2	233079	2056120				7-b-F	I7	7-b-R	I8	M-10-F	31		M-10-R	32			
+10090	gene	Hmgcs1	208715	2005321				7-b-F	I9	7-b-R	I10	M-10-F	33		M-10-R	34			
+10090	gene	Mcts1	68995	2500555				9-b-F	A3	9-b-R	A4	M-11-F	G5		M-11-R	G6			

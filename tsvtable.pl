@@ -5,7 +5,7 @@
 #
 #        USAGE: ./tsvtable.pl
 #
-#  DESCRIPTION: desplay tsv formated file as table-like output in linux
+#  DESCRIPTION: display tsv formated file as table-like output in linux
 #               terminal
 #
 #      OPTIONS: <file in tsv format> [line2echo] [cellwidth]
