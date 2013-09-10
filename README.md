@@ -23,3 +23,11 @@ batch add record into primer db
 
 ## db/add_sys_name.pl [file]
 add systhesis name to primer
+
+## venn_chart.pl [file1] [file2] [file2]
+make venn chart between 2/3 file
+modify Chart.pm for better font settting
+
+## gi_ucsc_gene_transcript_seq.pl [gi.txt]
+list gene exon-intron structure in excel format
+print transcripts sequences in html, intron-exon highlighted
