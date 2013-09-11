@@ -31,3 +31,25 @@ modify Chart.pm for better font settting
 ## gi_ucsc_gene_transcript_seq.pl [gi.txt]
 list gene exon-intron structure in excel format
 print transcripts sequences in html, intron-exon highlighted
+
+## kegg_rest_gene.pl [gene id / kegg pathway list]
+retrieve kegg info
+
+## split_by_list.pl [mirna_list.txt] [mirna_target.txt]
+add kegg pathway enrichment annotation to mirna list
+
+## primer_format.pl [primer_info.txt]
+add primer info into db using batch script
+
+## sfda_get_records.pl
+从药监局网站获取国产器械的数据
+
+## omim_gene_mutation.pl
+extract gene mutation ALLELIC VARIANTS table from OMIM download data
+
+## cv_xml_parse.pl
+parse downloaded xml file in clinvar ftp site (ftp://ftp.ncbi.nlm.nih.gov/pub/clinvar)
+
+## known_gene_box.pl
+draw a gene box in text file
+turn off auto line wrap
