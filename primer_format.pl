@@ -4,6 +4,8 @@
 # Purpose: parse data from primer tables, insert into ctnet
 # Update: 2013-08-21
 # Note: update primer db using text
+# Update: 2013-09-22
+# Note: add systhetic name to primer
 
 use lib '/home/zhaorui/bin/lib';
 use Ctnet::Schema;
@@ -116,7 +118,8 @@ foreach my $r ( 0 .. $t1->lastRow) {
     $rs->barcode($t1->elm($r,'barcode'));
     $rs->update;
   }
-  if ($t1->elm($r,'QC') ne '' && $rs->qc eq '') {
+  # if ($t1->elm($r,'QC') ne '' && $rs->qc eq '') {
+  if ($t1->elm($r,'QC') ne '') {
     $rs->qc($t1->elm($r,'QC'));
     $rs->update;
   }
@@ -125,6 +128,7 @@ foreach my $r ( 0 .. $t1->lastRow) {
   $primerid = $rs->id;
 
   # insert plate & well use
+  # type of primer
   $top = $type eq 'gene' ? 5 : 8;
   insert_entry('use_plate','use_well',$top,$r);
 
@@ -179,6 +183,14 @@ sub insert_entry{
   unless ($rs->in_storage) {
     $rs->insert;
     $rs->store_date($date);
+    given ($st_id) {
+      when ([2,4]) {
+        $rs->synthetic_name($t1->elm($r,'sn3p'));
+      }
+      when ([1,3,6,7]) {
+        $rs->synthetic_name($t1->elm($r,'sn5p'));
+      }
+    }
     $rs->update;
   }
 }

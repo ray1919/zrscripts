@@ -53,3 +53,18 @@ parse downloaded xml file in clinvar ftp site (ftp://ftp.ncbi.nlm.nih.gov/pub/cl
 ## known_gene_box.pl
 draw a gene box in text file
 turn off auto line wrap
+
+## fas2iupac.pl [fasta file]
+use clustal omega output(grouped fasta format) convert to iupac code sequence
+
+## snp_summary_parse.pl
+parse the summary formated result of ncbi snp result
+
+## gi_clinvar_var.pl
+get clinvar records and output mass array design file
+
+## go_enrichment/
+go enrichment analysis using R packages
+
+## email-validation/
+validate email address using php
