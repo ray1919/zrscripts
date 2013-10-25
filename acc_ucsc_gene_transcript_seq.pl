@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 # Ahthor: Zhao
 # Date: 2013-08-07
-# Purpose: query omim and clinvar db for gene variation data
+# Purpose: print refseq exon info using acc no.
 
 use 5.012;
 use Data::Dump qw(dump);
@@ -12,7 +12,7 @@ use Excel::Writer::XLSX;
 my %chr_seqs;
 
 my $ucsc = Ucsc::Schema->connect('dbi:mysql:ucsc_hg19', 'ucsc', 'ucsc');
-load_tx_from_gi('gi.txt');
+load_tx_from_gi(shift);
 exit;
 
 sub load_tx_from_gi {
@@ -21,38 +21,30 @@ sub load_tx_from_gi {
 
   open my $GI, '<', $gifile || die $!;
   # open my $OUT, '>', 'gene_tx_seq.html' || die $!;
-  my $wb = Excel::Writer::XLSX->new( 'gene_table.xlsx' );
+  my $wb = Excel::Writer::XLSX->new( 'refseq_table.xlsx' );
   my $s1 = $wb->add_worksheet("gene list");
-  my $ht = new Data::Table ( [], ['gene id', 'symbol', 'transcript id', 'chrom',
+  my $ht = new Data::Table ( [], ['symbol', 'transcript id', 'chrom',
     'strand', 'tx start', 'tx end', 'cdsStart',  'cdsEnd', 'exon count', 'exon starts', 'exon ends'],
     0);
   while (<$GI>) {
     chomp;
     my $gi = $_;
-    ### gene id : $gi;
-    my $link = $ucsc->resultset('RefLink')->search({locuslinkid => $gi});
-    if ($link == 0) {
-      # say $OUT $gi;
-      $ht->addRow([$gi, '','','','','','','','','']);
-    }
-    else {
-      my $l1 = $link->next;
-      my $symbol = $l1->name;
+    $gi =~ s/\.\d+$//;
+    ### acc no : $gi;
       my $tx = $ucsc->resultset('RefGene')->search(
-        { name2 => $l1->name },
+        { name => $gi },
         { order_by => 'txend - txstart desc, exoncount desc'},
       );
       while ( my $tx = $tx->next ) {
       # exit(1) if $tx == 0;
       # $tx = $tx->first;
-      $ht->addRow([$gi, $symbol, $tx->name, $tx->chrom,$tx->strand,
+      $ht->addRow([$tx->name2, $tx->name, $tx->chrom,$tx->strand,
           $tx->txstart, $tx->txend,$tx->cdsstart, $tx->cdsend,
           $tx->exoncount, $tx->exonstarts, $tx->exonends]);
       }
-    }
   }
-  $ht->addCol(undef,'tx lenth');
-  $ht->colsMap(sub {$_->[12] = $_->[6] - $_->[5]});
+  $ht->addCol(undef,'tx length');
+  $ht->colsMap(sub {$_->[11] = $_->[5] - $_->[4]});
   $ht->colMap('tx start',sub{$_ + 1;}); # 1 based
 
   # dump $$ht{'data'};

@@ -15,9 +15,9 @@ my $file = shift || die "Input a file name";
 my $og = 'hsa';
 $dir = '.dl';
 mkdir($dir) unless -d $dir;
-kg_path_from_gi($file);
-exit;
 kg_gene_from_path($file);
+exit;
+kg_path_from_gi($file);
 kg_name_from_gi($file);
 
 sub kg_gene_from_path {
@@ -180,6 +180,7 @@ sub sheet_name {
   if (length($name) + length($suffix) > 31) {
     $name = substr($name,0,31-length($suffix));
   }
+  $name =~ s/[|]|\:|\*|\?|\/|\\/-/g;
   return $name.$suffix;
 }
 

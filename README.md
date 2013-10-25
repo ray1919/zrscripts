@@ -68,3 +68,9 @@ go enrichment analysis using R packages
 
 ## email-validation/
 validate email address using php
+
+## acc_ucsc_gene_transcript_seq.pl
+get refseq exons to excel table
+
+## get_refseq.pl
+get refseq sequence of gi list
