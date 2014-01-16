@@ -74,3 +74,6 @@ get refseq exons to excel table
 
 ## get_refseq.pl
 get refseq sequence of gi list
+
+## js_progress_bar.php php-progress-bar.php
+php progress bar under terminal and web ui

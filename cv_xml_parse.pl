@@ -10,7 +10,7 @@ use XML::Simple;
 use Data::Dump qw/dump/;
 use 5.012;
 
-my $xml = 'ClinVarFullRelease_new.xml';
+my $xml = shift;
 
 my ($cv_id, $cv_acc, $title, $CITE);
 
@@ -20,12 +20,13 @@ say '';
 sub split_xml {
   my $file = shift;
   open(XML, $file) || die $!;
-  open(OUT, '>clinvar_dump.txt') || die $!;
+  open(OUT, '>clinvar.dump.txt') || die $!;
   open $CITE, '>', 'clinvar_citation.txt' or die $!;
   $/ = '</ClinVarSet>';
-  <XML>;<XML>;
+  # <XML>;<XML>;
   my $i = 1;
   while (<XML>) {
+    next unless $_ =~ /ClinVarSet/;
     my $set = XMLin($_);
     $cv_id = $$set{'ID'};
     my %RCVA = %{$$set{'ReferenceClinVarAssertion'}};
@@ -33,11 +34,11 @@ sub split_xml {
     $cv_acc = $RCVA{'ClinVarAccession'}{'Acc'};
     $title = $$set{'Title'};
     # next unless ($cv_acc eq 'RCV000029674');
-    say "\x1b[31m$cv_acc\t",$i++,"\x1b[0m";
+    say "\x1b[31m$cv_acc\t",$i++,"\t",$i/629.12,"\x1b[0m";
 
     parse_citation0($$set{'ClinVarAssertion'});
   # bar($i++, 48971);
-    next;
+  # next;
     if ( is_hash($RCVA{'MeasureSet'}{'Measure'}) ) {
       parse(\%{$RCVA{'MeasureSet'}{'Measure'}});
     }
@@ -47,8 +48,9 @@ sub split_xml {
       }
     }
 
-    bar($i++, 48971);
+    # bar($i++, 62912);
   }
+  close OUT;
 }
 
 sub parse_citation0 {
@@ -105,14 +107,14 @@ sub parse_citation4 {
   my $od = shift;
   return unless defined $od;
   say $CITE join("\t",$cv_id,"$$od{'Source'}:$$od{'content'}");
-  say "\t\t\t",join("\t",$cv_id,"$$od{'Source'}:$$od{'content'}");
+  # say "\t\t\t",join("\t",$cv_id,"$$od{'Source'}:$$od{'content'}");
 }
 
 sub parse_citation5 {
   my $od = shift;
   return unless defined $od;
   say $CITE join("\t",$cv_id,$od);
-  say "\t\t\t",join("\t",$cv_id,$od);
+  # say "\t\t\t",join("\t",$cv_id,$od);
 }
 
 sub parse {
@@ -140,9 +142,24 @@ sub parse {
 sub parse_gene {
   my $RCVA = shift;
   my %RCVA = %{$RCVA};
-  my ($gene_id, $omim_id, $hgvs, $omim_av, $dbsnp, $sl_acc, $sl_ass, $sl_chr, $sl_start, $sl_stop, $type, $a1, $a2, $phenotype ) = ('','','','','','','','','','','','','');
+  my ($gene_id, $omim_id, $hgvs, $omim_av, $dbsnp, $sl_acc, $sl_ass, $sl_chr,
+      $sl_start, $sl_stop, $type, $a1, $a2, $phenotype )
+      = ('','','','','','','','','','','','','','');
     # if ( is_hash( $RCVA{'MeasureRelationship'} ) ) {
     # dump $RCVA{'MeasureRelationship'};
+    #  if ( $cv_acc eq 'RCV000009535') {
+    #     dump $RCVA{'MeasureRelationship'}{'XRef'};
+    #     dump @{$RCVA{'MeasureRelationship'}{'XRef'}};
+    # }
+    if ( is_hash( $RCVA{'MeasureRelationship'}{'XRef'} ) ) {
+      if ( $RCVA{'MeasureRelationship'}{'XRef'}{'DB'} eq 'Gene' ) {
+        $gene_id = $RCVA{'MeasureRelationship'}{'XRef'}{'ID'};
+      }
+      if ( $RCVA{'MeasureRelationship'}{'XRef'}{'DB'} eq 'OMIM' ) {
+        $omim_id = $RCVA{'MeasureRelationship'}{'XRef'}{'ID'};
+      }
+    }
+    else {
     foreach my $i (@{$RCVA{'MeasureRelationship'}{'XRef'}}) {
       if ($$i{'DB'} eq 'Gene') {
         $gene_id = $$i{'ID'};
@@ -150,6 +167,7 @@ sub parse_gene {
       elsif ($$i{'DB'} eq 'OMIM') {
         $omim_id = $$i{'ID'};
       }
+    }
     }
     # }
 
@@ -208,6 +226,11 @@ sub parse_gene {
     if ($title =~ / AND (.*)/) {
       $phenotype = $1;
     }
+    $sl_start = '' unless defined $sl_start;
+    $sl_stop = '' unless defined $sl_stop;
+    $sl_acc = '' unless defined $sl_acc;
+    $sl_ass = '' unless defined $sl_ass;
+    $sl_chr = '' unless defined $sl_chr;
     say OUT join("\t", ($cv_id, $cv_acc, $title, $a1, $a2, $phenotype, $gene_id, $omim_id, $hgvs, $omim_av, $dbsnp, $sl_acc, $sl_ass, $sl_chr, $sl_start, $sl_stop, $type) );
     return 0;
 }

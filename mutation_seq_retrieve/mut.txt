@@ -1,0 +1,47 @@
+Gene	Exon	Codon location	Nucleotide change	Frequency of mutant alleles (n = 528)	Number of patients with mutations (n = 264)
+GJB2	exon 2	p.L79fs	c.235delC	43 (8.1%)	29 (10.9%)
+GJB2	exon 2	p.V37I	c.109G>A	7 (1.3%)	6 (2.3%)
+GJB2	exon 2	p.G45E	c.134G>A	10 (1.9%)	10 (3.8%)
+GJB2	exon 2	p.Y136X	c.408C>A	10 (1.9%)	10 (3.8%)
+GJB2	exon 2	p.G59fs	c.176-191del	3 (0.6%)	3 (1.1%)
+GJB2	exon 2	p.R143W	c.427C>T	4 (0.8%)	4 (1.5%)
+GJB2	exon 2	p.H100fs	c.299-300del	5 (0.9%)	5 (1.9%)
+GJB2	exon 2	p.T123N	c.368C>A	4 (0.8%)	4 (1.5%)
+GJB2	exon 2	p.T86R	c.257C>G	1 (0.2%)	1 (0.4%)
+GJB2	exon 2	p.F191L	c.571T>C	0	0
+GJB2	exon 2	p.I71T	c.212T>C	0	0
+GJB2	exon 2	p.A49V	c.146C>T	0	0
+GJB2	exon 2	p.G12fs	c.35delG	0	0
+SLC26A4	exon 19	p.H723R	c.2168A>G	22 (4.1%)	17 (6.4%)
+SLC26A4	int 7/exon 8	splice site	c.919-2A>G	2 (0.4%)	2 (0.8%)
+SLC26A4	exon 7	p.T410M	c.1229C>T	4 (0.8%)	3 (1.1%)
+SLC26A4	exon 7	p.V306fs	c.917insG	0	0
+SLC26A4	exon 19	p.T721M	c.2162C>T	0	0
+SLC26A4	exon 8/int 8	splice site	c.1001+1G>A	0	0
+SLC26A4	exon 9	p.A372V	c.1115C>T	0	0
+SLC26A4	exon 5	p.M147V	c.439A>G	1 (0.2%)	1 (0.4%)
+SLC26A4	int 5/exon 6	splice site	c.601-1G>A	0	0
+SLC26A4	exon 9	p.K369E	c.1105A>G	1 (0.2%)	1 (0.4%)
+SLC26A4	exon 15	p.S551fs	c.1652insT	1 (0.2%)	1 (0.4%)
+SLC26A4	exon 15	p.C565Y	c.1694G>A	0	0
+SLC26A4	exon 17	p.S666F	c.1997C>T	0	0
+SLC26A4	exon 19	p.E704fs	c.2111insGCTGG	1 (0.2%)	1 (0.4%)
+SLC26A4	exon 4	p.L108fs	c.322delC	0	0
+SLC26A4	exon 4	p.P123S	c.367C>T	0	0
+SLC26A4	exon 10	p.N392Y	c.1174A>T	0	0
+SLC26A4	exon 17	p.S610X	c.1829C>A	0	0
+SLC26A4	exon 17	p.S657N	c.1970G>A	0	0
+EYA1	exon 12	p.D396G	c.1187A>G	0	0
+EYA1	exon 8	p.R264X	c.790C>T	0	0
+EYA1	exon 7	p.Y193X	c.579C>G	0	0
+COCH	exon 5	p.A119T	c.355G>A	0	0
+KCNQ4	exon 5	p.W276S	c.827G>C	0	0
+MYO7A	exon 22	p.A886fs	c.2656-2664del	0	0
+TECTA	exon 16	p.R1773X	c.5317C>T	0	0
+TECTA	exon 20	p.R2021H	c.6062G>A	0	0
+Mitochondrial 12S rRNA			m.1555A>G	-	5 (1.9%)
+Mitochondrial tRNALeu			m.3243A>G	-	6 (2.3%)
+Mitochondrial tRNASer			m.7445A>G	-	0
+Mitochondrial tRNALys			m.8296A>G	-	0
+CRYM	exon 10	p.K314T	c.941A>C	0	0
+CRYM	exon 10	p.X315Y	c.945A>T	0	0
