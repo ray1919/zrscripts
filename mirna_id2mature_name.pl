@@ -23,15 +23,51 @@ while(<$fh1>) {
     and r.auto_mirna = p.auto_mirna
     and m.auto_mature = r.auto_mature";
   my $rv = $dbh->selectall_hashref($sql1,['previous_mature_id']);
-  if (scalar keys $rv  == 0 ) {
-    say "$mirna_id has no records!";
-    exit;
-  }
   foreach my $k (keys $rv) {
     my @keys = split(';', $k);
     if (@keys ~~ /^$mirna_pid$/i) {
-      print join("\t",$mirna_id,$$rv{$k}{'mature_name'});
+      print join("\t",$mirna_id,$$rv{$k}{'mature_name'},"\n");
     }
   }
-  say '';
+  if (scalar keys $rv  == 0 ) { # maybe it is a previous id
+    my $sql1 = "select m.mature_name, m.previous_mature_id
+    from mirna_mature m, mirna p, mirna_pre_mature r
+    where p.previous_mirna_id like '%$mirna_id%'
+      and r.auto_mirna = p.auto_mirna
+      and m.auto_mature = r.auto_mature";
+    my $rv = $dbh->selectall_hashref($sql1,['previous_mature_id']);
+    if (scalar keys $rv > 0) {
+      foreach my $k (keys $rv) {
+        my @keys = split(';', $k);
+        if (@keys ~~ /^$mirna_pid$/i) {
+          print join("\t",$mirna_id,$$rv{$k}{'mature_name'},"\n");
+        }
+      }
+      next;
+    }
+    ### maybe it is a mature id
+    my $sql2 = "select m.mature_name
+    from mirna_mature m
+    where m.mature_name = '$mirna_id'";
+    my $rv = $dbh->selectall_hashref($sql2,['mature_name']);
+    if (scalar keys $rv > 0) {
+      print join("\t",$mirna_id,$mirna_id,"\n");
+    }
+    else { # previous id of mature id ?
+      my $sql3 = "select m.mature_name, m.previous_mature_id
+      from mirna_mature m
+      where m.previous_mature_id like '%$mirna_id%'";
+      my $rv = $dbh->selectall_hashref($sql3,['previous_mature_id']);
+      foreach my $k (keys $rv) {
+        my @keys = split(';', $k);
+        if (@keys ~~ /^$mirna_pid$/i) {
+          print join("\t",$mirna_id,$$rv{$k}{'mature_name'},"\n");
+        }
+      }
+      if (scalar keys $rv  == 0 ) {
+        say "$mirna_id has no records!";
+        exit;
+      }
+    }
+  }
 }
