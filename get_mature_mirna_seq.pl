@@ -5,6 +5,7 @@
 
 use 5.012;
 use Data::Dump qw/dump/;
+use File::stat;
 
 get_mature_seq(shift);
 
@@ -49,7 +50,22 @@ and p.auto_mirna = i.auto_mirna";
     }
     push(@result, @$rv);
   }
-  my $workbook = Excel::Writer::XLSX->new( 'mirna_seq.xlsx' );
+  # only mature sequence
+  my (@mature_seq, @array);
+  @array = @{$result[0]}[3,4,5,7];
+  foreach my $i ( 1 .. $#result ) {
+    my @a = @{$result[$i]}[3,4,5,7];
+    if ( @a ~~ @array ) {
+      next;
+    }
+    else {
+      push @mature_seq, [@array];
+      @array = @a;
+    }
+  }
+  push @mature_seq, [@array];
+
+  my $workbook = Excel::Writer::XLSX->new( 'mirna_seq-'.stat($fh1)->mtime.'.xlsx' );
   my $format = $workbook->add_format();
   $format->set_font('Courier New');
   my $worksheet = $workbook->add_worksheet('miRNA sequence');
@@ -58,5 +74,10 @@ and p.auto_mirna = i.auto_mirna";
       'mature sequence'], $format);
   $worksheet->write_col('A2', \@result, $format);
   $worksheet->set_column( 0, 7, 20 );
+  $worksheet = $workbook->add_worksheet('mature sequence');
+  $worksheet->write_row('A1', ['mature acc', 'mature name',
+      'previous mature id', 'mature sequence'], $format);
+  $worksheet->write_col('A2', \@mature_seq, $format);
+  $worksheet->set_column( 0, 3, 20 );
   $workbook->close();
 }
