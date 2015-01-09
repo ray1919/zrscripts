@@ -18,6 +18,7 @@ sub get_mature_seq {
   my @result;
   while(<$fh1>) {
     chomp;
+    next if $_ eq '';
     my @line = split("\t",$_);
     # my $mirna_acc = $line[2];
     my $mirna_id = $line[0];
@@ -33,6 +34,7 @@ and p.auto_mirna = i.auto_mirna";
 # where (i.mirna_id = '$mirna_id' or a.mature_name = '$mirna_id')
     my $rv = $dbh->selectall_arrayref($sql1);
     if (scalar keys $rv  == 0 ) {
+      dump $mirna_id;next;
       $sql1 = "select i.mirna_acc, i.mirna_id, i.previous_mirna_id,
 a.mature_acc, a.mature_name, a.previous_mature_id, 
 i.sequence mirna_sequence,
