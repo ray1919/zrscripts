@@ -16,6 +16,7 @@ open my $fh2, '>', "$file.taxid";
 while (<$fh1>) {
   chomp;
   my $name = $_;
+  $name =~ s/'/\\'/g;
   my $sql = "SELECT `tax_id` FROM `taxdump_names` WHERE `name_txt` = '$name'";
   my $rv = $dbi->selectrow_array($sql);
   unless (defined $rv) {

@@ -77,3 +77,6 @@ get refseq sequence of gi list
 
 ## js_progress_bar.php php-progress-bar.php
 php progress bar under terminal and web ui
+
+## enrichment/ 2015-01-12
+GO / KEGG / DO enrichment / GSEA analysis
