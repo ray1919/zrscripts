@@ -1,0 +1,26 @@
+Symbol	GeneID	description	Species	chromosome	type_of_gene
+Acsm3	24763	acyl-CoA synthetase medium-chain family member 3	Rattus norvegicus	1	protein-coding
+Apc2	299611	APC2, WNT signaling pathway regulator	Rattus norvegicus	7	protein-coding
+Arnt	25242	aryl hydrocarbon receptor nuclear translocator	Rattus norvegicus	2	protein-coding
+Atp5b	171374	ATP synthase, H+ transporting, mitochondrial F1 complex, beta polypeptide	Rattus norvegicus	7	protein-coding
+Bad	64639	BCL2-associated agonist of cell death	Rattus norvegicus	1	protein-coding
+Bop1	300050	block of proliferation 1	Rattus norvegicus	7	protein-coding
+Ctnnbl1	296320	catenin, beta like 1	Rattus norvegicus	3	protein-coding
+Entpd6	85260	ectonucleoside triphosphate diphosphohydrolase 6	Rattus norvegicus	3	protein-coding
+Fh	24368	fumarate hydratase	Rattus norvegicus	13	protein-coding
+Gh1	24391	growth hormone 1	Rattus norvegicus	10	protein-coding
+Hint3	246769	histidine triad nucleotide binding protein 3	Rattus norvegicus	1	protein-coding
+Hnrnpa3	362152	heterogeneous nuclear ribonucleoprotein A3	Rattus norvegicus	3	protein-coding
+Ift22	288585	intraflagellar transport 22	Rattus norvegicus	12	protein-coding
+Kars	292028	lysyl-tRNA synthetase	Rattus norvegicus	19	protein-coding
+LOC100911361	100911361	heterogeneous nuclear ribonucleoprotein A3-like	Rattus norvegicus	10	pseudo
+LOC100911372	100911372	40S ribosomal protein S6-like	Rattus norvegicus	5	protein-coding
+Lrtm2	680883	leucine-rich repeats and transmembrane domains 2	Rattus norvegicus	4	protein-coding
+Mysm1	298247	myb-like, SWIRM and MPN domains 1	Rattus norvegicus	5	protein-coding
+Nudt12	367323	nudix hydrolase 12	Rattus norvegicus	9	protein-coding
+Prl	24683	prolactin	Rattus norvegicus	17	protein-coding
+RGD1304587	303180	similar to RIKEN cDNA 2310033P09	Rattus norvegicus	10	protein-coding
+RGD1562987	498886	similar to cDNA sequence BC031181	Rattus norvegicus	18	protein-coding
+Rpl30	64640	ribosomal protein L30	Rattus norvegicus	7	protein-coding
+S100a16	361991	S100 calcium binding protein A16	Rattus norvegicus	2	protein-coding
+Slc3a2	50567	solute carrier family 3 member 2	Rattus norvegicus	1	protein-coding

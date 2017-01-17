@@ -1,0 +1,4 @@
+Source	Term	Desc	Target_Cnt	Gene_Set_Size	Intersection_Size	Intersection_Genes	P_Value	FDR
+GOBP	GO:0008152	metabolic process	25	3752	5	Acsm3, Entpd6, Hint3, Nudt12, Slc3a2	0.00893069208073023	0.0133960381210953
+GOMF	GO:0044822	poly(A) RNA binding	25	4119	5	Bop1, Hnrnpa3, Rpl30, S100a16, Slc3a2	1	1
+GOMF	GO:0046872	metal ion binding	25	6299	5	Acsm3, Gh1, Kars, Mysm1, Nudt12	0.00893069208073023	0.0133960381210953
