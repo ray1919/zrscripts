@@ -1,0 +1,87 @@
+---
+title: "SNP identification using sanger sequencing"
+author: "CT Bioscience"
+date: '2016-05-09'
+output: word_document
+---
+
+利用Biostrings和sangerseqR两个包，自动匹配测序结果，确定基因型。
+
+Sequencing target position: rs628031, rs272893, rs1065852 
+Sequencing method: Sanger sequencing
+
+```{r, echo=FALSE}
+suppressPackageStartupMessages(library(Biostrings))
+setwd("~/ct208/tmp/2016-03-21_zhongshan/supp1_2016-05-09")
+# read template
+template_table = read.table("template.txt",header=T,as.is=T)
+template <- DNAStringSet(c(template_table$template))
+temp_rc <- reverseComplement(template)
+temp_all <- DNAStringSet(c(template,temp_rc))
+# 测序目标位点，在正反链的位置，与temp_all一一对应
+target_pos <- c(template_table$pos,
+                  nchar(template_table$template) - template_table$pos + 1)
+refbase <- subseq(x = temp_all,start = target_pos, end = target_pos)
+# print(paste("Reference base in plus & minus strand is:",toString(refbase)))
+```
+
+Chromatogram of each sequencing, and basecalls of target:
+
+```{r, echo=FALSE}
+suppressPackageStartupMessages(library(sangerseqR))
+for (ab1_file in dir(pattern="*.ab1") ) {
+  sangerseq <- readsangerseq(ab1_file)
+  basecalls <- makeBaseCalls(sangerseq, ratio = 0.33)
+  Seq1 <- primarySeq(basecalls)
+  Seq2 <- secondarySeq(basecalls)
+  sample_id <- gsub(pattern = ".*?-.*?-|-_.*", x = ab1_file, replacement = "", perl = T)
+  print(paste("Sample ID:", sample_id))
+  vm <- vmatchPattern(Seq1,temp_all,max.mismatch = ceiling(length(Seq1)/8))
+  vm_df <- as.data.frame(vm)
+  if (nrow(vm_df) < 1) {
+    print("Does not match to template sequences.")
+    # stop(ab1_file)
+    next
+  }
+  
+  m <- matchPattern(Seq1,temp_all[[vm_df$group]],max.mismatch = ceiling(length(Seq1)/8))
+  nofMis <- nmismatch(Seq1, m)
+  
+  if (vm_df$group > length(temp_all) / 2 ) {
+    print(paste("Sequence match to minus strand of template",
+                vm_df$group - (length(temp_all) / 2)))
+  } else {
+    print(paste("Sequence match to plus strand of template",
+                vm_df$group))
+  }
+  print(paste("Number of Mismatch:", nofMis))
+  print(paste("Ref base for this position is:", refbase[vm_df$group]))
+  pos1 <- target_pos[vm_df$group]
+  
+  if (pos1 < vm_df$start | pos1 > vm_df$end) {
+    stop("target pos out of seq range.")
+  }
+  
+  idx <- 1 + pos1 - vm_df$start
+  chromatogram(basecalls, width = 5, trim5 = idx - 3,showhets = F,
+               trim3 = length(Seq1) - idx - 2, showcalls = "both")
+  text(0.5,0.9,paste("Sample:", sample_id))
+  allele <- paste(Seq1[idx],Seq2[idx],sep = ":")
+  text(0.5,0.8,allele)
+  record <- data.frame(Sample= sample_id,
+              Refbase = toString(subseq(x = temp_all[vm_df$group],
+              start = target_pos[vm_df$group], end = target_pos[vm_df$group])),
+              Allele = allele)
+  if (exists("res")) {
+    res <- rbind(res,record)
+  } else {
+    res <- record
+  }
+}
+```
+
+# Summary Table
+```{r, echo=FALSE}
+print(res)
+```
+

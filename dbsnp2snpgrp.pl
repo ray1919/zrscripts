@@ -2,8 +2,12 @@
 # Date: 2014-11-05
 # Author: Zhao
 # Purpose: format SNP group file using dbsnp rs number
+# Update: 2016-03-21
+# 输出common SNP 为小写字母 或 n
+# Update: 2017-01-17
+# 用dnSNP的alleles列替换原observed的列的信息，更为准确。排除不常见等位基因。
 
-use 5.012;
+use 5.014;
 use Data::Dump qw/dump/;
 use Smart::Comments;
 use autodie;
@@ -12,30 +16,48 @@ use Array::Utils qw/:all/;
 use Storable;
 use Array::Transpose;
 
+######## Usage:
+# ./dbsnp2snpgrp.pl dbsnp.txt RAW|IUPAC|LOWER|N
+
+my $MARK_DB = "snp144Common";
+my $FLANK_LEN = 200;
+
 my ($hashref, %assay_snpgrp);
 if (-f '.dbsnp2snpgrp') {
   ### load assays
   $hashref = retrieve('.dbsnp2snpgrp') || undef;
   %assay_snpgrp = %$hashref;
 }
-my $rsfile = shift || 'kaipu_beta_rsno.txt';
+my ($rsfile, $mode) = @ARGV;
+exit unless defined $mode;
+
+# mode:
+# RAW
+# IUPAC
+# LOWER
+# N
+
 open my $fh1, '<', $rsfile;
 my $c = 1;
-my $line_cnt = 77;
+my $line_cnt = 100;
 my $dbh = DBI->connect('dbi:mysql:ucsc_hg38','ucsc','ucsc');
 while (<$fh1>) {
   chomp;
   my $rs = $_;
-  next if exists $assay_snpgrp{$rs};
-  my $sql = "select chromStart,chromEnd + 1,chrom, strand, observed, class from snp141 where name = '$rs'";
+  next if exists $assay_snpgrp{$rs}{$mode};
+  my $sql = "select chromStart,chromEnd,chrom, strand, observed, alleles, class from snp144 where name = '$rs'";
   my $rv = $dbh->selectrow_arrayref($sql);
-  my ($nt_a1,$snp_grp,$nt_a2);
-  my $assay_catalog;
-  my ($str_pos,$end_pos,$chr,$strand,$observed,$class) = @$rv;
-  my $nt_left = get_chr_seqs($chr,$strand,$str_pos-99, $str_pos);
-  my $nt_left = proximal_snp($chr,$strand,$str_pos-99, $str_pos,$nt_left);
-  my $nt_right = get_chr_seqs($chr,$strand,$end_pos, $end_pos+99);
-  my $nt_right = proximal_snp($chr,$strand,$end_pos, $end_pos+99,$nt_right);
+  my $snp_grp;
+  my ($str_pos,$end_pos,$chr,$strand, $observed, $alleles,$class) = @$rv;
+  if ($alleles ne '') {
+    $observed = $alleles;
+    $observed =~ s/,$//;
+    $observed =~ s/,/\//g;
+  }
+  my $seq_upstream =    get_chr_seqs( $chr, $strand, $str_pos-$FLANK_LEN+1, $str_pos);
+  my $seq_downstream =  get_chr_seqs( $chr, $strand, $end_pos+1, $end_pos+$FLANK_LEN);
+  my $nt_left =         proximal(     $chr, $strand, $str_pos-$FLANK_LEN+1, $str_pos, $seq_upstream);
+  my $nt_right =        proximal(     $chr, $strand, $end_pos+1, $end_pos+$FLANK_LEN, $seq_downstream);
   given ($strand) {
     when ('+') {
       $snp_grp = "$rs\t${nt_left}[$observed]$nt_right";
@@ -45,40 +67,120 @@ while (<$fh1>) {
     }
   }
   # dump $chr, $strand, $snp_grp, $str_pos, $end_pos,$rs;exit;
-  $assay_snpgrp{$rs} = $snp_grp;
+  $assay_snpgrp{$rs}{$mode} = $snp_grp;
   store \%assay_snpgrp, '.dbsnp2snpgrp';
   bar($c++, $line_cnt);
 }
 
 ### output SNP group file for each snp
-my $filename1 = "$rsfile.snpgrp";
+my $filename1 = $rsfile;
+$filename1 =~ s/\.txt/.$mode.txt/;
 open my $fh2, ">", $filename1;
 say $fh2 "SNP_ID\tSequence";
 foreach my $k (keys %assay_snpgrp) {
-  say $fh2 $assay_snpgrp{$k};
+  say $fh2 $assay_snpgrp{$k}{$mode};
 }
 close $fh2;
 ### done
+
+sub proximal {
+  my ($chr,$strand,$str_pos,$end_pos,$seq) = @_;
+  my $dbh = DBI->connect('dbi:mysql:ucsc_hg38','ucsc','ucsc');
+  # label proximal snp in a piece of sequence
+  my $sql = "select chromEnd,observed,strand,alleles from $MARK_DB where class = 'single'
+    and chromEnd >= $str_pos and chromEnd <= $end_pos and chrom = '$chr'";
+  my $rv = $dbh->selectall_arrayref($sql);
+  $seq = uc $seq;
+  foreach my $i (@$rv) {
+    my $pos = $i->[0];  # 1 based
+    my $observed = uc $i->[1];
+    my $snp_strand = $i->[2];
+    my $alleles = $i->[3];
+    if ($alleles eq '') {
+      $alleles = $observed;
+    }
+    my $code;
+    if ($strand eq '+') {
+      $code = substr $seq, $pos - $str_pos, 1;
+    } else {
+      $code = substr $seq, $end_pos - $pos, 1;
+    }
+    given ($mode) {
+      when ('RAW') {
+      }
+      when ('LOWER') {
+        $code = lc($code);
+      }
+      when ('N') {
+        $code = 'N';
+      }
+      when ('IUPAC') {
+        $alleles =~ tr/ATCG/TAGC/ if $snp_strand ne $strand;
+        my @alleles = split /\W+/, $alleles;
+        $code = lc iupac_translate(@alleles);
+      }
+      default {
+        say "$mode not recognized.";
+        exit;
+      }
+    }
+    substr $seq, $pos - $str_pos, 1, $code if $strand eq '+';
+    substr $seq, $end_pos - $pos, 1, $code if $strand eq '-';
+  }
+  return $seq;
+}
 
 sub proximal_snp {
   my ($chr,$strand,$str_pos,$end_pos,$seq) = @_;
   my $dbh = DBI->connect('dbi:mysql:ucsc_hg38','ucsc','ucsc');
   # label proximal snp in a piece of sequence
-  my $sql = "select chromEnd,observed,strand,alleles from snp141Common where class = 'single'
+  my $sql = "select chromEnd,observed,strand,alleles from $MARK_DB where class = 'single'
     and chromEnd >= $str_pos and chromEnd <= $end_pos and chrom = '$chr'";
   my $rv = $dbh->selectall_arrayref($sql);
   $seq = lc $seq;
   foreach my $i (@$rv) {
     my $pos = $i->[0];
-    #my $observed = uc $i->[1];
+    my $observed = uc $i->[1];
     my $snp_strand = $i->[2];
     my $alleles = $i->[3];
+    if ($alleles eq '') {
+      $alleles = $observed;
+    }
     #$observed =~ tr/ATCG/TAGC/ if $snp_strand ne $strand;
     $alleles =~ tr/ATCG/TAGC/ if $snp_strand ne $strand;
     my @alleles = split /\W+/, $alleles;
     my $code = iupac_translate(@alleles);
     substr $seq, $pos - $str_pos, 1, $code if $strand eq '+';
     substr $seq, $end_pos - $pos, 1, $code if $strand eq '-';
+  }
+  return $seq;
+}
+
+sub proximal_pos {
+  my ($chr,$strand,$str_pos,$end_pos,$seq) = @_;
+  # str_pos 0 based, end_pos 1 based
+  $str_pos++;
+  my $dbh = DBI->connect('dbi:mysql:ucsc_hg19','ucsc','ucsc');
+  # label proximal snp in a piece of sequence
+  my $sql = "select chromEnd,observed,strand,alleles from snp144Common where class = 'single'
+    and chromEnd >= $str_pos and chromEnd <= $end_pos and chrom = '$chr'";
+  my $rv = $dbh->selectall_arrayref($sql);
+  $seq = uc $seq;
+  foreach my $i (@$rv) {
+    my $pos = $i->[0];
+    #my $observed = uc $i->[1];
+    #my $snp_strand = $i->[2];
+    #my $alleles = $i->[3];
+    #$observed =~ tr/ATCG/TAGC/ if $snp_strand ne $strand;
+    #$alleles =~ tr/ATCG/TAGC/ if $snp_strand ne $strand;
+    #my @alleles = split /\W+/, $alleles;
+    if ($strand eq '+') {
+      my $code = lc substr $seq, $pos - $str_pos, 1;
+      substr $seq, $pos - $str_pos, 1, $code;
+    } else {
+      my $code = lc substr $seq, $end_pos - $pos, 1;
+      substr $seq, $end_pos - $pos, 1, $code if $strand eq '-';
+    }
   }
   return $seq;
 }
@@ -148,7 +250,7 @@ sub get_chr_seq {
 
 sub iupac_translate {
   my @a = @_;
-  my @b = ('-', '.');
+  my @b = ('-', '.', 0);
   my %code = (
     'A' => ['A'],
     'T' => ['T'],
@@ -167,12 +269,12 @@ sub iupac_translate {
     'N' => ['A','C','G','T'],
   );
 
-  @a = unique(@a);
-  @a = map {@{$code{$_}}} @a;
-  @a = unique(@a);
-  @a = array_minus(@a, @b);
+  my @c = array_minus(@a, @b);
+  @c = unique(@c);
+  @c = map {@{$code{$_}}} @c;
+  @c = unique(@c);
   foreach my $k ( keys %code ) {
-    if ( !array_diff(@a,  @{$code{$k}}) ) {
+    if ( !array_diff(@c,  @{$code{$k}}) ) {
       return $k;
     }
   }

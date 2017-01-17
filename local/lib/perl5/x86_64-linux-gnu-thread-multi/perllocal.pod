@@ -1,0 +1,88 @@
+=head2 Fri Dec  4 16:31:44 2015: C<Module> L<CPAN::Meta::YAML|CPAN::Meta::YAML>
+
+=over 4
+
+=item *
+
+C<installed into: /home/zhaorui/ct208/zrscripts/local/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.016>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Fri Dec  4 16:31:44 2015: C<Module> L<Parse::CPAN::Meta|Parse::CPAN::Meta>
+
+=over 4
+
+=item *
+
+C<installed into: /home/zhaorui/ct208/zrscripts/local/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.4417>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Fri Dec  4 16:31:44 2015: C<Module> L<CPAN::Meta|CPAN::Meta>
+
+=over 4
+
+=item *
+
+C<installed into: /home/zhaorui/ct208/zrscripts/local/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.150005>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Fri Dec  4 16:32:01 2015: C<Module> L<List::Compare|List::Compare>
+
+=over 4
+
+=item *
+
+C<installed into: /home/zhaorui/ct208/zrscripts/local/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.53>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
