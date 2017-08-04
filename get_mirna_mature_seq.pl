@@ -30,7 +30,7 @@ where a.mature_acc = '$mirna_acc'
 and a.auto_mature = p.auto_mature
 and p.auto_mirna = i.auto_mirna";
     my $rv = $dbh->selectall_arrayref($sql1);
-    if (scalar keys $rv  == 0 ) {
+    if (scalar keys %$rv  == 0 ) {
       say join(";",@line) . " has no records!";
       exit;
     }

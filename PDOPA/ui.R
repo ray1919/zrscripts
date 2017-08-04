@@ -4,7 +4,7 @@ fluidPage(
   theme="style.css",
   titlePanel("PCR Data Online Processing App"),
   tags$code("Author: Zhao Rui"),
-  tags$code("Last update: 2017-01-20"),
+  tags$code("Last update: 2017-07-12"),
   sidebarLayout(
     sidebarPanel(
       fileInput('files', 'Choose PCR Template & Data Files', multiple = T,

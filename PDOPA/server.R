@@ -337,7 +337,7 @@ shinyServer(function(input, output) {
                            if (!schema1[i,"Symbol"] %in% symbolList) next
                            if (is.na(schema1[i,"Gene.ID"])) next
                            sth <- dbSendQuery(con, paste("SELECT gene_symbol, gene_id,
-                                                         gene_name,common,synonyms,type_of_gene FROM gene
+                                                         gene_name,common organism,synonyms,type_of_gene FROM gene
                                                          LEFT join species on tax_id = id
                                                          WHERE gene_id = ",schema1[i,"Gene.ID"],sep=""))
                            res <- dbFetch(sth)
@@ -426,9 +426,10 @@ shinyServer(function(input, output) {
                        incProgress(0.1, "Data & QC table sheet created.")
                        
                        # dataTblQc10 <- dataTbl[dataTbl$qual < qc_cutoff,]
-                       dataTblQc10 <- dataTbl[dataTbl$qual < qc_cutoff & # QC 小于阈值
-                                                !(dataTbl$sample %in% sampleQC$sample[sampleQC$is.qc.outlier]) &
-                                                !(dataTbl$symbol %in% assayQC$symbol[assayQC$is.qc.outlier]),]
+                       # dataTblQc10 <- dataTbl[dataTbl$qual < qc_cutoff & # QC 小于阈值
+                       #                          !(dataTbl$sample %in% sampleQC$sample[sampleQC$is.qc.outlier]) &
+                       #                          !(dataTbl$symbol %in% assayQC$symbol[assayQC$is.qc.outlier]),]
+                       dataTblQc10 <- dataTbl
                        
                        rawCtQc10 <- cast(dataTblQc10, symbol~sample,value = "ct")
                        # 找到类似-1 -2 -3标志的技术重复，先合并。去掉QC不合格的结果。
@@ -527,7 +528,7 @@ shinyServer(function(input, output) {
                        # save data Table 
                        options("openxlsx.borderColour" = "#4F80BD")
                        options("openxlsx.borderStyle" = "thin")
-                       modifyBaseFont(rv$wb, fontSize = 10, fontName = "Arial Narrow")
+                       modifyBaseFont(rv$wb, fontSize = 10, fontName = "Calibri")
                        headSty <- createStyle(fgFill="#DCE6F1", halign="center",
                                               border = "TopBottomLeftRight")
                        
@@ -541,7 +542,7 @@ shinyServer(function(input, output) {
                        freezePane(rv$wb, sheet = sheetName, firstRow = TRUE, firstCol = TRUE)
                        ## freeze first row and column
                        writeDataTable(rv$wb, sheet = sheetName, x = dataTbl, colNames = TRUE,
-                                      rowNames = FALSE, tableStyle = "TableStyleLight14")
+                                      rowNames = FALSE, tableStyle = "TableStyleLight10")
                        
                        if (array_type == "gene") {
                          # gene sheet
@@ -552,11 +553,12 @@ shinyServer(function(input, output) {
                          addWorksheet(rv$wb, sheetName, gridLines = FALSE, zoom = 150, tabColour = "orange")
                          freezePane(rv$wb, sheet = sheetName, firstRow = TRUE,
                                     firstCol = F) ## freeze first row and column
-                         setColWidths(rv$wb, sheetName, cols = "D", widths = 50)
-                         setColWidths(rv$wb, sheetName, cols = "F", widths = 20)
-                         setColWidths(rv$wb, sheetName, cols = "G", widths = 13)
+                         setColWidths(rv$wb, sheet = sheetName, cols = 1:ncol(geneTbl), widths = "auto")
+                         # setColWidths(rv$wb, sheetName, cols = "D", widths = 50)
+                         # setColWidths(rv$wb, sheetName, cols = "F", widths = 20)
+                         # setColWidths(rv$wb, sheetName, cols = "G", widths = 13)
                          writeDataTable(rv$wb, sheetName, x = geneTbl[naturalorder(geneTbl$Well), ],
-                                        withFilter = F, tableStyle = "TableStyleLight14")
+                                        withFilter = F, tableStyle = "TableStyleLight10")
                        }
                        
                        # raw sheet
@@ -565,11 +567,12 @@ shinyServer(function(input, output) {
                          removeWorksheet(rv$wb, sheetName)
                        }
                        addWorksheet(rv$wb, sheetName, gridLines = FALSE, zoom = 150, tabColour = "orange")
+                       setColWidths(rv$wb, sheet = sheetName, cols = 1:ncol(rawTbl), widths = "auto")
                        freezePane(rv$wb, sheet = "Data Table", firstActiveRow = 3,firstActiveCol = 'B')
                        ## freeze first row and column
                        writeDataTable(rv$wb, sheetName, x = rawTbl[naturalorder(rawTbl$Well),],
                                       startCol = 1, startRow=2,
-                                      withFilter = F, tableStyle = "TableStyleLight14")
+                                      withFilter = F, tableStyle = "TableStyleLight10")
                        writeData(rv$wb, sheetName, x = "CT", startCol = 4, startRow = 1)
                        writeData(rv$wb, sheetName, x = "TM", startCol = sum(schema3[,10]) + 4, startRow = 1)
                        writeData(rv$wb, sheetName, x = "QC", startCol = 2*sum(schema3[,10]) + 4, startRow = 1)
@@ -583,7 +586,7 @@ shinyServer(function(input, output) {
                        addWorksheet(rv$wb, sheetName, gridLines = FALSE, zoom = 150, tabColour = "yellow")
                        freezePane(rv$wb, sheet = "Assay QC", firstRow = T, firstCol = F)
                        writeDataTable(rv$wb, sheet = "Assay QC", x = assayQC,
-                                 startCol = 1, startRow=1, tableStyle = "TableStyleLight9")
+                                 startCol = 1, startRow=1, tableStyle = "TableStyleLight10")
                        
                        sheetName <- "Sample QC"
                        if (sheetName %in% names(rv$wb)) {
@@ -592,7 +595,7 @@ shinyServer(function(input, output) {
                        addWorksheet(rv$wb, sheetName = "Sample QC", gridLines = FALSE, zoom = 150, tabColour = "yellow")
                        freezePane(rv$wb, sheet = "Sample QC", firstRow = T, firstCol = F)
                        writeDataTable(rv$wb, sheet = "Sample QC", x = sampleQC,
-                                      startCol = 1, startRow=1, tableStyle = "TableStyleLight9")
+                                      startCol = 1, startRow=1, tableStyle = "TableStyleLight10")
                        
                        # ΔΔCT compare
                        for (i in 1:nrow(schema4)) {
@@ -601,11 +604,11 @@ shinyServer(function(input, output) {
                          B <- schema4$B[i]
                          
                          cmp_name <- paste(A,"vs",B,sep=" ")
-                         sheet_name <- substr(cmp_name,1,31)
+                         sheet_name <- substr(cmp_name %>% gsub(replacement = "-", pattern = "\\/|\\\\|:|\\?|\\|"),1,31)
                          if (sheet_name %in% names(rv$wb)) {
                            removeWorksheet(rv$wb, sheet_name)
                          }
-                         addWorksheet(rv$wb, sheetName = sheet_name, gridLines = FALSE, zoom = 150, tabColour = "red")
+                         addWorksheet(rv$wb, sheetName = sheet_name, gridLines = FALSE, zoom = 150, tabColour = "purple")
                          freezePane(rv$wb, sheet = sheet_name, firstRow = T, firstCol = F)
                          UpStyle <- createStyle(textDecoration = "bold", fontColour = "#9C0006")
                          DownStyle <- createStyle(textDecoration = "bold", fontColour = "#006100")
@@ -643,27 +646,36 @@ shinyServer(function(input, output) {
                            ddCt <- ddCt[,c("symbol",naturalsort(colnames(ddCt[,-1])))]
                            print("calculate delta Ct")
                            for ( t in nrow(ddCt):1 ) {
+                             # if ( length(na.omit(as.numeric(ddCt[t, sA]))) < 2 |
+                             #      length(na.omit(as.numeric(ddCt[t, sB]))) < 2) {
+                             #   ddCt <- ddCt[-t,]
+                             #   next
+                             # }
                              if ( length(na.omit(as.numeric(ddCt[t, sA]))) < 2 |
                                   length(na.omit(as.numeric(ddCt[t, sB]))) < 2) {
-                               ddCt <- ddCt[-t,]
-                               next
+                               ddCt[t,"delta.delta.Ct"] <- NA
+                               ddCt[t, "ratio"] <- NA
+                               ddCt[t, "log ratio"] <- NA
+                               ddCt[t, "fold change"] <- NA
+                               ddCt[t, "p value"] <- NA
+                             } else {
+                               ddCt[t,"delta.delta.Ct"] =  mean(as.numeric(ddCt[t, sA]), na.rm=T) -
+                                 mean(as.numeric(ddCt[t, sB]), na.rm=T)
+                               ddCt[t, "ratio"] = 2 ^ (-1 * ddCt[t,"delta.delta.Ct"])
+                               ddCt[t, "log ratio"] = -1 * ddCt[t,"delta.delta.Ct"]
+                               ddCt[t, "fold change"] = ddCt[t,"ratio"]
+                               if (ddCt[t,"ratio"] < 1)
+                                 ddCt[t, "fold change"] = -1/ddCt[t,"ratio"]
+                               if (grepl(x = schema4$IsPaired[i], pattern = "Y", ignore.case = T) ) {
+                                 pdata <- data.frame(g1=as.numeric(ddCt[t, sA]),g2=as.numeric(ddCt[t, sB]) )
+                                 if (nrow(na.omit(pdata)) >= 2)
+                                   pval <- t.test(pdata$g1, pdata$g2, paired = TRUE, var.equal = TRUE)$p.value
+                                 else
+                                   pval <- NA
+                               } else
+                                 pval <- t.test(as.numeric(ddCt[t, sA]), as.numeric(ddCt[t, sB]), paired = FALSE, var.equal = TRUE)$p.value
+                               ddCt[t, "p value"] <- pval
                              }
-                             ddCt[t,"delta.delta.Ct"] =  mean(as.numeric(ddCt[t, sA]), na.rm=T) -
-                               mean(as.numeric(ddCt[t, sB]), na.rm=T)
-                             ddCt[t, "ratio"] = 2 ^ (-1 * ddCt[t,"delta.delta.Ct"])
-                             ddCt[t, "log ratio"] = -1 * ddCt[t,"delta.delta.Ct"]
-                             ddCt[t, "fold change"] = ddCt[t,"ratio"]
-                             if (ddCt[t,"ratio"] < 1)
-                               ddCt[t, "fold change"] = -1/ddCt[t,"ratio"]
-                             if (grepl(x = schema4$IsPaired[i], pattern = "Y", ignore.case = T) ) {
-                               pdata <- data.frame(g1=as.numeric(ddCt[t, sA]),g2=as.numeric(ddCt[t, sB]) )
-                               if (nrow(na.omit(pdata)) >= 2)
-                                 pval <- t.test(pdata$g1, pdata$g2, paired = TRUE, var.equal = TRUE)$p.value
-                               else
-                                 pval <- NA
-                             } else
-                               pval <- t.test(as.numeric(ddCt[t, sA]), as.numeric(ddCt[t, sB]), paired = FALSE, var.equal = TRUE)$p.value
-                             ddCt[t, "p value"] <- pval
                            }
                            # plotxy <- data.frame(A = 2^-apply(ddCt[, sA], 1,mean), B = 2^-apply(ddCt[, sB], 1,mean),
                            plotxy <- data.frame(A = -apply(ddCt[, sA], 1, mean, na.rm=T),
@@ -677,7 +689,7 @@ shinyServer(function(input, output) {
                            print(paste("Compare",i,"is not supported.",sep=" "))
                          }
                          
-                         setColWidths(rv$wb, sheet = sheet_name, cols = 1:ncol(ddCt), widths = 10)
+                         setColWidths(rv$wb, sheet = sheet_name, cols = 1:ncol(ddCt), widths = "auto")
                          writeDataTable(rv$wb, sheet_name, x = ddCt[,1:ncol(ddCt)], startCol = 1, startRow=2,
                                         withFilter = F, tableStyle = "TableStyleLight10")
                          writeData(rv$wb, sheet_name, x = cmp_name, startCol = "A", startRow=1)
@@ -717,19 +729,19 @@ shinyServer(function(input, output) {
                              geom_vline(xintercept = -1, color = "dodgerblue", linetype="longdash") + #add vertical line
                              geom_hline(yintercept = -log10(0.05), color = "deeppink", linetype="longdash") +  #add vertical line
                              labs(x="log2(Fold-change)", y="-log10(P.Value)") + 
-                             scale_x_continuous("log2(Fold-change)") +
+                             scale_x_continuous("log2(Fold-change)", limits = range(dat2$x+0.5, dat2$x)) +
                              scale_y_continuous("-log10(P.Value)", limits = range(0,max(dat2$y)+0.2)) +
                              annotate("text", x=dat2$x[mask], y=dat2$y[mask], 
                                       label=dat2$ID[mask], size=dat2$y[mask], 
                                       vjust=-0.1, hjust=-0.1, color="lightsteelblue4") +
                              theme_bw()
                            pngfile2 = paste(A,B,".vp.png",sep="")
-                           png(filename = pngfile2,width=5,height=5,units="in",res=300)
+                           png(filename = pngfile2,width=6,height=6,units="in",res=300)
                            print(p2)
                            dev.off()
                            # insertPlot(wb, sheet = 3+i, startCol = ncol(ddCt) + 2)
-                           insertImage(wb = rv$wb, sheet = sheet_name, file = pngfile2, width = 5, 
-                                       height = 5, startRow = 30, startCol = ncol(ddCt) + 1, 
+                           insertImage(wb = rv$wb, sheet = sheet_name, file = pngfile2, width = 6, 
+                                       height = 6, startRow = 30, startCol = ncol(ddCt) + 1, 
                                        units = "in", dpi = 300)
                          }
                          # conditional formatting
@@ -947,7 +959,7 @@ shinyServer(function(input, output) {
                              color <- rgb(runif(1),runif(1),runif(1))
                              addWorksheet(rv$wb, sheetName = sheetname, tabColour = color, gridLines = TRUE)
                              cp2 <- as.data.frame(cp)
-                             writeDataTable(rv$wb, sheet = sheetname, x = cp2, colNames = TRUE,tableStyle="TableStyleLight2")
+                             writeDataTable(rv$wb, sheet = sheetname, x = cp2, colNames = TRUE,tableStyle="TableStyleLight10")
                            }
                          }
                        }
@@ -1032,13 +1044,13 @@ shinyServer(function(input, output) {
                        
                        # 合并技术重复
                        schema5$CT <- apply(X = schema5[,grepl(pattern = "CT\\d",
-                                      x = colnames(schema5))], MARGIN = 1,
+                                      x = colnames(schema5))] %>% as.data.frame, MARGIN = 1,
                                       FUN = mean, na.rm = T)
                        
-                       schema5$TM <- apply(X = schema5[,grepl(pattern = "TM\\d",x = colnames(schema5))], MARGIN = 1,
+                       schema5$TM <- apply(X = schema5[,grepl(pattern = "TM\\d",x = colnames(schema5))] %>% as.data.frame, MARGIN = 1,
                              FUN = function(x) { strsplit(x %>% as.character, split = ", ") %>% unlist %>% as.numeric %>% median(na.rm=T)})
 
-                       isDP <- apply(X = schema5[,grepl(pattern = "TM\\d",x = colnames(schema5))], MARGIN = 1,
+                       isDP <- apply(X = schema5[,grepl(pattern = "TM\\d",x = colnames(schema5))] %>% as.data.frame, MARGIN = 1,
                              FUN = function(x) { (strsplit(x %>% as.character, split = ", ") %>% lapply(FUN = length) %>% unlist > 1) %>% all})
                        
                        isHK <- schema5$GENE %in% schema2$Housekeeping.Gene.Symbol
@@ -1077,16 +1089,18 @@ shinyServer(function(input, output) {
                            iqr <- IQR(tms,na.rm=T)
                            outlimit2 <- c(quantile(tms,1/4,na.rm=T) - 1.5*iqr, quantile(tms,3/4,na.rm=T) + 1.5*iqr)
                            
-                           if (outlimit2[2] - outlimit2[1] < min_CI) {
-                             mean_limit2 = mean(outlimit2)
-                             outlimit2[1] = mean_limit2 - 0.5*min_CI
-                             outlimit2[2] = mean_limit2 + 0.5*min_CI
-                           }
-                           
-                           istmoutlier2 <- TRUE
-                           opt.tm <- dataTbl$opt.tm[i]
-                           if (all(c(opt.tm >= outlimit2[1], opt.tm <= outlimit2[2], !is.na(opt.tm)) ) ) {
-                             istmoutlier2 <- FALSE
+                           if (!is.na(outlimit2[1])) {
+                             if (outlimit2[2] - outlimit2[1] < min_CI) {
+                               mean_limit2 = mean(outlimit2)
+                               outlimit2[1] = mean_limit2 - 0.5*min_CI
+                               outlimit2[2] = mean_limit2 + 0.5*min_CI
+                             }
+                             
+                             istmoutlier2 <- TRUE
+                             opt.tm <- dataTbl$opt.tm[i]
+                             if (all(c(opt.tm >= outlimit2[1], opt.tm <= outlimit2[2], !is.na(opt.tm)) ) ) {
+                               istmoutlier2 <- FALSE
+                             }
                            }
                            
                            # determine is TM a outlier compared to previous records
@@ -1136,8 +1150,9 @@ shinyServer(function(input, output) {
                                                Synonyms=character(),"Type of Gene"=character())
                          
                          for (s in schema5$GENE_ID %>% unique) {
+                           if(is.na(s)) {next}
                            sth <- dbSendQuery(con, paste("SELECT gene_symbol, gene_id,
-                                                         gene_name,common,synonyms,type_of_gene FROM gene
+                                                         gene_name,common organism,synonyms,type_of_gene FROM gene
                                                          LEFT join species on tax_id = id
                                                          WHERE gene_id = ", s, sep=""))
                            res <- dbFetch(sth)
@@ -1268,12 +1283,17 @@ shinyServer(function(input, output) {
                            ct_raw <- rawCtQc10[rawCtQc10$symbol == j, k]
                            if (length(ct_raw) == 0)
                              next
+                           if (is.na(ct_raw) )
+                             next
                            delta_ct <- ct_raw - hks_avg_ct
                            deltaCt <- rbind(deltaCt, data.frame(symbol=j,sample=k,delta_ct))
                          }
                        }
                        rownames(deltaCt) <- NULL
                        deltaCtCasted <- sort_col(cast(deltaCt, symbol~sample,value = "delta_ct"))
+                       for (diff_sample in setdiff(all_samples, deltaCt$sample %>% unique)) {
+                         sample_analysis[all_samples == diff_sample] <- F
+                       }
                        
                        incProgress(0.1, "HK gene QC checked.")
 
@@ -1285,18 +1305,20 @@ shinyServer(function(input, output) {
                        # save data Table 
                        options("openxlsx.borderColour" = "#4F80BD")
                        options("openxlsx.borderStyle" = "thin")
-                       modifyBaseFont(rv$wb, fontSize = 10, fontName = "Arial Narrow")
+                       modifyBaseFont(rv$wb, fontSize = 10, fontName = "Calibri")
                        headSty <- createStyle(fgFill="#DCE6F1", halign="center",
                                               border = "TopBottomLeftRight")
                        
                        
                        # raw data sheet
-                       sheetName <- "Raw Data and QC"
+                       sheetName <- "Raw Data"
                        if (sheetName %in% names(rv$wb)) {
                          removeWorksheet(rv$wb, sheetName)
                        }
                        addWorksheet(rv$wb, sheetName, gridLines = FALSE, zoom = 150)
                        freezePane(rv$wb, sheet = 1, firstRow = TRUE, firstCol = TRUE)
+                       setColWidths(rv$wb, sheet = sheetName, cols = 1:ncol(dataTbl), widths = "auto")
+                       
                        ## freeze first row and column
                        writeDataTable(rv$wb, sheet = 1, x = dataTbl, colNames = TRUE,
                                       rowNames = FALSE, tableStyle = "TableStyleLight10")
@@ -1310,11 +1332,12 @@ shinyServer(function(input, output) {
                          addWorksheet(rv$wb, sheetName, gridLines = FALSE, zoom = 150)
                          freezePane(rv$wb, sheet = "Gene Table", firstRow = TRUE,
                                     firstCol = F) ## freeze first row and column
-                         setColWidths(rv$wb, sheet = 2, cols = "D", widths = 50)
-                         setColWidths(rv$wb, sheet = 2, cols = "F", widths = 20)
-                         setColWidths(rv$wb, sheet = 2, cols = "G", widths = 13)
-                         writeData(rv$wb, sheet = "Gene Table", x = geneTbl, startCol = "A", startRow=1,
-                                   borders="rows", headerStyle = headSty)
+                         setColWidths(rv$wb, sheet = sheetName, cols = 1:ncol(geneTbl), widths = "auto")
+                         # setColWidths(rv$wb, sheet = 2, cols = "D", widths = 50)
+                         # setColWidths(rv$wb, sheet = 2, cols = "F", widths = 20)
+                         # setColWidths(rv$wb, sheet = 2, cols = "G", widths = 13)
+                         writeDataTable(rv$wb, sheet = "Gene Table", x = geneTbl, startCol = "A", startRow=1,
+                                   tableStyle = "TableStyleLight10")
                        }
                        
                        # raw sheet
@@ -1323,15 +1346,16 @@ shinyServer(function(input, output) {
                          removeWorksheet(rv$wb, sheetName)
                        }
                        addWorksheet(rv$wb, sheetName, gridLines = FALSE, zoom = 150)
-                       freezePane(rv$wb, sheet = "Data Table", firstActiveRow = 3,firstActiveCol = 'B')
+                       setColWidths(rv$wb, sheet = sheetName, cols = 1:ncol(rawTbl), widths = "auto")
+                       freezePane(rv$wb, sheet = sheetName, firstActiveRow = 3,firstActiveCol = 'B')
                        ## freeze first row and column
-                       writeData(rv$wb, "Data Table", x = rawTbl, startCol = "A", startRow=2, borders="rows",
+                       writeData(rv$wb, sheetName, x = rawTbl, startCol = "A", startRow=2, borders="rows",
                                  headerStyle = headSty)
-                       writeData(rv$wb, "Data Table", x = "CT", startCol = 4, startRow = 1)
-                       writeData(rv$wb, "Data Table", x = "TM", startCol = length(all_samples) + 4, startRow = 1)
-                       writeData(rv$wb, "Data Table", x = "QC", startCol = 2*length(all_samples) + 4, startRow = 1)
+                       writeData(rv$wb, sheetName, x = "CT", startCol = 3, startRow = 1)
+                       writeData(rv$wb, sheetName, x = "TM", startCol = length(all_samples) + 3, startRow = 1)
+                       writeData(rv$wb, sheetName, x = "QC", startCol = 2*length(all_samples) + 3, startRow = 1)
                        s1 <- createStyle(fontSize=14, textDecoration=c("bold", "italic"))
-                       addStyle(rv$wb, "Data Table", style = s1, rows=c(1,1,1), cols=(0:2) * length(all_samples) + 4)
+                       addStyle(rv$wb, sheetName, style = s1, rows=c(1,1,1), cols=(0:2) * length(all_samples) + 4)
                        
                        sheetName <- "Assay QC"
                        if (sheetName %in% names(rv$wb)) {
@@ -1358,7 +1382,7 @@ shinyServer(function(input, output) {
                          B <- schema4$B[i]
                          
                          cmp_name <- paste(A,"vs",B,sep=" ")
-                         sheet_name <- substr(cmp_name,1,31)
+                         sheet_name <- substr(cmp_name %>% gsub(replacement = "-", pattern = "\\/|\\\\|:|\\?|\\|"),1,31)
                          if (sheet_name %in% names(rv$wb)) {
                            removeWorksheet(rv$wb, sheet_name)
                          }
@@ -1434,7 +1458,7 @@ shinyServer(function(input, output) {
                            print(paste("Compare",i,"is not supported.",sep=" "))
                          }
                          
-                         setColWidths(rv$wb, sheet = sheet_name, cols = 1:ncol(ddCt), widths = 10)
+                         setColWidths(rv$wb, sheet = sheet_name, cols = 1:ncol(ddCt), widths = "auto")
                          writeData(rv$wb, sheet_name, x = ddCt[,1:ncol(ddCt)], startCol = "A", startRow=1,
                                    borders="rows", headerStyle = headSty)
                          
