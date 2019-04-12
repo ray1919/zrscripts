@@ -1,0 +1,48 @@
+Transport and catabolism	Endocytosis	细胞内吞信号通路	04144
+	Phagosome	细胞吞噬信号通路	04145
+	Lysosome	细胞溶酶体	04142
+Cell growth and death	Cell cycle	细胞周期通路	04110
+	Apoptosis	细胞凋亡通路	04210
+Cellular community	Focal adhesion	细胞基质粘附因子	04510
+	Tight junction	细胞封闭小带基因	04530
+	Gap junction	细胞间隙连接基因	04540
+	Signaling pathways regulating pluripotency of stem cells	多能干细胞调控信号通路	04550
+Transcription	Spliceosome	可变剪切组基因 03040	03040
+	RNA transport	RNA转运 03013	03013
+	mRNA surveillance pathway	mRNA降解通路 03015	03015
+Folding, sorting and degradation	Protein processing in endoplasmic reticulum	内质网蛋白质加工通路 04141	04141
+	Ubiquitin mediated proteolysis	泛素介导蛋白质水解 04120	04120
+Signal transduction	Ras signaling pathway	Ras信号通路 04014	04014
+	Rap1 signaling pathway	Rap1信号通路 04015	04015
+	MAPK signaling pathway	MAPK信号通路 04010	04010
+	Wnt signaling pathway	Wnt信号通路 04310	04310
+	Hippo signaling pathway	Hippo信号通路 04390	04390
+	Jak-STAT signaling pathway	Jak-STAT信号通路 04630	04630
+	NF-kappa B signaling pathway	NF-kappa B信号通路 04064	04064
+	TNF signaling pathway	TNF信号通路 04668	04668
+	HIF-1 signaling pathway	HIF-1信号通路 04066	04066
+	FoxO signaling pathway	FoxO信号通路 04068	04068
+	Calcium signaling pathway	钙离子信号通路 04020	04020
+	Phosphatidylinositol signaling system	PLD信号通路 04072	04072
+	Phospholipase D signaling pathway	鞘脂类信号通路 04071	04071
+	Sphingolipid signaling pathway	cAMP信号通路 04024	04024
+	cAMP signaling pathway	cGMP-PKG信号通路 04022	04022
+	cGMP-PKG signaling pathway	PI3K-Akt信号通路 04151	04151
+	PI3K-Akt signaling pathway	AMPK信号通路 04152	04152
+Signaling molecules and interaction	Cytokine-cytokine receptor interaction	细胞因子受体相互作用通路 04060	04060
+Immune system	Platelet activation	血小板激活通路 04611	04611
+	Toll-like receptor signaling pathway	Toll样受体信号通路 04620	04620
+	Natural killer cell mediated cytotoxicity	NK细胞介导细胞毒性通路 04650	04650
+	T cell receptor signaling pathway	T细胞受体信号通路 04660	04660
+	Leukocyte transendothelial migration	白细胞跨内皮转移通路 04670	04670
+	Chemokine signaling pathway	趋化因子信号通路 04062	04062
+Endocrine system	Insulin signaling pathway	胰岛素信号通路 04910	04910
+	Glucagon signaling pathway	胰高血糖素信号通路 04922	04922
+	GnRH signaling pathway	GnRH信号通路 04912	04912
+	Estrogen signaling pathway	雌激素信号通路 04915	04915
+	Oxytocin signaling pathway	催产素信号通路 04921	04921
+	Thyroid hormone signaling pathway	甲状腺素信号通路 04919	04919
+	Melanogenesis	黑素生成通路 04916	04916
+Nervous system	Neurotrophin signaling pathway	神经营养蛋白信号通路 04722	04722
+Sensory system	Inflammatory mediator regulation of TRP channels	TRP通道炎症调控通路 04750	04750
+Aging	Longevity regulating pathway - mammal	长寿调控通路 04211	04211

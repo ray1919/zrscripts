@@ -1,0 +1,2112 @@
+ENTRY       hsa04064                    Pathway
+NAME        NF-kappa B signaling pathway - Homo sapiens (human)
+DESCRIPTION Nuclear factor-kappa B (NF-kappa B) is the generic name of a family of transcription factors that function as dimers and regulate genes involved in immunity, inflammation and cell survival. There are several pathways leading to NF-kappa B-activation. The canonical pathway is induced by tumour necrosis factor-alpha (TNF-alpha), interleukin-1 (IL-1) or byproducts of bacterial and viral infections. This pathway relies on IKK- mediated IkappaB-alpha phosphorylation on Ser32 and 36, leading to its  degradation, which allows the p50/p65 NF-kappa B dimer to enter the nucleus and activate gene transcription. Atypical pathways are IKK-independent and rely on phosphorylation of IkappaB-alpha on Tyr42 or on Ser residues in IkappaB-alpha PEST domain. The non-canonical pathway is triggered by particular members of the TNFR superfamily, such as lymphotoxin-beta (LT-beta) or BAFF. It involves NIK and IKK-alpha-mediated p100 phosphorylation and processing to p52, resulting in nuclear translocation of p52/RelB heterodimers.
+CLASS       Environmental Information Processing; Signal transduction
+PATHWAY_MAP hsa04064  NF-kappa B signaling pathway
+MODULE      hsa_M00686  Toll-like receptor signaling [PATH:hsa04064]
+DRUG        D04690  Lenercept (USAN/INN)
+            D05263  Onercept (USAN/INN)
+            D05393  Pegsunercept (USAN)
+            D08866  Baminercept (USAN/INN)
+            D08877  Briobacept (USAN)
+            D09347  Fostamatinib (USAN)
+            D09348  Fostamatinib disodium (USAN)
+            D09692  Veliparib (USAN/INN)
+            D09730  Olaparib (JAN/USAN/INN)
+            D09913  Iniparib (USAN/INN)
+ORGANISM    Homo sapiens (human) [GN:hsa]
+GENE        3932  LCK; LCK proto-oncogene, Src family tyrosine kinase [KO:K05856] [EC:2.7.10.2]
+            7535  ZAP70; zeta chain of T cell receptor associated protein kinase 70kDa [KO:K07360] [EC:2.7.10.2]
+            27040  LAT; linker for activation of T-cells [KO:K07362]
+            5335  PLCG1; phospholipase C gamma 1 [KO:K01116] [EC:3.1.4.11]
+            5588  PRKCQ; protein kinase C theta [KO:K18052] [EC:2.7.11.13]
+            102723407  putative V-set and immunoglobulin domain-containing-like protein IGHV4OR15-8; K06856 immunoglobulin heavy chain [KO:K06856]
+            6850  SYK; spleen tyrosine kinase [KO:K05855] [EC:2.7.10.2]
+            4067  LYN; LYN proto-oncogene, Src family tyrosine kinase [KO:K05854] [EC:2.7.10.2]
+            29760  BLNK; B-cell linker [KO:K07371]
+            695  BTK; Bruton tyrosine kinase [KO:K07370] [EC:2.7.10.2]
+            5336  PLCG2; phospholipase C gamma 2 [KO:K05859] [EC:3.1.4.11]
+            5579  PRKCB; protein kinase C beta [KO:K19662] [EC:2.7.11.13]
+            84433  CARD11; caspase recruitment domain family member 11 [KO:K07367]
+            8915  BCL10; B-cell CLL/lymphoma 10 [KO:K07368]
+            10892  MALT1; MALT1 paracaspase [KO:K07369] [EC:3.4.22.-]
+            3553  IL1B; interleukin 1 beta [KO:K04519]
+            3554  IL1R1; interleukin 1 receptor type 1 [KO:K04386]
+            4615  MYD88; myeloid differentiation primary response 88 [KO:K04729]
+            3654  IRAK1; interleukin 1 receptor associated kinase 1 [KO:K04730] [EC:2.7.11.1]
+            51135  IRAK4; interleukin 1 receptor associated kinase 4 [KO:K04733] [EC:2.7.11.1]
+            7189  TRAF6; TNF receptor associated factor 6 [KO:K03175] [EC:2.3.2.27]
+            7124  TNF; tumor necrosis factor [KO:K03156]
+            7132  TNFRSF1A; tumor necrosis factor receptor superfamily member 1A [KO:K03158]
+            8737  RIPK1; receptor interacting serine/threonine kinase 1 [KO:K02861] [EC:2.7.11.1]
+            8717  TRADD; TNFRSF1A-associated via death domain [KO:K03171]
+            7186  TRAF2; TNF receptor associated factor 2 [KO:K03173] [EC:2.3.2.27]
+            7188  TRAF5; TNF receptor associated factor 5 [KO:K09849]
+            329  BIRC2; baculoviral IAP repeat containing 2 [KO:K16060]
+            330  BIRC3; baculoviral IAP repeat containing 3 [KO:K16060]
+            23586  DDX58; DEXD/H-box helicase 58 [KO:K12646] [EC:3.6.3.14]
+            7706  TRIM25; tripartite motif containing 25 [KO:K10652] [EC:2.3.2.27]
+            3929  LBP; lipopolysaccharide binding protein [KO:K05399]
+            929  CD14; CD14 molecule [KO:K04391]
+            7099  TLR4; toll like receptor 4 [KO:K10160]
+            23643  LY96; lymphocyte antigen 96 [KO:K05400]
+            114609  TIRAP; toll-interleukin 1 receptor (TIR) domain containing adaptor protein [KO:K05403]
+            353376  TICAM2; toll like receptor adaptor molecule 2 [KO:K05409]
+            148022  TICAM1; toll like receptor adaptor molecule 1 [KO:K05842]
+            959  CD40LG; CD40 ligand [KO:K03161]
+            958  CD40; CD40 molecule [KO:K03160]
+            7187  TRAF3; TNF receptor associated factor 3 [KO:K03174]
+            8600  TNFSF11; tumor necrosis factor superfamily member 11 [KO:K05473]
+            8792  TNFRSF11A; tumor necrosis factor receptor superfamily member 11a [KO:K05147]
+            4049  LTA; lymphotoxin alpha [KO:K05468]
+            4050  LTB; lymphotoxin beta [KO:K03157]
+            8740  TNFSF14; tumor necrosis factor superfamily member 14 [KO:K05477]
+            4055  LTBR; lymphotoxin beta receptor [KO:K03159]
+            9020  MAP3K14; mitogen-activated protein kinase kinase kinase 14 [KO:K04466] [EC:2.7.11.25]
+            6885  MAP3K7; mitogen-activated protein kinase kinase kinase 7 [KO:K04427] [EC:2.7.11.25]
+            10454  TAB1; TGF-beta activated kinase 1/MAP3K7 binding protein 1 [KO:K04403]
+            23118  TAB2; TGF-beta activated kinase 1/MAP3K7 binding protein 2 [KO:K04404]
+            257397  TAB3; TGF-beta activated kinase 1/MAP3K7 binding protein 3 [KO:K12793]
+            10673  TNFSF13B; tumor necrosis factor superfamily member 13b [KO:K05476]
+            115650  TNFRSF13C; tumor necrosis factor receptor superfamily member 13C [KO:K05151]
+            8517  IKBKG; inhibitor of kappa light polypeptide gene enhancer in B-cells, kinase gamma [KO:K07210]
+            1147  CHUK; conserved helix-loop-helix ubiquitous kinase [KO:K04467] [EC:2.7.11.10]
+            3551  IKBKB; inhibitor of kappa light polypeptide gene enhancer in B-cells, kinase beta [KO:K07209] [EC:2.7.11.10]
+            51588  PIAS4; protein inhibitor of activated STAT 4 [KO:K16065]
+            7329  UBE2I; ubiquitin conjugating enzyme E2 I [KO:K10577]
+            472  ATM; ATM serine/threonine kinase [KO:K04728] [EC:2.7.11.1]
+            55367  PIDD1; p53-induced death domain protein 1 [KO:K10130]
+            23085  ERC1; ELKS/RAB6-interacting/CAST family member 1 [KO:K16072]
+            4792  NFKBIA; NFKB inhibitor alpha [KO:K04734]
+            4790  NFKB1; nuclear factor of kappa light polypeptide gene enhancer in B-cells 1 [KO:K02580]
+            5970  RELA; v-rel avian reticuloendotheliosis viral oncogene homolog A [KO:K04735]
+            8837  CFLAR; CASP8 and FADD like apoptosis regulator [KO:K04724]
+            331  XIAP; X-linked inhibitor of apoptosis [KO:K04725] [EC:2.3.2.27]
+            598  BCL2L1; BCL2 like 1 [KO:K04570]
+            596  BCL2; B-cell CLL/lymphoma 2 [KO:K02161]
+            7185  TRAF1; TNF receptor associated factor 1 [KO:K03172]
+            597  BCL2A1; BCL2 related protein A1 [KO:K02162]
+            4791  NFKB2; nuclear factor of kappa light polypeptide gene enhancer in B-cells 2 [KO:K04469]
+            3576  CXCL8; C-X-C motif chemokine ligand 8 [KO:K10030]
+            7128  TNFAIP3; TNF alpha induced protein 3 [KO:K11859] [EC:3.4.19.12]
+            5743  PTGS2; prostaglandin-endoperoxide synthase 2 [KO:K11987] [EC:1.14.99.1]
+            6351  CCL4; C-C motif chemokine ligand 4 [KO:K12964]
+            9560  CCL4L2; chemokine (C-C motif) ligand 4-like 2 [KO:K12964]
+            388372  CCL4L1; chemokine (C-C motif) ligand 4-like 1 [KO:K12964]
+            7412  VCAM1; vascular cell adhesion molecule 1 [KO:K06527]
+            5328  PLAU; plasminogen activator, urokinase [KO:K01348] [EC:3.4.21.73]
+            1457  CSNK2A1; casein kinase 2 alpha 1 [KO:K03097] [EC:2.7.11.1]
+            1459  CSNK2A2; casein kinase 2 alpha 2 [KO:K03097] [EC:2.7.11.1]
+            283106  CSNK2A3; casein kinase 2 alpha 3 [KO:K03097] [EC:2.7.11.1]
+            1460  CSNK2B; casein kinase 2 beta [KO:K03115]
+            5971  RELB; v-rel avian reticuloendotheliosis viral oncogene homolog B [KO:K09253]
+            6357  CCL13; C-C motif chemokine ligand 13 [KO:K16595]
+            6363  CCL19; C-C motif chemokine ligand 19 [KO:K05512]
+            6366  CCL21; C-C motif chemokine ligand 21 [KO:K16062]
+            6387  CXCL12; C-X-C motif chemokine ligand 12 [KO:K10031]
+            3383  ICAM1; intercellular adhesion molecule 1 [KO:K06490]
+            142  PARP1; poly(ADP-ribose) polymerase 1 [KO:K10798] [EC:2.4.2.30]
+            2920  CXCL2; C-X-C motif chemokine ligand 2 [KO:K05505]
+            4616  GADD45B; growth arrest and DNA damage inducible beta [KO:K04402]
+COMPOUND    C00076  Calcium cation
+            C00165  Diacylglycerol
+            C01245  D-myo-Inositol 1,4,5-trisphosphate
+REFERENCE   PMID:21772278
+  AUTHORS   Oeckinghaus A, Hayden MS, Ghosh S
+  TITLE     Crosstalk in NF-kappaB signaling pathways.
+  JOURNAL   Nat Immunol 12:695-708 (2011)
+REFERENCE   PMID:19203223
+  AUTHORS   Gloire G, Piette J
+  TITLE     Redox regulation of nuclear post-translational modifications during NF-kappaB activation.
+  JOURNAL   Antioxid Redox Signal 11:2209-22 (2009)
+REFERENCE   PMID:17183360
+  AUTHORS   Perkins ND
+  TITLE     Integrating cell-signalling pathways with NF-kappaB and IKK function.
+  JOURNAL   Nat Rev Mol Cell Biol 8:49-62 (2007)
+REFERENCE   PMID:16264088
+  AUTHORS   Lindstrom TM, Bennett PR
+  TITLE     The role of nuclear factor kappa B in human labour.
+  JOURNAL   Reproduction 130:569-81 (2005)
+REFERENCE   PMID:22017430
+  AUTHORS   Razani B, Reichardt AD, Cheng G
+  TITLE     Non-canonical NF-kappaB signaling activation and regulation: principles and perspectives.
+  JOURNAL   Immunol Rev 244:44-54 (2011)
+REFERENCE   PMID:21173796
+  AUTHORS   Sun SC
+  TITLE     Non-canonical NF-kappaB signaling pathway.
+  JOURNAL   Cell Res 21:71-85 (2011)
+REFERENCE   PMID:17431096
+  AUTHORS   Neumann M, Naumann M
+  TITLE     Beyond IkappaBs: alternative regulation of NF-kappaB activity.
+  JOURNAL   FASEB J 21:2642-54 (2007)
+REFERENCE   PMID:22119011
+  AUTHORS   Verhelst K, Carpentier I, Beyaert R
+  TITLE     Regulation of TNF-induced NF-kappaB activation by different cytoplasmic ubiquitination events.
+  JOURNAL   Cytokine Growth Factor Rev 22:277-86 (2011)
+REFERENCE   PMID:22017435
+  AUTHORS   Rickert RC, Jellusova J, Miletic AV
+  TITLE     Signaling by the tumor necrosis factor receptor superfamily in B-cell biology and disease.
+  JOURNAL   Immunol Rev 244:115-33 (2011)
+REFERENCE   PMID:21232019
+  AUTHORS   Naude PJ, den Boer JA, Luiten PG, Eisel UL
+  TITLE     Tumor necrosis factor receptor cross-talk.
+  JOURNAL   FEBS J 278:888-98 (2011)
+REFERENCE   PMID:16984817
+  AUTHORS   Grivennikov SI, Kuprash DV, Liu ZG, Nedospasov SA
+  TITLE     Intracellular signals and events activated by cytokines of the tumor necrosis factor superfamily: From simple paradigms to complex mechanisms.
+  JOURNAL   Int Rev Cytol 252:129-61 (2006)
+REFERENCE   PMID:16356770
+  AUTHORS   Wada T, Nakashima T, Hiroshi N, Penninger JM
+  TITLE     RANKL-RANK signaling in osteoclastogenesis and bone disease.
+  JOURNAL   Trends Mol Med 12:17-25 (2006)
+REFERENCE   PMID:17098202
+  AUTHORS   Schulze-Luehrmann J, Ghosh S
+  TITLE     Antigen-receptor signaling to nuclear factor kappa B.
+  JOURNAL   Immunity 25:701-15 (2006)
+REFERENCE   PMID:15134788
+  AUTHORS   Weil R, Israel A
+  TITLE     T-cell-receptor- and B-cell-receptor-mediated activation of NF-kappaB in lymphocytes.
+  JOURNAL   Curr Opin Immunol 16:374-81 (2004)
+REFERENCE   PMID:15905862
+  AUTHORS   Siebenlist U, Brown K, Claudio E
+  TITLE     Control of lymphocyte development by nuclear factor-kappaB.
+  JOURNAL   Nat Rev Immunol 5:435-45 (2005)
+REFERENCE   PMID:14657271
+  AUTHORS   Lucas PC, McAllister-Lucas LM, Nunez G
+  TITLE     NF-kappaB signaling in lymphocytes: a new cast of characters.
+  JOURNAL   J Cell Sci 117:31-9 (2004)
+REFERENCE   PMID:19726767
+  AUTHORS   Khan WN
+  TITLE     B cell receptor and BAFF receptor signaling regulation of B cell homeostasis.
+  JOURNAL   J Immunol 183:3561-7 (2009)
+REFERENCE   PMID:19302050
+  AUTHORS   Vallabhapurapu S, Karin M
+  TITLE     Regulation and function of NF-kappaB transcription factors in the immune system.
+  JOURNAL   Annu Rev Immunol 27:693-733 (2009)
+REFERENCE   PMID:17047224
+  AUTHORS   Hacker H, Karin M
+  TITLE     Regulation and function of IKK and IKK-related kinases.
+  JOURNAL   Sci STKE 2006:re13 (2006)
+REFERENCE   PMID:21872579
+  AUTHORS   Sabatel H, Pirlot C, Piette J, Habraken Y
+  TITLE     Importance of PIKKs in NF-kappaB activation by genotoxic stress.
+  JOURNAL   Biochem Pharmacol 82:1371-83 (2011)
+REFERENCE   PMID:21187855
+  AUTHORS   Miyamoto S
+  TITLE     Nuclear initiated NF-kappaB signaling: NEMO and ATM take center stage.
+  JOURNAL   Cell Res 21:116-30 (2011)
+REFERENCE   PMID:18832076
+  AUTHORS   Brzoska K, Szumiel I
+  TITLE     Signalling loops and linear pathways: NF-kappaB activation in response to genotoxic stress.
+  JOURNAL   Mutagenesis 24:1-8 (2009)
+REFERENCE   PMID:17607554
+  AUTHORS   Wu ZH, Miyamoto S
+  TITLE     Many faces of NF-kappaB signaling induced by genotoxic stress.
+  JOURNAL   J Mol Med (Berl) 85:1187-202 (2007)
+REFERENCE   PMID:22390971
+  AUTHORS   Maelfait J, Beyaert R
+  TITLE     Emerging role of ubiquitination in antiviral RIG-I signaling.
+  JOURNAL   Microbiol Mol Biol Rev 76:33-45 (2012)
+REFERENCE   PMID:18613837
+  AUTHORS   Ware CF
+  TITLE     Targeting lymphocyte activation through the lymphotoxin and LIGHT pathways.
+  JOURNAL   Immunol Rev 223:186-201 (2008)
+REFERENCE   PMID:15546385
+  AUTHORS   Schneider K, Potter KG, Ware CF
+  TITLE     Lymphotoxin and LIGHT signaling pathways and target genes.
+  JOURNAL   Immunol Rev 202:49-66 (2004)
+REFERENCE   PMID:22152226
+  AUTHORS   Remouchamps C, Boutaffala L, Ganeff C, Dejardin E
+  TITLE     Biology and signal transduction pathways of the Lymphotoxin-alphabeta/LTbetaR system.
+  JOURNAL   Cytokine Growth Factor Rev 22:301-10 (2011)
+REFERENCE   PMID:21135871
+  AUTHORS   Liu S, Chen ZJ
+  TITLE     Expanding role of ubiquitination in NF-kappaB signaling.
+  JOURNAL   Cell Res 21:6-21 (2011)
+REFERENCE   PMID:19489733
+  AUTHORS   Skaug B, Jiang X, Chen ZJ
+  TITLE     The role of ubiquitin in NF-kappaB regulatory pathways.
+  JOURNAL   Annu Rev Biochem 78:769-96 (2009)
+REFERENCE   PMID:20300215
+  AUTHORS   Wertz IE, Dixit VM
+  TITLE     Signaling to NF-kappaB: regulation by ubiquitination.
+  JOURNAL   Cold Spring Harb Perspect Biol 2:a003350 (2010)
+REFERENCE   PMID:11875461
+  AUTHORS   Karin M, Lin A
+  TITLE     NF-kappaB at the crossroads of life and death.
+  JOURNAL   Nat Immunol 3:221-7 (2002)
+REFERENCE   PMID:12654254
+  AUTHORS   Lin A, Karin M
+  TITLE     NF-kappaB in cancer: a marked target.
+  JOURNAL   Semin Cancer Biol 13:107-14 (2003)
+KO_PATHWAY  ko04064
+///
+ENTRY       hsa04668                    Pathway
+NAME        TNF signaling pathway - Homo sapiens (human)
+DESCRIPTION Tumor necrosis factor (TNF), as a critical cytokine, can induce a wide range of intracellular signal pathways including apoptosis and cell survival as well as inflammation and immunity. Activated TNF is assembled to a homotrimer and binds to its receptors (TNFR1, TNFR2) resulting in the trimerization of TNFR1 or TNFR2. TNFR1 is expressed by nearly all cells and is the major receptor for TNF (also called TNF-alpha). In contrast, TNFR2 is expressed in limited cells such as CD4 and CD8 T lymphocytes, endothelial cells, microglia, oligodendrocytes, neuron subtypes, cardiac myocytes, thymocytes and human mesenchymal stem cells. It is the receptor for both TNF and LTA (also called TNF-beta). Upon binding of the ligand, TNFR mediates the association of some adaptor proteins such as TRADD or TRAF2, which in turn initiate recruitment of signal transducers. TNFR1 signaling induces activation of many genes, primarily controlled by two distinct pathways, NF-kappa B pathway and the MAPK cascade, or apoptosis and necroptosis. TNFR2 signaling activates NF-kappa B pathway including PI3K-dependent NF-kappa B pathway and JNK pathway leading to survival.
+CLASS       Environmental Information Processing; Signal transduction
+PATHWAY_MAP hsa04668  TNF signaling pathway
+DBLINKS     BSID: 812256
+            GO: 0033209
+ORGANISM    Homo sapiens (human) [GN:hsa]
+GENE        7124  TNF; tumor necrosis factor [KO:K03156]
+            7132  TNFRSF1A; tumor necrosis factor receptor superfamily member 1A [KO:K03158]
+            9530  BAG4; BCL2 associated athanogene 4 [KO:K09558]
+            8717  TRADD; TNFRSF1A-associated via death domain [KO:K03171]
+            7186  TRAF2; TNF receptor associated factor 2 [KO:K03173] [EC:2.3.2.27]
+            7188  TRAF5; TNF receptor associated factor 5 [KO:K09849]
+            8737  RIPK1; receptor interacting serine/threonine kinase 1 [KO:K02861] [EC:2.7.11.1]
+            329  BIRC2; baculoviral IAP repeat containing 2 [KO:K16060]
+            330  BIRC3; baculoviral IAP repeat containing 3 [KO:K16060]
+            6885  MAP3K7; mitogen-activated protein kinase kinase kinase 7 [KO:K04427] [EC:2.7.11.25]
+            10454  TAB1; TGF-beta activated kinase 1/MAP3K7 binding protein 1 [KO:K04403]
+            23118  TAB2; TGF-beta activated kinase 1/MAP3K7 binding protein 2 [KO:K04404]
+            257397  TAB3; TGF-beta activated kinase 1/MAP3K7 binding protein 3 [KO:K12793]
+            6416  MAP2K4; mitogen-activated protein kinase kinase 4 [KO:K04430] [EC:2.7.12.2]
+            5609  MAP2K7; mitogen-activated protein kinase kinase 7 [KO:K04431] [EC:2.7.12.2]
+            5599  MAPK8; mitogen-activated protein kinase 8 [KO:K04440] [EC:2.7.11.24]
+            5602  MAPK10; mitogen-activated protein kinase 10 [KO:K04440] [EC:2.7.11.24]
+            5601  MAPK9; mitogen-activated protein kinase 9 [KO:K04440] [EC:2.7.11.24]
+            3725  JUN; jun proto-oncogene [KO:K04448]
+            83737  ITCH; itchy E3 ubiquitin protein ligase [KO:K05632] [EC:2.3.2.26]
+            8837  CFLAR; CASP8 and FADD like apoptosis regulator [KO:K04724]
+            5606  MAP2K3; mitogen-activated protein kinase kinase 3 [KO:K04432] [EC:2.7.12.2]
+            5608  MAP2K6; mitogen-activated protein kinase kinase 6 [KO:K04433] [EC:2.7.12.2]
+            5600  MAPK11; mitogen-activated protein kinase 11 [KO:K04441] [EC:2.7.11.24]
+            6300  MAPK12; mitogen-activated protein kinase 12 [KO:K04441] [EC:2.7.11.24]
+            5603  MAPK13; mitogen-activated protein kinase 13 [KO:K04441] [EC:2.7.11.24]
+            1432  MAPK14; mitogen-activated protein kinase 14 [KO:K04441] [EC:2.7.11.24]
+            1051  CEBPB; CCAAT/enhancer binding protein beta [KO:K10048]
+            4217  MAP3K5; mitogen-activated protein kinase kinase kinase 5 [KO:K04426] [EC:2.7.11.25]
+            9020  MAP3K14; mitogen-activated protein kinase kinase kinase 14 [KO:K04466] [EC:2.7.11.25]
+            8517  IKBKG; inhibitor of kappa light polypeptide gene enhancer in B-cells, kinase gamma [KO:K07210]
+            3551  IKBKB; inhibitor of kappa light polypeptide gene enhancer in B-cells, kinase beta [KO:K07209] [EC:2.7.11.10]
+            1147  CHUK; conserved helix-loop-helix ubiquitous kinase [KO:K04467] [EC:2.7.11.10]
+            4792  NFKBIA; NFKB inhibitor alpha [KO:K04734]
+            5970  RELA; v-rel avian reticuloendotheliosis viral oncogene homolog A [KO:K04735]
+            4790  NFKB1; nuclear factor of kappa light polypeptide gene enhancer in B-cells 1 [KO:K02580]
+            1326  MAP3K8; mitogen-activated protein kinase kinase kinase 8 [KO:K04415] [EC:2.7.11.25]
+            5604  MAP2K1; mitogen-activated protein kinase kinase 1 [KO:K04368] [EC:2.7.12.2]
+            5594  MAPK1; mitogen-activated protein kinase 1 [KO:K04371] [EC:2.7.11.24]
+            5595  MAPK3; mitogen-activated protein kinase 3 [KO:K04371] [EC:2.7.11.24]
+            9252  RPS6KA5; ribosomal protein S6 kinase A5 [KO:K04445] [EC:2.7.11.1]
+            8986  RPS6KA4; ribosomal protein S6 kinase A4 [KO:K16510] [EC:2.7.11.1]
+            1385  CREB1; cAMP responsive element binding protein 1 [KO:K05870]
+            10488  CREB3; cAMP responsive element binding protein 3 [KO:K09048]
+            90993  CREB3L1; cAMP responsive element binding protein 3-like 1 [KO:K09048]
+            64764  CREB3L2; cAMP responsive element binding protein 3-like 2 [KO:K09048]
+            84699  CREB3L3; cAMP responsive element binding protein 3-like 3 [KO:K09048]
+            148327  CREB3L4; cAMP responsive element binding protein 3-like 4 [KO:K09048]
+            1386  ATF2; activating transcription factor 2 [KO:K04450]
+            468  ATF4; activating transcription factor 4 [KO:K04374]
+            9586  CREB5; cAMP responsive element binding protein 5 [KO:K09047]
+            1388  ATF6B; activating transcription factor 6 beta [KO:K09049]
+            11035  RIPK3; receptor interacting serine/threonine kinase 3 [KO:K08847] [EC:2.7.11.1]
+            197259  MLKL; mixed lineage kinase domain-like [KO:K08849] [EC:2.7.11.1]
+            192111  PGAM5; PGAM family member 5, mitochondrial serine/threonine protein phosphatase [KO:K15637] [EC:3.1.3.16]
+            10059  DNM1L; dynamin 1-like [KO:K17065] [EC:3.6.5.5]
+            8772  FADD; Fas associated via death domain [KO:K02373]
+            841  CASP8; caspase 8 [KO:K04398] [EC:3.4.22.61]
+            843  CASP10; caspase 10 [KO:K04400] [EC:3.4.22.63]
+            840  CASP7; caspase 7 [KO:K04397] [EC:3.4.22.60]
+            836  CASP3; caspase 3 [KO:K02187] [EC:3.4.22.56]
+            6347  CCL2; C-C motif chemokine ligand 2 [KO:K14624]
+            6352  CCL5; C-C motif chemokine ligand 5 [KO:K12499]
+            6364  CCL20; C-C motif chemokine ligand 20 [KO:K14625]
+            2919  CXCL1; C-X-C motif chemokine ligand 1 [KO:K05505]
+            2920  CXCL2; C-X-C motif chemokine ligand 2 [KO:K05505]
+            2921  CXCL3; C-X-C motif chemokine ligand 3 [KO:K05505]
+            3627  CXCL10; C-X-C motif chemokine ligand 10 [KO:K12671]
+            6376  CX3CL1; C-X3-C motif chemokine ligand 1 [KO:K05508]
+            1435  CSF1; colony stimulating factor 1 [KO:K05453]
+            1437  CSF2; colony stimulating factor 2 [KO:K05427]
+            355  FAS; Fas cell surface death receptor [KO:K04390]
+            8809  IL18R1; interleukin 18 receptor 1 [KO:K05173]
+            3553  IL1B; interleukin 1 beta [KO:K04519]
+            3569  IL6; interleukin 6 [KO:K05405]
+            3600  IL15; interleukin 15 [KO:K05433]
+            3976  LIF; leukemia inhibitory factor [KO:K05419]
+            4049  LTA; lymphotoxin alpha [KO:K05468]
+            602  BCL3; B-cell CLL/lymphoma 3 [KO:K09258]
+            9021  SOCS3; suppressor of cytokine signaling 3 [KO:K04696]
+            7128  TNFAIP3; TNF alpha induced protein 3 [KO:K11859] [EC:3.4.19.12]
+            7185  TRAF1; TNF receptor associated factor 1 [KO:K03172]
+            2353  FOS; FBJ murine osteosarcoma viral oncogene homolog [KO:K04379]
+            3726  JUNB; jun B proto-oncogene [KO:K09028]
+            4314  MMP3; matrix metallopeptidase 3 [KO:K01394] [EC:3.4.24.17]
+            4318  MMP9; matrix metallopeptidase 9 [KO:K01403] [EC:3.4.24.35]
+            4323  MMP14; matrix metallopeptidase 14 [KO:K07763] [EC:3.4.24.80]
+            1906  EDN1; endothelin 1 [KO:K16366]
+            64127  NOD2; nucleotide binding oligomerization domain containing 2 [KO:K10165]
+            3383  ICAM1; intercellular adhesion molecule 1 [KO:K06490]
+            6401  SELE; selectin E [KO:K06494]
+            7412  VCAM1; vascular cell adhesion molecule 1 [KO:K06527]
+            5743  PTGS2; prostaglandin-endoperoxide synthase 2 [KO:K11987] [EC:1.14.99.1]
+            7133  TNFRSF1B; tumor necrosis factor receptor superfamily member 1B [KO:K05141]
+            7187  TRAF3; TNF receptor associated factor 3 [KO:K03174]
+            5290  PIK3CA; phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha [KO:K00922] [EC:2.7.1.153]
+            5293  PIK3CD; phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit delta [KO:K00922] [EC:2.7.1.153]
+            5291  PIK3CB; phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit beta [KO:K00922] [EC:2.7.1.153]
+            5294  PIK3CG; phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit gamma [KO:K00922] [EC:2.7.1.153]
+            5295  PIK3R1; phosphoinositide-3-kinase regulatory subunit 1 [KO:K02649]
+            23533  PIK3R5; phosphoinositide-3-kinase regulatory subunit 5 [KO:K02649]
+            5296  PIK3R2; phosphoinositide-3-kinase regulatory subunit 2 [KO:K02649]
+            8503  PIK3R3; phosphoinositide-3-kinase regulatory subunit 3 [KO:K02649]
+            207  AKT1; v-akt murine thymoma viral oncogene homolog 1 [KO:K04456] [EC:2.7.11.1]
+            208  AKT2; v-akt murine thymoma viral oncogene homolog 2 [KO:K04456] [EC:2.7.11.1]
+            10000  AKT3; v-akt murine thymoma viral oncogene homolog 3 [KO:K04456] [EC:2.7.11.1]
+            153090  DAB2IP; DAB2 interacting protein [KO:K19901]
+            182  JAG1; jagged 1 [KO:K06052]
+            6374  CXCL5; C-X-C motif chemokine ligand 5 [KO:K05506]
+            7424  VEGFC; vascular endothelial growth factor C [KO:K05449]
+REFERENCE   PMID:23085193
+  AUTHORS   Chu WM
+  TITLE     Tumor necrosis factor.
+  JOURNAL   Cancer Lett 328:222-5 (2013)
+REFERENCE   PMID:23531747
+  AUTHORS   Shuh M, Bohorquez H, Loss GE Jr, Cohen AJ
+  TITLE     Tumor Necrosis Factor-alpha: Life and Death of Hepatocytes During Liver Ischemia/Reperfusion Injury.
+  JOURNAL   Ochsner J 13:119-30 (2013)
+REFERENCE   PMID:11897488
+  AUTHORS   MacEwan DJ
+  TITLE     TNF receptor subtype signalling: differences and cellular consequences.
+  JOURNAL   Cell Signal 14:477-92 (2002)
+REFERENCE   PMID:22296764
+  AUTHORS   Newton K, Dixit VM
+  TITLE     Signaling in innate immunity and inflammation.
+  JOURNAL   Cold Spring Harb Perspect Biol 4 (2012)
+REFERENCE   PMID:10581243
+  AUTHORS   Pomerantz JL, Baltimore D
+  TITLE     NF-kappaB activation by a signaling complex containing TRAF2, TANK and TBK1, a novel IKK-related kinase.
+  JOURNAL   EMBO J 18:6694-704 (1999)
+REFERENCE   PMID:21232019
+  AUTHORS   Naude PJ, den Boer JA, Luiten PG, Eisel UL
+  TITLE     Tumor necrosis factor receptor cross-talk.
+  JOURNAL   FEBS J 278:888-98 (2011)
+REFERENCE   PMID:20489699
+  AUTHORS   Faustman D, Davis M
+  TITLE     TNF receptor 2 pathway: drug target for autoimmune diseases.
+  JOURNAL   Nat Rev Drug Discov 9:482-93 (2010)
+REFERENCE   PMID:14532286
+  AUTHORS   Chan FK, Shisler J, Bixby JG, Felices M, Zheng L, Appel M, Orenstein J, Moss B, Lenardo MJ
+  TITLE     A role for tumor necrosis factor receptor-2 and receptor-interacting protein in programmed necrosis and antiviral responses.
+  JOURNAL   J Biol Chem 278:51613-21 (2003)
+KO_PATHWAY  ko04668
+///
+ENTRY       hsa04066                    Pathway
+NAME        HIF-1 signaling pathway - Homo sapiens (human)
+DESCRIPTION Hypoxia-inducible factor 1 (HIF-1) is a transcription factor that functions as a master regulator of oxygen homeostasis. It consists of two subunits: an inducibly-expressed HIF-1alpha subunit and a constitutively-expressed HIF-1beta subunit. Under normoxia, HIF-1 alpha undergoes hydroxylation at specific prolyl residues which leads to an immediate ubiquitination and subsequent proteasomal degradation of the subunit. In contrast, under hypoxia, HIF-1 alpha subunit becomes stable and interacts with coactivators such as p300/CBP to modulate its transcriptional activity. Eventually, HIF-1 acts as a master regulator of numerous hypoxia-inducible genes under hypoxic conditions. The target genes of HIF-1 encode proteins that increase O2 delivery and mediate adaptive responses to O2 deprivation. Despite its name, HIF-1 is induced not only in response to reduced oxygen availability but also by other stimulants, such as nitric oxide, or various growth factors.
+CLASS       Environmental Information Processing; Signal transduction
+PATHWAY_MAP hsa04066  HIF-1 signaling pathway
+DISEASE     H01457  Diabetic retinopathy
+            H01510  Malignant paraganglioma
+DRUG        D10334  Rebastinib (USAN)
+            D10386  Cindunistat (USAN/INN)
+            D10395  Nesvacumab (USAN)
+            D10399  Rebastinib Tosylate (USAN)
+            D10419  Cindunistat hydrochloride maleate (USAN)
+            D10593  Roxadustat (JAN/USAN/INN)
+ORGANISM    Homo sapiens (human) [GN:hsa]
+GENE        3569  IL6; interleukin 6 [KO:K05405]
+            3570  IL6R; interleukin 6 receptor [KO:K05055]
+            6774  STAT3; signal transducer and activator of transcription 3 (acute-phase response factor) [KO:K04692]
+            7099  TLR4; toll like receptor 4 [KO:K10160]
+            3458  IFNG; interferon, gamma [KO:K04687]
+            3459  IFNGR1; interferon gamma receptor 1 [KO:K05132]
+            3460  IFNGR2; interferon gamma receptor 2 (interferon gamma transducer 1) [KO:K05133]
+            5970  RELA; v-rel avian reticuloendotheliosis viral oncogene homolog A [KO:K04735]
+            4790  NFKB1; nuclear factor of kappa light polypeptide gene enhancer in B-cells 1 [KO:K02580]
+            3630  INS; insulin [KO:K04526]
+            1950  EGF; epidermal growth factor [KO:K04357]
+            3479  IGF1; insulin like growth factor 1 [KO:K05459]
+            3643  INSR; insulin receptor [KO:K04527] [EC:2.7.10.1]
+            1956  EGFR; epidermal growth factor receptor [KO:K04361] [EC:2.7.10.1]
+            3480  IGF1R; insulin like growth factor 1 receptor [KO:K05087] [EC:2.7.10.1]
+            2064  ERBB2; erb-b2 receptor tyrosine kinase 2 [KO:K05083] [EC:2.7.10.1]
+            5604  MAP2K1; mitogen-activated protein kinase kinase 1 [KO:K04368] [EC:2.7.12.2]
+            5605  MAP2K2; mitogen-activated protein kinase kinase 2 [KO:K04369] [EC:2.7.12.2]
+            5594  MAPK1; mitogen-activated protein kinase 1 [KO:K04371] [EC:2.7.11.24]
+            5595  MAPK3; mitogen-activated protein kinase 3 [KO:K04371] [EC:2.7.11.24]
+            8569  MKNK1; MAP kinase interacting serine/threonine kinase 1 [KO:K04372] [EC:2.7.11.1]
+            2872  MKNK2; MAP kinase interacting serine/threonine kinase 2 [KO:K04372] [EC:2.7.11.1]
+            5290  PIK3CA; phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha [KO:K00922] [EC:2.7.1.153]
+            5293  PIK3CD; phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit delta [KO:K00922] [EC:2.7.1.153]
+            5291  PIK3CB; phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit beta [KO:K00922] [EC:2.7.1.153]
+            5294  PIK3CG; phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit gamma [KO:K00922] [EC:2.7.1.153]
+            5295  PIK3R1; phosphoinositide-3-kinase regulatory subunit 1 [KO:K02649]
+            23533  PIK3R5; phosphoinositide-3-kinase regulatory subunit 5 [KO:K02649]
+            5296  PIK3R2; phosphoinositide-3-kinase regulatory subunit 2 [KO:K02649]
+            8503  PIK3R3; phosphoinositide-3-kinase regulatory subunit 3 [KO:K02649]
+            207  AKT1; v-akt murine thymoma viral oncogene homolog 1 [KO:K04456] [EC:2.7.11.1]
+            208  AKT2; v-akt murine thymoma viral oncogene homolog 2 [KO:K04456] [EC:2.7.11.1]
+            10000  AKT3; v-akt murine thymoma viral oncogene homolog 3 [KO:K04456] [EC:2.7.11.1]
+            2475  MTOR; mechanistic target of rapamycin [KO:K07203] [EC:2.7.11.1]
+            1978  EIF4EBP1; eukaryotic translation initiation factor 4E binding protein 1 [KO:K07205]
+            1977  EIF4E; eukaryotic translation initiation factor 4E [KO:K03259]
+            9470  EIF4E2; eukaryotic translation initiation factor 4E family member 2 [KO:K03259]
+            253314  EIF4E1B; eukaryotic translation initiation factor 4E family member 1B [KO:K03259]
+            6198  RPS6KB1; ribosomal protein S6 kinase B1 [KO:K04688] [EC:2.7.11.1]
+            6199  RPS6KB2; ribosomal protein S6 kinase B2 [KO:K04688] [EC:2.7.11.1]
+            6194  RPS6; ribosomal protein S6 [KO:K02991]
+            3091  HIF1A; hypoxia inducible factor 1 alpha subunit [KO:K08268]
+            7428  VHL; von Hippel-Lindau tumor suppressor [KO:K03871]
+            9978  RBX1; ring-box 1, E3 ubiquitin protein ligase [KO:K03868]
+            6921  TCEB1; transcription elongation factor B subunit 1 [KO:K03872]
+            6923  TCEB2; transcription elongation factor B subunit 2 [KO:K03873]
+            8453  CUL2; cullin 2 [KO:K03870]
+            54583  EGLN1; egl-9 family hypoxia-inducible factor 1 [KO:K09592] [EC:1.14.11.29]
+            112399  EGLN3; egl-9 family hypoxia-inducible factor 3 [KO:K09592] [EC:1.14.11.29]
+            112398  EGLN2; egl-9 family hypoxia-inducible factor 2 [KO:K09592] [EC:1.14.11.29]
+            405  ARNT; aryl hydrocarbon receptor nuclear translocator [KO:K09097]
+            1387  CREBBP; CREB binding protein [KO:K04498] [EC:2.3.1.48]
+            2033  EP300; E1A binding protein p300 [KO:K04498] [EC:2.3.1.48]
+            50508  NOX3; NADPH oxidase 3 [KO:K08008]
+            27035  NOX1; NADPH oxidase 1 [KO:K08008]
+            1536  CYBB; cytochrome b-245, beta polypeptide [KO:K08008]
+            5335  PLCG1; phospholipase C gamma 1 [KO:K01116] [EC:3.1.4.11]
+            5336  PLCG2; phospholipase C gamma 2 [KO:K05859] [EC:3.1.4.11]
+            5578  PRKCA; protein kinase C alpha [KO:K02677] [EC:2.7.11.13]
+            5579  PRKCB; protein kinase C beta [KO:K19662] [EC:2.7.11.13]
+            5582  PRKCG; protein kinase C gamma [KO:K19663] [EC:2.7.11.13]
+            815  CAMK2A; calcium/calmodulin-dependent protein kinase II alpha [KO:K04515] [EC:2.7.11.17]
+            817  CAMK2D; calcium/calmodulin-dependent protein kinase II delta [KO:K04515] [EC:2.7.11.17]
+            816  CAMK2B; calcium/calmodulin-dependent protein kinase II beta [KO:K04515] [EC:2.7.11.17]
+            818  CAMK2G; calcium/calmodulin-dependent protein kinase II gamma [KO:K04515] [EC:2.7.11.17]
+            7076  TIMP1; TIMP metallopeptidase inhibitor 1 [KO:K16451]
+            4055  LTBR; lymphotoxin beta receptor [KO:K03159]
+            2056  EPO; erythropoietin [KO:K05437]
+            7018  TF; transferrin [KO:K14736]
+            7037  TFRC; transferrin receptor [KO:K06503]
+            7422  VEGFA; vascular endothelial growth factor A [KO:K05448]
+            2321  FLT1; fms related tyrosine kinase 1 [KO:K05096] [EC:2.7.10.1]
+            5054  SERPINE1; serpin peptidase inhibitor, clade E (nexin, plasminogen activator inhibitor type 1), member 1 [KO:K03982]
+            284  ANGPT1; angiopoietin 1 [KO:K05465]
+            285  ANGPT2; angiopoietin 2 [KO:K05466]
+            51378  ANGPT4; angiopoietin 4 [KO:K05467]
+            7010  TEK; TEK receptor tyrosine kinase [KO:K05121] [EC:2.7.10.1]
+            1906  EDN1; endothelin 1 [KO:K16366]
+            4843  NOS2; nitric oxide synthase 2 [KO:K13241] [EC:1.14.13.39]
+            4846  NOS3; nitric oxide synthase 3 [KO:K13242] [EC:1.14.13.39]
+            4878  NPPA; natriuretic peptide A [KO:K12334]
+            6513  SLC2A1; solute carrier family 2 member 1 [KO:K07299]
+            5163  PDK1; pyruvate dehydrogenase kinase 1 [KO:K12077] [EC:2.7.11.2]
+            3101  HK3; hexokinase 3 [KO:K00844] [EC:2.7.1.1]
+            3098  HK1; hexokinase 1 [KO:K00844] [EC:2.7.1.1]
+            3099  HK2; hexokinase 2 [KO:K00844] [EC:2.7.1.1]
+            80201  HKDC1; hexokinase domain containing 1 [KO:K00844] [EC:2.7.1.1]
+            2597  GAPDH; glyceraldehyde-3-phosphate dehydrogenase [KO:K00134] [EC:1.2.1.12]
+            2027  ENO3; enolase 3 (beta, muscle) [KO:K01689] [EC:4.2.1.11]
+            2026  ENO2; enolase 2 (gamma, neuronal) [KO:K01689] [EC:4.2.1.11]
+            2023  ENO1; enolase 1, (alpha) [KO:K01689] [EC:4.2.1.11]
+            5209  PFKFB3; 6-phosphofructo-2-kinase/fructose-2,6-biphosphatase 3 [KO:K01103] [EC:3.1.3.46 2.7.1.105]
+            596  BCL2; B-cell CLL/lymphoma 2 [KO:K02161]
+            1026  CDKN1A; cyclin-dependent kinase inhibitor 1A [KO:K06625]
+            1027  CDKN1B; cyclin-dependent kinase inhibitor 1B [KO:K06624]
+            5161  PDHA2; pyruvate dehydrogenase (lipoamide) alpha 2 [KO:K00161] [EC:1.2.4.1]
+            5160  PDHA1; pyruvate dehydrogenase (lipoamide) alpha 1 [KO:K00161] [EC:1.2.4.1]
+            5162  PDHB; pyruvate dehydrogenase (lipoamide) beta [KO:K00162] [EC:1.2.4.1]
+            226  ALDOA; aldolase, fructose-bisphosphate A [KO:K01623] [EC:4.1.2.13]
+            3162  HMOX1; heme oxygenase 1 [KO:K00510] [EC:1.14.14.18]
+            3939  LDHA; lactate dehydrogenase A [KO:K00016] [EC:1.1.1.27]
+            5211  PFKL; phosphofructokinase, liver type [KO:K00850] [EC:2.7.1.11]
+            5230  PGK1; phosphoglycerate kinase 1 [KO:K00927] [EC:2.7.2.3]
+COMPOUND    C00002  ATP
+            C00007  Oxygen
+            C00022  Pyruvate
+            C00024  Acetyl-CoA
+            C00026  2-Oxoglutarate
+            C00031  D-Glucose
+            C00072  Ascorbate
+            C00076  Calcium cation
+            C00165  Diacylglycerol
+            C00186  (S)-Lactate
+            C00338  Lipopolysaccharide
+            C00533  Nitric oxide
+            C00704  O2.-
+            C01245  D-myo-Inositol 1,4,5-trisphosphate
+            C14818  Fe2+
+REFERENCE   PMID:20836033
+  AUTHORS   Semenza GL
+  TITLE     Oxygen homeostasis.
+  JOURNAL   Wiley Interdiscip Rev Syst Biol Med 2:336-61 (2010)
+REFERENCE   PMID:17955264
+  AUTHORS   Mole DR, Ratcliffe PJ
+  TITLE     Cellular oxygen sensing in health and disease.
+  JOURNAL   Pediatr Nephrol 23:681-94 (2008)
+REFERENCE   PMID:22205687
+  AUTHORS   Palazon A, Aragones J, Morales-Kastresana A, de Landazuri MO, Melero I
+  TITLE     Molecular pathways: hypoxia response in immune cells fighting or promoting cancer.
+  JOURNAL   Clin Cancer Res 18:1207-13 (2012)
+REFERENCE   PMID:20965423
+  AUTHORS   Majmundar AJ, Wong WJ, Simon MC
+  TITLE     Hypoxia-inducible factors and the response to hypoxic stress.
+  JOURNAL   Mol Cell 40:294-309 (2010)
+REFERENCE   PMID:22562152
+  AUTHORS   Greer SN, Metcalf JL, Wang Y, Ohh M
+  TITLE     The updated biology of hypoxia-inducible factor.
+  JOURNAL   EMBO J 31:2448-60 (2012)
+REFERENCE   PMID:15448722
+  AUTHORS   Zagorska A, Dulak J
+  TITLE     HIF-1: the knowns and unknowns of hypoxia sensing.
+  JOURNAL   Acta Biochim Pol 51:563-85 (2004)
+REFERENCE   PMID:19364912
+  AUTHORS   Semenza GL
+  TITLE     Regulation of oxygen homeostasis by hypoxia-inducible factor 1.
+  JOURNAL   Physiology (Bethesda) 24:97-106 (2009)
+REFERENCE   PMID:16234508
+  AUTHORS   Wenger RH, Stiehl DP, Camenisch G
+  TITLE     Integration of oxygen signaling at the consensus HRE.
+  JOURNAL   Sci STKE 2005:re12 (2005)
+REFERENCE   PMID:15031665
+  AUTHORS   Lee JW, Bae SH, Jeong JW, Kim SH, Kim KW
+  TITLE     Hypoxia-inducible factor (HIF-1)alpha: its protein stability and biological functions.
+  JOURNAL   Exp Mol Med 36:1-12 (2004)
+REFERENCE   PMID:18259201
+  AUTHORS   Weidemann A, Johnson RS
+  TITLE     Biology of HIF-1alpha.
+  JOURNAL   Cell Death Differ 15:621-7 (2008)
+REFERENCE   PMID:11902584
+  AUTHORS   Harris AL
+  TITLE     Hypoxia--a key regulatory factor in tumour growth.
+  JOURNAL   Nat Rev Cancer 2:38-47 (2002)
+REFERENCE   PMID:19147540
+  AUTHORS   Knaup KX, Jozefowski K, Schmidt R, Bernhardt WM, Weidemann A, Juergensen JS, Warnecke C, Eckardt KU, Wiesener MS
+  TITLE     Mutual regulation of hypoxia-inducible factor and mammalian target of rapamycin as a function of oxygen availability.
+  JOURNAL   Mol Cancer Res 7:88-98 (2009)
+REFERENCE   PMID:18505681
+  AUTHORS   Kaluz S, Kaluzova M, Stanbridge EJ
+  TITLE     Regulation of gene expression by hypoxia: integration of the HIF-transduced hypoxic signal at the hypoxia-responsive element.
+  JOURNAL   Clin Chim Acta 395:6-13 (2008)
+REFERENCE   PMID:20679415
+  AUTHORS   Cadenas S, Aragones J, Landazuri MO
+  TITLE     Mitochondrial reprogramming through cardiac oxygen sensors in ischaemic heart disease.
+  JOURNAL   Cardiovasc Res 88:219-28 (2010)
+REFERENCE   PMID:19861159
+  AUTHORS   Berchner-Pfannschmidt U, Tug S, Kirsch M, Fandrey J
+  TITLE     Oxygen-sensing under the influence of nitric oxide.
+  JOURNAL   Cell Signal 22:349-56 (2010)
+KO_PATHWAY  ko04066
+///
+ENTRY       hsa04068                    Pathway
+NAME        FoxO signaling pathway - Homo sapiens (human)
+DESCRIPTION The forkhead box O (FOXO) family of transcription factors regulates the expression of genes in cellular physiological events including apoptosis, cell-cycle control, glucose metabolism, oxidative stress resistance, and longevity. A central regulatory mechanism of FOXO proteins is phosphorylation by the serine-threonine kinase Akt/protein kinase B (Akt/PKB), downstream of phosphatidylinositol 3-kinase (PI3K), in response to insulin or several growth factors. Phosphorylation at three conserved residues results in the export of FOXO proteins from the nucleus to the cytoplasm, thereby decreasing expression of FOXO target genes. In contrast, the stress-activated c-Jun N-terminal kinase (JNK) and the energy sensing AMP-activated protein kinase (AMPK), upon oxidative and nutrient stress stimuli phosphorylate and activate FoxOs. Aside from PKB, JNK and AMPK, FOXOs are regulated by multiple players through several post-translational modifications, including phosphorylation, but also acetylation, methylation and ubiquitylation.
+CLASS       Environmental Information Processing; Signal transduction
+PATHWAY_MAP hsa04068  FoxO signaling pathway
+MODULE      hsa_M00676  PI3K-Akt signaling [PATH:hsa04068]
+DISEASE     H01385  Rienhoff syndrome
+            H01456  Diabetic nephropathy
+DBLINKS     BSID: 921162
+            GO: 0009267
+ORGANISM    Homo sapiens (human) [GN:hsa]
+GENE        7040  TGFB1; transforming growth factor beta 1 [KO:K13375]
+            7042  TGFB2; transforming growth factor beta 2 [KO:K13376]
+            7043  TGFB3; transforming growth factor beta 3 [KO:K13377]
+            7046  TGFBR1; transforming growth factor beta receptor I [KO:K04674] [EC:2.7.11.30]
+            7048  TGFBR2; transforming growth factor beta receptor II [KO:K04388] [EC:2.7.11.30]
+            4089  SMAD4; SMAD family member 4 [KO:K04501]
+            4087  SMAD2; SMAD family member 2 [KO:K04500]
+            4088  SMAD3; SMAD family member 3 [KO:K04500]
+            6794  STK11; serine/threonine kinase 11 [KO:K07298]
+            5562  PRKAA1; protein kinase AMP-activated catalytic subunit alpha 1 [KO:K07198] [EC:2.7.11.11]
+            5563  PRKAA2; protein kinase AMP-activated catalytic subunit alpha 2 [KO:K07198] [EC:2.7.11.11]
+            5564  PRKAB1; protein kinase AMP-activated non-catalytic subunit beta 1 [KO:K07199]
+            5565  PRKAB2; protein kinase AMP-activated non-catalytic subunit beta 2 [KO:K07199]
+            5571  PRKAG1; protein kinase AMP-activated non-catalytic subunit gamma 1 [KO:K07200]
+            53632  PRKAG3; protein kinase AMP-activated non-catalytic subunit gamma 3 [KO:K07200]
+            51422  PRKAG2; protein kinase AMP-activated non-catalytic subunit gamma 2 [KO:K07200]
+            51701  NLK; nemo-like kinase [KO:K04468] [EC:2.7.11.24]
+            6502  SKP2; S-phase kinase-associated protein 2, E3 ubiquitin protein ligase [KO:K03875]
+            4193  MDM2; MDM2 proto-oncogene [KO:K06643] [EC:2.3.2.27]
+            80854  SETD7; SET domain containing lysine methyltransferase 7 [KO:K11431] [EC:2.1.1.43]
+            1387  CREBBP; CREB binding protein [KO:K04498] [EC:2.3.1.48]
+            2033  EP300; E1A binding protein p300 [KO:K04498] [EC:2.3.1.48]
+            23411  SIRT1; sirtuin 1 [KO:K11411] [EC:3.5.1.-]
+            7874  USP7; ubiquitin specific peptidase 7 (herpes virus-associated) [KO:K11838] [EC:3.4.19.12]
+            6517  SLC2A4; solute carrier family 2 member 4 [KO:K07191]
+            5599  MAPK8; mitogen-activated protein kinase 8 [KO:K04440] [EC:2.7.11.24]
+            5602  MAPK10; mitogen-activated protein kinase 10 [KO:K04440] [EC:2.7.11.24]
+            5601  MAPK9; mitogen-activated protein kinase 9 [KO:K04440] [EC:2.7.11.24]
+            6789  STK4; serine/threonine kinase 4 [KO:K04411]
+            3479  IGF1; insulin like growth factor 1 [KO:K05459]
+            3480  IGF1R; insulin like growth factor 1 receptor [KO:K05087] [EC:2.7.10.1]
+            3630  INS; insulin [KO:K04526]
+            3643  INSR; insulin receptor [KO:K04527] [EC:2.7.10.1]
+            3667  IRS1; insulin receptor substrate 1 [KO:K16172]
+            8660  IRS2; insulin receptor substrate 2 [KO:K07187]
+            8471  IRS4; insulin receptor substrate 4 [KO:K17446]
+            5290  PIK3CA; phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha [KO:K00922] [EC:2.7.1.153]
+            5293  PIK3CD; phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit delta [KO:K00922] [EC:2.7.1.153]
+            5291  PIK3CB; phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit beta [KO:K00922] [EC:2.7.1.153]
+            5294  PIK3CG; phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit gamma [KO:K00922] [EC:2.7.1.153]
+            5295  PIK3R1; phosphoinositide-3-kinase regulatory subunit 1 [KO:K02649]
+            23533  PIK3R5; phosphoinositide-3-kinase regulatory subunit 5 [KO:K02649]
+            5296  PIK3R2; phosphoinositide-3-kinase regulatory subunit 2 [KO:K02649]
+            8503  PIK3R3; phosphoinositide-3-kinase regulatory subunit 3 [KO:K02649]
+            5170  PDPK1; 3-phosphoinositide dependent protein kinase 1 [KO:K06276] [EC:2.7.11.1]
+            1147  CHUK; conserved helix-loop-helix ubiquitous kinase [KO:K04467] [EC:2.7.11.10]
+            3551  IKBKB; inhibitor of kappa light polypeptide gene enhancer in B-cells, kinase beta [KO:K07209] [EC:2.7.11.10]
+            5728  PTEN; phosphatase and tensin homolog [KO:K01110] [EC:3.1.3.67 3.1.3.48 3.1.3.16]
+            207  AKT1; v-akt murine thymoma viral oncogene homolog 1 [KO:K04456] [EC:2.7.11.1]
+            208  AKT2; v-akt murine thymoma viral oncogene homolog 2 [KO:K04456] [EC:2.7.11.1]
+            10000  AKT3; v-akt murine thymoma viral oncogene homolog 3 [KO:K04456] [EC:2.7.11.1]
+            6446  SGK1; serum/glucocorticoid regulated kinase 1 [KO:K13302] [EC:2.7.11.1]
+            10110  SGK2; serum/glucocorticoid regulated kinase 2 [KO:K13303] [EC:2.7.11.1]
+            23678  SGK3; serum/glucocorticoid regulated kinase family member 3 [KO:K13304] [EC:2.7.11.1]
+            100533105  C8orf44-SGK3; C8orf44-SGK3 readthrough [KO:K13304] [EC:2.7.11.1]
+            2308  FOXO1; forkhead box O1 [KO:K07201]
+            2309  FOXO3; forkhead box O3 [KO:K09408]
+            4303  FOXO4; forkhead box O4 [KO:K12358]
+            100132074  FOXO6; forkhead box O6 [KO:K17847]
+            2911  GRM1; glutamate receptor, metabotropic 1 [KO:K04603]
+            9456  HOMER1; homer scaffolding protein 1 [KO:K15010]
+            9455  HOMER2; homer scaffolding protein 2 [KO:K15010]
+            9454  HOMER3; homer scaffolding protein 3 [KO:K15010]
+            116986  AGAP2; ArfGAP with GTPase domain, ankyrin repeat and PH domain 2 [KO:K17848]
+            1454  CSNK1E; casein kinase 1 epsilon [KO:K08960] [EC:2.7.11.1]
+            102800317  LOC400927-CSNK1E readthrough; K08960 casein kinase 1, epsilon [EC:2.7.11.1] [KO:K08960] [EC:2.7.11.1]
+            3569  IL6; interleukin 6 [KO:K05405]
+            3586  IL10; interleukin 10 [KO:K05443]
+            6774  STAT3; signal transducer and activator of transcription 3 (acute-phase response factor) [KO:K04692]
+            1950  EGF; epidermal growth factor [KO:K04357]
+            1956  EGFR; epidermal growth factor receptor [KO:K04361] [EC:2.7.10.1]
+            2885  GRB2; growth factor receptor bound protein 2 [KO:K04364]
+            6654  SOS1; SOS Ras/Rac guanine nucleotide exchange factor 1 [KO:K03099]
+            6655  SOS2; SOS Ras/Rho guanine nucleotide exchange factor 2 [KO:K03099]
+            3265  HRAS; Harvey rat sarcoma viral oncogene homolog [KO:K02833]
+            3845  KRAS; Kirsten rat sarcoma viral oncogene homolog [KO:K07827]
+            4893  NRAS; neuroblastoma RAS viral (v-ras) oncogene homolog [KO:K07828]
+            673  BRAF; B-Raf proto-oncogene, serine/threonine kinase [KO:K04365] [EC:2.7.11.1]
+            5894  RAF1; Raf-1 proto-oncogene, serine/threonine kinase [KO:K04366] [EC:2.7.11.1]
+            369  ARAF; A-Raf proto-oncogene, serine/threonine kinase [KO:K08845] [EC:2.7.11.1]
+            5604  MAP2K1; mitogen-activated protein kinase kinase 1 [KO:K04368] [EC:2.7.12.2]
+            5605  MAP2K2; mitogen-activated protein kinase kinase 2 [KO:K04369] [EC:2.7.12.2]
+            5594  MAPK1; mitogen-activated protein kinase 1 [KO:K04371] [EC:2.7.11.24]
+            5595  MAPK3; mitogen-activated protein kinase 3 [KO:K04371] [EC:2.7.11.24]
+            5600  MAPK11; mitogen-activated protein kinase 11 [KO:K04441] [EC:2.7.11.24]
+            6300  MAPK12; mitogen-activated protein kinase 12 [KO:K04441] [EC:2.7.11.24]
+            5603  MAPK13; mitogen-activated protein kinase 13 [KO:K04441] [EC:2.7.11.24]
+            1432  MAPK14; mitogen-activated protein kinase 14 [KO:K04441] [EC:2.7.11.24]
+            1017  CDK2; cyclin-dependent kinase 2 [KO:K02206] [EC:2.7.11.22]
+            3276  PRMT1; protein arginine methyltransferase 1 [KO:K11434] [EC:2.1.1.319]
+            2290  FOXG1; forkhead box G1 [KO:K09385]
+            891  CCNB1; cyclin B1 [KO:K05868]
+            9133  CCNB2; cyclin B2 [KO:K05868]
+            85417  CCNB3; cyclin B3 [KO:K05868]
+            595  CCND1; cyclin D1 [KO:K04503]
+            894  CCND2; cyclin D2 [KO:K10151]
+            901  CCNG2; cyclin G2 [KO:K10146]
+            1030  CDKN2B; cyclin-dependent kinase inhibitor 2B [KO:K04685]
+            1032  CDKN2D; cyclin-dependent kinase inhibitor 2D [KO:K06623]
+            1026  CDKN1A; cyclin-dependent kinase inhibitor 1A [KO:K06625]
+            1027  CDKN1B; cyclin-dependent kinase inhibitor 1B [KO:K06624]
+            5934  RBL2; retinoblastoma-like 2 [KO:K16332]
+            5347  PLK1; polo like kinase 1 [KO:K06631] [EC:2.7.11.21]
+            10769  PLK2; polo like kinase 2 [KO:K08861] [EC:2.7.11.21]
+            1263  PLK3; polo like kinase 3 [KO:K08862] [EC:2.7.11.21]
+            10733  PLK4; polo like kinase 4 [KO:K08863] [EC:2.7.11.21]
+            1647  GADD45A; growth arrest and DNA damage inducible alpha [KO:K04402]
+            4616  GADD45B; growth arrest and DNA damage inducible beta [KO:K04402]
+            10912  GADD45G; growth arrest and DNA damage inducible gamma [KO:K04402]
+            356  FASLG; Fas ligand [KO:K04389]
+            10018  BCL2L11; BCL2 like 11 [KO:K16341]
+            8743  TNFSF10; tumor necrosis factor superfamily member 10 [KO:K04721]
+            604  BCL6; B-cell CLL/lymphoma 6 [KO:K15618]
+            664  BNIP3; BCL2/adenovirus E1B 19kDa interacting protein 3 [KO:K15464]
+            9140  ATG12; autophagy related 12 [KO:K08336]
+            11337  GABARAP; GABA type A receptor-associated protein [KO:K08341]
+            23710  GABARAPL1; GABA type A receptor associated protein like 1 [KO:K08341]
+            11345  GABARAPL2; GABA type A receptor associated protein like 2 [KO:K08341]
+            847  CAT; catalase [KO:K03781] [EC:1.11.1.6]
+            6648  SOD2; superoxide dismutase 2, mitochondrial [KO:K04564] [EC:1.15.1.1]
+            472  ATM; ATM serine/threonine kinase [KO:K04728] [EC:2.7.11.1]
+            5105  PCK1; phosphoenolpyruvate carboxykinase 1 [KO:K01596] [EC:4.1.1.32]
+            5106  PCK2; phosphoenolpyruvate carboxykinase 2, mitochondrial [KO:K01596] [EC:4.1.1.32]
+            2538  G6PC; glucose-6-phosphatase catalytic subunit [KO:K01084] [EC:3.1.3.9]
+            57818  G6PC2; glucose-6-phosphatase catalytic subunit 2 [KO:K01084] [EC:3.1.3.9]
+            92579  G6PC3; glucose 6 phosphatase catalytic subunit 3 [KO:K01084] [EC:3.1.3.9]
+            3575  IL7R; interleukin 7 receptor [KO:K05072]
+            10365  KLF2; Kruppel-like factor 2 [KO:K17845]
+            1901  S1PR1; sphingosine-1-phosphate receptor 1 [KO:K04288]
+            8698  S1PR4; sphingosine-1-phosphate receptor 4 [KO:K04293]
+            5896  RAG1; recombination activating gene 1 [KO:K10628] [EC:2.3.2.27]
+            5897  RAG2; recombination activating gene 2 [KO:K10988]
+            26260  FBXO25; F-box protein 25 [KO:K10305]
+            114907  FBXO32; F-box protein 32 [KO:K10305]
+COMPOUND    C00008  ADP
+            C00020  AMP
+            C00025  L-Glutamate
+            C00031  D-Glucose
+            C05981  Phosphatidylinositol-3,4,5-trisphosphate
+REFERENCE   PMID:17470511
+  AUTHORS   Glauser DA, Schlegel W
+  TITLE     The emerging role of FOXO transcription factors in pancreatic beta cells.
+  JOURNAL   J Endocrinol 193:195-207 (2007)
+REFERENCE   PMID:17522590
+  AUTHORS   van der Horst A, Burgering BM
+  TITLE     Stressing the role of FoxO proteins in lifespan and disease.
+  JOURNAL   Nat Rev Mol Cell Biol 8:440-50 (2007)
+REFERENCE   PMID:21440011
+  AUTHORS   Zhang X, Tang N, Hadden TJ, Rishi AK
+  TITLE     Akt, FoxO and regulation of apoptosis.
+  JOURNAL   Biochim Biophys Acta 1813:1978-86 (2011)
+REFERENCE   PMID:23325358
+  AUTHORS   Eijkelenboom A, Burgering BM
+  TITLE     FOXOs: signalling integrators for homeostasis maintenance.
+  JOURNAL   Nat Rev Mol Cell Biol 14:83-97 (2013)
+REFERENCE   PMID:17569704
+  AUTHORS   Daitoku H, Fukamizu A
+  TITLE     FOXO transcription factors in the regulatory networks of longevity.
+  JOURNAL   J Biochem 141:769-74 (2007)
+REFERENCE   PMID:19701188
+  AUTHORS   Hedrick SM
+  TITLE     The cunning little vixen: Foxo and the cycle of life and death.
+  JOURNAL   Nat Immunol 10:1057-63 (2009)
+REFERENCE   PMID:15516968
+  AUTHORS   Coffer PJ, Burgering BM
+  TITLE     Forkhead-box transcription factors and their role in the immune system.
+  JOURNAL   Nat Rev Immunol 4:889-99 (2004)
+REFERENCE   PMID:22902436
+  AUTHORS   Ro SH, Liu D, Yeo H, Paik JH
+  TITLE     FoxOs in neural stem cell fate decision.
+  JOURNAL   Arch Biochem Biophys 534:55-63 (2013)
+REFERENCE   PMID:18403263
+  AUTHORS   Maiese K, Chong ZZ, Shang YC
+  TITLE     OutFOXOing disease and disability: the therapeutic potential of targeting FoxO proteins.
+  JOURNAL   Trends Mol Med 14:219-27 (2008)
+REFERENCE   PMID:23801966
+  AUTHORS   Hagenbuchner J, Ausserlechner MJ
+  TITLE     Mitochondria and FOXO3: breath or die.
+  JOURNAL   Front Physiol 4:147 (2013)
+REFERENCE   PMID:18045156
+  AUTHORS   Maiese K, Chong ZZ, Shang YC
+  TITLE     "Sly as a FOXO": new paths with Forkhead signaling in the brain.
+  JOURNAL   Curr Neurovasc Res 4:295-302 (2007)
+REFERENCE   PMID:22761423
+  AUTHORS   Oh HM, Yu CR, Dambuza I, Marrero B, Egwuagu CE
+  TITLE     STAT3 protein interacts with Class O Forkhead transcription factors in the cytoplasm and regulates nuclear/cytoplasmic localization of FoxO1 and FoxO3a proteins in CD4(+) T cells.
+  JOURNAL   J Biol Chem 287:30436-43 (2012)
+REFERENCE   PMID:21238503
+  AUTHORS   Huang H, Tindall DJ
+  TITLE     Regulation of FOXO protein stability via ubiquitination and proteasome degradation.
+  JOURNAL   Biochim Biophys Acta 1813:1961-4 (2011)
+REFERENCE   PMID:16288288
+  AUTHORS   Greer EL, Brunet A
+  TITLE     FOXO transcription factors at the interface between longevity and tumor suppression.
+  JOURNAL   Oncogene 24:7410-25 (2005)
+REFERENCE   PMID:15084259
+  AUTHORS   Seoane J, Le HV, Shen L, Anderson SA, Massague J
+  TITLE     Integration of Smad and forkhead pathways in the control of neuroepithelial and glioblastoma cell proliferation.
+  JOURNAL   Cell 117:211-23 (2004)
+REFERENCE   PMID:18951090
+  AUTHORS   Yamagata K, Daitoku H, Takahashi Y, Namiki K, Hisatake K, Kako K, Mukai H, Kasuya Y, Fukamizu A
+  TITLE     Arginine methylation of FOXO transcription factors inhibits their phosphorylation by Akt.
+  JOURNAL   Mol Cell 32:221-31 (2008)
+REFERENCE   PMID:16964248
+  AUTHORS   van der Horst A, de Vries-Smits AM, Brenkman AB, van Triest MH, van den Broek N, Colland F, Maurice MM, Burgering BM
+  TITLE     FOXO4 transcriptional activity is regulated by monoubiquitination and USP7/HAUSP.
+  JOURNAL   Nat Cell Biol 8:1064-73 (2006)
+REFERENCE   PMID:21613825
+  AUTHORS   Zhang Y, Gan B, Liu D, Paik JH
+  TITLE     FoxO family members in cancer.
+  JOURNAL   Cancer Biol Ther 12:253-9 (2011)
+REFERENCE   PMID:15005655
+  AUTHORS   Van Der Heide LP, Hoekman MF, Smidt MP
+  TITLE     The ins and outs of FoxO shuttling: mechanisms of FoxO translocation and transcriptional regulation.
+  JOURNAL   Biochem J 380:297-309 (2004)
+KO_PATHWAY  ko04068
+///
+ENTRY       hsa04020                    Pathway
+NAME        Calcium signaling pathway - Homo sapiens (human)
+DESCRIPTION Ca2+ that enters the cell from the outside is a principal source of signal Ca2+. Entry of Ca2+ is driven by the presence of a large electrochemical gradient across the plasma membrane. Cells use this external source of signal Ca2+ by activating various entry channels with widely different properties. The voltage-operated channels (VOCs) are found in excitable cells and generate the rapid Ca2+ fluxes that control fast cellular processes. There are many other Ca2+-entry channels, such as the receptor-operated channels (ROCs), for example the NMDA (N-methyl-D-aspartate) receptors (NMDARs) that respond to glutamate. There also are second-messenger-operated channels (SMOCs) and store-operated channels (SOCs).
+            The other principal source of Ca2+ for signalling is the internal stores that are located primarily in the endoplasmic/sarcoplasmic reticulum (ER/SR), in which inositol-1,4,5-trisphosphate receptors (IP3Rs) or ryanodine receptors (RYRs) regulate the release of Ca2+. The principal activator of these channels is Ca2+ itself and this process of Ca2+-induced Ca2+ release is central to the mechanism of Ca2+ signalling. Various second messengers or modulators also control the release of Ca2+. IP3, which is generated by pathways using different isoforms of phospholipase C (PLCbeta, delta, epsilon, gamma and zeta), regulates the IP3Rs. Cyclic ADP-ribose (cADPR) releases Ca2+ via RYRs. Nicotinic acid adenine dinucleotide phosphate (NAADP) may activate a distinct Ca2+ release mechanism on separate acidic Ca2+ stores. Ca2+ release via the NAADP-sensitive mechanism may also feedback onto either RYRs or IP3Rs. cADPR and NAADP are generated by CD38. This enzyme might be sensitive to the cellular metabolism, as ATP and NADH inhibit it.
+            The influx of Ca2+ from the environment or release from internal stores causes a very rapid and dramatic increase in cytoplasmic calcium concentration, which has been widely exploited for signal transduction. Some proteins, such as troponin C (TnC) involved in muscle contraction, directly bind to and sense Ca2+. However, in other cases Ca2+ is sensed through intermediate calcium sensors such as calmodulin (CALM).
+CLASS       Environmental Information Processing; Signal transduction
+PATHWAY_MAP hsa04020  Calcium signaling pathway
+DISEASE     H00441  Progressive osseous heteroplasia (POH)
+            H00608  46,XY disorders of sex development (Disorders in androgen synthesis or action)
+            H00627  Premature ovarian failure
+            H00699  Central core disease
+            H00715  Darier disease
+            H00728  Brugada syndrome (BRS)
+            H00746  Hypokalemic periodic paralysis (HypoPP)
+            H00749  Episodic ataxias
+            H00755  Acrokeratosis verruciformis
+            H00759  Waardenburg syndrome (WS)
+            H00775  Familial or sporadic hemiplegic migraine
+            H00787  Congenital stationary night blindness (CSNB)
+            H00801  Familial thoracic aortic aneurysm and dissection (TAAD)
+            H00823  ABCD syndrome
+            H00865  Lethal congenital contractural syndrome (LCCS)
+            H00910  Hirschsprung disease (HD)
+            H00937  Precocious puberty
+            H01019  Catecholaminergic polymorphic ventricular tachycardia
+            H01118  Progressive external ophthalmoplegia (PEO)
+            H01129  Brody myopathy
+            H01307  Nonsyndromic congenital nail disorder (NDNC)
+            H01310  Multi-minicore disease (MmD)
+DRUG        D00045  Adenosine (JAN/USP)
+            D00059  Levodopa (JP17/USP/INN)
+            D00076  Noradrenaline (JP17)
+            D00081  Dinoprost (JP17/USAN/INN)
+            D00089  Oxytocin (JP17/USP/INN)
+            D00095  Adrenaline (JP17)
+            D00101  Vasopressin (JP17/USP)
+            D00113  Atropine (USP)
+            D00124  Ephedrine (USP)
+            D00138  Scopolamine (INN)
+            D00147  Hyoscyamine (USP)
+            D00150  Angiotensin II (INN)
+            D00176  Protirelin (JP17/USAN/INN)
+            D00180  Alprostadil (JP17/USP/INN)
+            D00227  Aminophylline (USP/INN)
+            D00232  Methyloctatropine bromide (JAN)
+            D00234  Astemizole (JAN/USP/INN)
+            D00235  Atenolol (JP17/USP/INN)
+            D00255  Carvedilol (JAN/USAN/INN)
+            D00270  Chlorpromazine (USP/INN)
+            D00274  Cisapride (USAN/INN)
+            D00283  Clozapine (JAN/USP/INN)
+            D00291  Desmopressin (INN)
+            D00295  Cimetidine (JP17/USP/INN)
+            D00300  Diphenhydramine (JP17/INN)
+            D00304  Divalproex sodium (USP)
+            D00318  Famotidine (JP17/USP/INN)
+            D00319  Felodipine (JAN/USP/INN)
+            D00349  Isradipine (USP/INN)
+            D00356  Latanoprost (JAN/USAN/INN)
+            D00357  Losartan potassium (JP17/USAN)
+            D00364  Loratadine (JAN/USAN/INN)
+            D00366  Lypressin (USP/INN)
+            D00371  Theophylline (JP17)
+            D00374  Tiotixene (JAN)
+            D00378  Timolol (USAN)
+            D00397  Tropicamide (JP17/USP/INN)
+            D00399  Valproic acid (USP)
+            D00400  Valsartan (JP17/USAN/INN)
+            D00403  Levomepromazine (USAN/INN)
+            D00411  Zafirlukast (JAN/USAN/INN)
+            D00422  Ranitidine (USAN/INN)
+            D00426  Risperidone (JP17/USAN/INN)
+            D00432  Nadolol (JP17/USP/INN)
+            D00437  Nifedipine (JP17/USP/INN)
+            D00438  Nimodipine (USAN/INN)
+            D00440  Nizatidine (JP17/USP/INN)
+            D00454  Olanzapine (JAN/USAN/INN)
+            D00458  Quetiapine fumarate (JP17/USAN)
+            D00465  Oxybutynin (USAN/INN)
+            D00480  Promethazine hydrochloride (JP17/USP)
+            D00481  Propantheline bromide (JP17/USP/INN)
+            D00483  Propranolol hydrochloride (JP17/USP)
+            D00485  Pseudoephedrine hydrochloride (USP)
+            D00494  Promethazine (JAN/INN)
+            D00502  Pergolide mesilate (JAN)
+            D00507  Phenoxybenzamine hydrochloride (USP)
+            D00509  Phentolamine mesilate (JAN/INN)
+            D00511  Phenylephrine hydrochloride (JP17/USP)
+            D00513  Pindolol (JP17/USP/INN)
+            D00520  Dimenhydrinate (JP17/USP/INN)
+            D00521  Terfenadine (JAN/USAN/INN)
+            D00522  Candesartan (USAN/INN)
+            D00523  Irbesartan (JP17/USAN/INN)
+            D00524  Carbachol (JAN/USP/INN)
+            D00525  Pilocarpine (JAN/USP)
+            D00528  Anhydrous caffeine (JP17)
+            D00529  Montelukast sodium (JP17/USAN)
+            D00537  Topiramate (JAN/USAN/INN)
+            D00538  Zonisamide (JAN/USAN/INN)
+            D00539  Ethosuximide (JP17/USP/INN)
+            D00540  Glycopyrronium bromide (JAN/INN)
+            D00560  Pimozide (JP17/USP/INN)
+            D00561  Sertindole (USAN/INN)
+            D00563  Mirtazapine (JAN/USAN/INN)
+            D00597  Acebutolol hydrochloride (JP17/USP)
+            D00598  Betaxolol hydrochloride (JP17/USP)
+            D00599  Carteolol hydrochloride (JP17/USP)
+            D00600  Labetalol hydrochloride (JP17/USP)
+            D00601  Metoprolol tartrate (JP17/USP)
+            D00602  Penbutolol sulfate (JP17/USP)
+            D00603  Timolol maleate (JP17/USP)
+            D00607  Guanadrel sulfate (USP)
+            D00608  Doxazosin mesilate (JP17)
+            D00609  Prazosin hydrochloride (JP17/USP)
+            D00610  Terazosin hydrochloride hydrate (JAN)
+            D00611  Mecamylamine hydrochloride (USP)
+            D00613  Fenoldopam mesylate (USP)
+            D00615  Amlodipine besilate (JP17)
+            D00616  Diltiazem hydrochloride (JP17/USP)
+            D00617  Nicardipine hydrochloride (JP17/USAN)
+            D00618  Nisoldipine (JAN/USAN/INN)
+            D00619  Verapamil hydrochloride (JP17/USP)
+            D00626  Candesartan cilexetil (JP17/USAN)
+            D00627  Telmisartan (JP17/USAN/INN)
+            D00629  Nitrendipine (JP17/USAN/INN)
+            D00631  Bepridil hydrochloride hydrate (JAN)
+            D00632  Dobutamine hydrochloride (JP17/USP)
+            D00633  Dopamine hydrochloride (JP17/USP)
+            D00634  Bisoprolol fumarate (JP17/USP)
+            D00635  Metoprolol succinate (USP)
+            D00636  Amiodarone hydrochloride (JP17/USAN)
+            D00644  Esmolol hydrochloride (JAN/USAN)
+            D00646  Tolterodine (USAN/INN)
+            D00659  Azelastine hydrochloride (JP17/USAN)
+            D00661  Cevimeline hydrochloride hydrate (JAN)
+            D00662  Azatadine maleate (USP)
+            D00663  Brompheniramine maleate (USAN)
+            D00664  Cetirizine hydrochloride (JP17/USAN)
+            D00665  Chlorpheniramine maleate (JP17/USP)
+            D00666  Clemastine fumarate (JP17/USP)
+            D00668  d-Chlorpheniramine maleate (JP17)
+            D00669  Diphenhydramine hydrochloride (JP17/USP)
+            D00671  Fexofenadine hydrochloride (JP17/USAN)
+            D00672  Hydroxyzine hydrochloride (JP17/USP)
+            D00673  Ranitidine hydrochloride (JP17/USP)
+            D00679  Ergotamine tartrate (JP17/USP)
+            D00680  Methylergometrine maleate (JP17)
+            D00682  Carboprost tromethamine (USP)
+            D00683  Salbutamol sulfate (JP17)
+            D00684  Bitolterol mesilate (JAN)
+            D00685  Orciprenaline sulfate (JP17)
+            D00686  Pirbuterol acetate (USAN)
+            D00687  Salmeterol xinafoate (JAN/USAN)
+            D00688  Terbutaline sulfate (JP17/USP)
+            D00710  Sodium valproate (JP17)
+            D00711  Ketamine hydrochloride (JP17/USP)
+            D00715  Hyoscine methobromide (INN)
+            D00717  Dicyclomine hydrochloride (JAN/USP)
+            D00719  Hyoscyamine sulfate (USP)
+            D00720  Mepenzolate bromide (JP17/INN)
+            D00721  Methanthelinium bromide (INN)
+            D00722  Oxybutynin hydrochloride (JAN)
+            D00723  Tridihexethyl chloride (BAN)
+            D00726  Metoclopramide (JP17/INN)
+            D00740  Procaine hydrochloride (JP17/USP)
+            D00743  Naphazoline hydrochloride (JP17/USP)
+            D00756  Tetrahydrozoline nitrate (JAN)
+            D00757  Xylometazoline hydrochloride (USP)
+            D00774  Orphenadrine citrate (USP)
+            D00777  Amantadine hydrochloride (JP17/USP)
+            D00778  Benztropine mesilate (JAN)
+            D00779  Biperiden (JAN/USP/INN)
+            D00782  Procyclidine hydrochloride (USP)
+            D00787  Trihexyphenidyl hydrochloride (JP17/USP)
+            D00789  Chlorpromazine hydrochloride (JP17/USP)
+            D00819  Nefazodone hydrochloride (USAN)
+            D00820  Trazodone hydrochloride (JAN/USP)
+            D00848  Dextromethorphan hydrobromide hydrate (JP17)
+            D00996  Epinephrine hydrochloride (JAN)
+            D00997  Tolazoline hydrochloride (JAN/USP)
+            D00999  Acetylcholine chloride (JP17/USP/INN)
+            D01000  Bethanechol chloride (JP17/USP)
+            D01002  Cyclopentolate hydrochloride (JP17/USP)
+            D01003  Hexocyclium metilsulfate (INN)
+            D01004  Homatropine hydrobromide (JP17/USP)
+            D01005  Isopropamide iodide (JAN/USP/INN)
+            D01006  Oxyphencyclimine hydrochloride (JAN)
+            D01007  Propiverine hydrochloride (JP17)
+            D01017  Dipivefrin hydrochloride (JAN/USP)
+            D01019  Metaraminol bitartrate (JAN/USP)
+            D01020  Methoxamine hydrochloride (JAN)
+            D01021  Naphazoline nitrate (JP17)
+            D01022  Oxymetazoline hydrochloride (JAN/USP)
+            D01023  Tetrahydrozoline hydrochloride (JAN/USP)
+            D01024  Tamsulosin hydrochloride (JP17/USAN)
+            D01025  Levobunolol hydrochloride (JAN/USP)
+            D01026  Sotalol hydrochloride (JAN/USP)
+            D01044  Flupentixol (INN)
+            D01051  Spiperone (JAN/USAN)
+            D01077  Atropine methonitrate (JAN/INN)
+            D01096  Hydroxyzine pamoate (JP17/USP)
+            D01103  Trospium chloride (JAN/USAN/INN)
+            D01104  Barnidipine hydrochloride (JAN)
+            D01117  Mizolastine (JAN/INN)
+            D01118  Profenamine hydrochloride (JAN)
+            D01123  Seratrodast (JAN/USAN/INN)
+            D01128  Ramatroban (JAN/INN)
+            D01131  Lafutidine (JP17/INN)
+            D01143  Isothipendyl hydrochloride (JAN)
+            D01145  Azelnidipine (JP17/INN)
+            D01148  Tolterodine tartrate (JAN/USAN)
+            D01163  Ergometrine maleate (JP17)
+            D01164  Aripiprazole (JAN/USAN/INN)
+            D01165  Piperidolate hydrochloride (JAN)
+            D01172  Diphenylpyraline hydrochloride (JAN)
+            D01173  Cilnidipine (JP17/INN)
+            D01174  Pheniramine maleate (JAN/USP)
+            D01175  Carpronium chloride (JAN/INN)
+            D01176  Blonanserin (JAN/INN)
+            D01182  Alprenolol hydrochloride (JP17/USAN)
+            D01192  Olopatadine hydrochloride (JP17/USAN)
+            D01193  Osutidine (JAN/INN)
+            D01201  Tiemonium iodide (JAN/INN)
+            D01204  Olmesartan medoxomil (JP17/USAN)
+            D01227  Bosentan hydrate (JAN)
+            D01231  Piroheptine hydrochloride (JAN)
+            D01236  Conivaptan hydrochloride (JAN/USAN)
+            D01242  Promethazine teoclate (JAN/INN)
+            D01263  Ritodrine hydrochloride (JP17/USP)
+            D01269  Solifenacin succinate (JAN/USAN/INN)
+            D01290  Nicergoline (JP17/USAN/INN)
+            D01295  Cinnarizine (JAN/USAN/INN)
+            D01297  Pirenzepine hydrochloride (USAN)
+            D01303  Flunarizine hydrochloride (JAN/USAN)
+            D01307  Midodrine hydrochloride (JAN/USAN)
+            D01315  Methylbenactyzium bromide (JP17/INN)
+            D01317  Meclizine hydrochloride (JAN/USP)
+            D01321  Zotepine (JAN/INN)
+            D01324  Mequitazine (JP17/INN)
+            D01332  Ketotifen fumarate (JP17/USAN)
+            D01333  Urapidil (JP17/INN)
+            D01336  Carbinoxamine maleate (JAN/USP)
+            D01343  Dimetindene maleate (JAN)
+            D01347  Tramazoline hydrochloride (JAN/USAN)
+            D01349  Pirbuterol hydrochloride (JAN/USAN)
+            D01352  Dinoprost tromethamine (JAN/USP)
+            D01358  Mianserin hydrochloride (JAN/USAN)
+            D01359  Etomidoline (JAN/INN)
+            D01360  Clenbuterol hydrochloride (JAN/USP)
+            D01362  Tulobuterol hydrochloride (JP17)
+            D01369  Bevantolol hydrochloride (JAN/USAN)
+            D01373  Formoterol fumarate (USAN)
+            D01377  Prifinium bromide (JAN/INN)
+            D01386  Ephedrine hydrochloride (JP17/USP)
+            D01390  dl-Isoprenaline hydrochloride (JAN)
+            D01405  Norfenefrine hydrochloride (JAN)
+            D01428  Fenoterol hydrobromide (JAN)
+            D01441  Imatinib mesilate (JAN)
+            D01444  Bunitrolol hydrochloride (JAN)
+            D01445  Ifenprodil tartrate (JP17)
+            D01451  Scopolamine butylbromide (JP17)
+            D01452  Isopropyl unoprostone (JAN)
+            D01453  Caffeine hydrate (JP17)
+            D01454  Bupranolol hydrochloride (JP17)
+            D01460  Homochlorcyclizine hydrochloride (JP17)
+            D01463  Diponium bromide (JAN/INN)
+            D01467  Roxatidine acetate hydrochloride (JP17/USAN)
+            D01469  Amosulalol hydrochloride (JP17)
+            D01471  Esatenolol (JAN/INN)
+            D01477  Opipramol hydrochloride (JAN/USAN)
+            D01478  Ebastine (JP17/USAN/INN)
+            D01482  Pipamperone hydrochloride (JAN)
+            D01491  Butropium bromide (JP17/INN)
+            D01500  Trimebutine maleate (JP17)
+            D01504  Bufetolol hydrochloride (JP17)
+            D01512  Befunolol hydrochloride (JAN)
+            D01520  Levomepromazine hydrochloride (JAN/USAN)
+            D01521  Pipethanate hydrochloride (JAN)
+            D01538  Valethamate bromide (JAN)
+            D01543  Nylidrin hydrochloride (JAN)
+            D01548  Mosapramine hydrochloride (JAN)
+            D01553  Manidipine hydrochloride (JP17)
+            D01562  Aranidipine (JAN/INN)
+            D01571  Moxisylyte hydrochloride (JAN)
+            D01573  Etilefrine hydrochloride (JP17)
+            D01589  Mabuterol hydrochloride (JAN)
+            D01592  Betahistine mesilate (JP17)
+            D01600  Diphenylpiperidinomethyldioxolan iodide (JAN)
+            D01604  Efonidipine hydrochloride ethanolate (JAN)
+            D01624  Sarpogrelate hydrochloride (JP17)
+            D01627  Diphenylpyraline teoclate (JAN)
+            D01635  Methoxyphenamine hydrochloride (JAN)
+            D01648  Hyoscyamine methylbromide (JAN)
+            D01652  Apafant (JAN/USAN/INN)
+            D01654  Bepotastine besilate (JP17)
+            D01674  Naftopidil (JP17/INN)
+            D01691  Nipradilol (JAN/INN)
+            D01692  Alfuzosin hydrochloride (JAN/USAN)
+            D01697  Colforsin daropate hydrochloride (JAN)
+            D01698  Dalcotidine (JAN/INN)
+            D01699  Darifenacin hydrobromide (JAN/USAN)
+            D01712  Theophylline sodium acetate (JAN)
+            D01713  Epinastine hydrochloride (JAN)
+            D01717  Levocabastine hydrochloride (JAN/USAN)
+            D01741  Celiprolol hydrochloride (JAN/USAN)
+            D01742  Clebopride malate (JP17)
+            D01748  Isoxsuprine hydrochloride (JP17/USP)
+            D01771  Proxyphylline (JAN/INN)
+            D01773  Oxatomide (JAN/USAN/INN)
+            D01782  Triprolidine hydrochloride hydrate (JAN)
+            D01794  Bopindolol malonate (JAN)
+            D01795  Tilisolol hydrochloride (JAN)
+            D01801  Thonzylamine hydrochloride (JAN/USAN)
+            D01806  Oxprenolol hydrochloride (JP17/USP)
+            D01815  Oxapium iodide (JP17/INN)
+            D01818  Proglumide (JP17/USAN/INN)
+            D01830  Arotinolol hydrochloride (JP17)
+            D01835  Clorprenaline hydrochloride (JAN/USAN)
+            D01847  Landiolol hydrochloride (JAN)
+            D01849  Lercanidipine hydrochloride (JAN/USAN)
+            D01858  Panazepide (JAN)
+            D01861  Pibutidine hydrochloride (JAN)
+            D01869  Ornoprostil (JAN/INN)
+            D01871  Metixene hydrochloride (JAN)
+            D01875  Tiquizium bromide (JAN/INN)
+            D01887  Bunazosin hydrochloride (JP17)
+            D01902  Dimetotiazine mesilate (JAN)
+            D01908  Nilvadipine (JP17/USAN/INN)
+            D01922  Pratosartan (JAN/INN)
+            D01925  Taltirelin hydrate (JP17)
+            D01929  Tiotropium bromide hydrate (JAN)
+            D01939  Ziprasidone hydrochloride hydrate (JAN)
+            D01946  Oxitropium bromide (JAN/INN)
+            D01952  L-Methylephedrine hydrochloride (JAN)
+            D01955  Aclatonium napadisilate (JAN)
+            D01958  Indenolol hydrochloride (JP17)
+            D01964  Travoprost (JAN/USAN/INN)
+            D01965  Silodosin (JP17/INN)
+            D01969  Gallopamil hydrochloride (JAN)
+            D01976  N-Methylscopolamine methylsulfate (JAN)
+            D01977  Gefitinib (JAN/USAN/INN)
+            D01978  Trimetoquinol hydrochloride
+            D01987  Pipethanate ethobromide (JAN)
+            D01994  Mosapride citrate hydrate (JP17)
+            D02004  Apomorphine hydrochloride hydrate (JAN)
+            D02007  Protirelin tartrate hydrate (JP17)
+            D02014  Angiotensin II (human type) (JAN)
+            D02017  Choline theophylline (JAN)
+            D02034  Setiptiline maleate (JAN)
+            D02045  Benidipine hydrochloride (JP17)
+            D02066  Isoprenaline sulfate (JAN)
+            D02069  Atropine sulfate (JP17/USP)
+            D02070  Homatropine methylbromide (USP)
+            D02071  Scopolamine hydrobromide hydrate (JP17)
+            D02073  Gemeprost (JAN/USAN/INN)
+            D02081  Metipranolol hydrochloride
+            D02082  Eprosartan mesylate (USAN)
+            D02090  Cyclizine lactate (BAN)
+            D02091  Tripelennamine hydrochloride (USP)
+            D02092  Cisapride (JAN)
+            D02093  Isoetharine hydrochloride (USP)
+            D02100  Ziprasidone mesylate (USAN)
+            D02102  Methadone hydrochloride (JAN/USP)
+            D02109  dl-Methylephedrine hydrochloride (JP17)
+            D02147  Albuterol (USP)
+            D02148  Phenindamine tartrate (USAN)
+            D02149  Epinephrine bitartrate (JAN/USP)
+            D02150  l-Isoprenaline hydrochloride (JP17)
+            D02151  Tulobuterol (JP17/INN)
+            D02200  Pilocarpine hydrochloride (JP17/USP)
+            D02202  Lobeline hydrochloride (JAN)
+            D02204  Hexamethonium bromide (JAN/INN)
+            D02211  Dihydroergotamine mesilate (JP17)
+            D02212  Ipratropium bromide hydrate (JP17)
+            D02213  Metoclopramide hydrochloride (JAN)
+            D02234  Cyproheptadine hydrochloride (JP17/USP)
+            D02235  Desmopressin acetate hydrate (JAN)
+            D02236  Flupentixol dihydrochloride (JAN)
+            D02245  Alimemazine tartrate (JP17)
+            D02246  Biperiden hydrochloride (JP17/USP)
+            D02247  Biperiden lactate (JAN/USP)
+            D02248  Levomepromazine maleate (JP17/USAN)
+            D02249  Emedastine difumarate (JP17/USP)
+            D02274  Dantrolene sodium hydrate (JP17)
+            D02281  Levalbuterol hydrochloride (USAN)
+            D02327  Doxylamine succinate (USP)
+            D02338  Acebutolol (USAN/INN)
+            D02342  Bisoprolol (JAN/USAN/INN)
+            D02343  Carboprost (USAN/INN)
+            D02347  Dantrolene (USAN/INN)
+            D02349  Dipivefrin (USAN)
+            D02356  Verapamil (USAN/INN)
+            D02358  Metoprolol (USAN/INN)
+            D02359  Ritodrine (USAN/INN)
+            D02363  Ketanserin (USAN/INN)
+            D02364  Lobeline (INN)
+            D02372  Perospirone hydrochloride hydrate (JAN)
+            D02374  Metipranolol (USAN/INN)
+            D02384  Verlukast (USAN/INN)
+            D02389  Primidolol (USAN/INN)
+            D02396  Hexoprenaline sulfate (USAN)
+            D02404  Procaterol hydrochloride (USAN)
+            D02410  Selfotel (USAN/INN)
+            D02417  Flutropium bromide (JAN)
+            D02419  Diphenhydramine salicylate (JAN)
+            D02535  Timepidium bromide hydrate (JP17)
+            D02537  Dronedarone (INN)
+            D02577  Flibanserin (USAN/INN)
+            D02578  Agomelatine (INN)
+            D02588  Montirelin (INN)
+            D02590  Israpafant (JAN/INN)
+            D02599  Orphenadrine hydrochloride
+            D02612  Thiothixene hydrochloride (USP)
+            D02613  Clopenthixol (USAN)
+            D02614  Denopamine (JAN/INN)
+            D02622  Pipamperone (USAN/INN)
+            D02630  Penfluridol (USAN/INN)
+            D02641  Butaclamol hydrochloride (USAN)
+            D02656  Fananserin (USAN/INN)
+            D02666  Iloperidone (USAN/INN)
+            D02676  Oxiperomide (USAN/INN)
+            D02692  Human menopausal gonadotrophin (JP17)
+            D02693  Devazepide (USAN/INN)
+            D02702  Talibegron hydrochloride (USAN)
+            D02705  Alprostadil alfadex (JP17)
+            D02710  Tarazepide (INN)
+            D02719  Rosaprostol (INN)
+            D02722  Limaprost (INN)
+            D02724  Bimatoprost (JAN/USAN/INN)
+            D02730  Tegaserod maleate (USAN)
+            D02732  Pranlukast hydrate (JP17)
+            D02739  Ablukast (USAN/INN)
+            D02741  Ablukast sodium (USAN)
+            D02750  Aceclidine (USAN/INN)
+            D02760  Acrivastine (USAN/INN)
+            D02765  Adaprolol maleate (USAN)
+            D02767  Adatanserin hydrochloride (USAN)
+            D02775  Adrogolide hydrochloride (USAN)
+            D02780  Acamprosate calcium (JAN/USAN)
+            D02834  Alprenoxime hydrochloride (USAN)
+            D02836  Altanserin tartrate (USAN)
+            D02846  Cinalukast (USAN/INN)
+            D02848  Pobilukast edamine (USAN)
+            D02849  Ritolukast (USAN/INN)
+            D02850  Sulukast (USAN/INN)
+            D02851  Tomelukast (USAN/INN)
+            D02860  Limaprost alfadex (JP17)
+            D02876  Alvameline maleate (USAN)
+            D02893  Amesergide (USAN/INN)
+            D02901  Amidephrine mesylate (USAN)
+            D02910  Amiodarone (USAN/INN)
+            D02914  Amlodipine maleate (USAN)
+            D02939  Angiotensin amide (USAN)
+            D02950  Antazoline phosphate (USP)
+            D02968  Aprepitant (JAN/USAN/INN)
+            D02973  Aptiganel hydrochloride (USAN)
+            D02976  Arbutamine hydrochloride (USAN)
+            D02981  Arformoterol tartrate (USAN)
+            D02983  Argipressin tannate (USAN)
+            D02995  Asenapine maleate (JAN/USAN)
+            D03008  Atosiban (USAN/INN)
+            D03009  Atrasentan hydrochloride (USAN)
+            D03011  Atropine oxide hydrochloride (USAN)
+            D03065  Becaplermin (USAN/INN)
+            D03087  Benzetimide hydrochloride (USAN)
+            D03102  Betahistine hydrochloride (USP)
+            D03120  Binodenoson (USAN/INN)
+            D03166  Bromodiphenhydramine hydrochloride (USP)
+            D03170  Bucindolol hydrochloride (USAN)
+            D03177  Bunolol hydrochloride (USAN)
+            D03195  Butopamine (USAN/INN)
+            D03198  Butoxamine hydrochloride (USAN)
+            D03212  Apadenoson (USAN)
+            D03218  Axitinib (JAN/USAN)
+            D03221  Befetupitant (USAN/INN)
+            D03264  Mazaticol hydrochloride hydrate (JAN)
+            D03274  Chlorpromazine hibenzate (JAN)
+            D03276  Profenamine hibenzate (JAN)
+            D03285  Diphenhydramine tannate (JP17)
+            D03290  Promethazine methylenedisalicylate (JAN)
+            D03350  Canertinib dihydrochloride (USAN)
+            D03360  Diphenhydramine laurylsulfate (JAN)
+            D03399  Carboprost methyl (USAN)
+            D03402  Carbuterol hydrochloride (USAN)
+            D03415  Carvedilol phosphate hydrate (JAN)
+            D03449  Cetamolol hydrochloride (USAN)
+            D03455  Cetuximab (genetical recombination) (JAN)
+            D03475  Chlorpheniramine polistirex (USAN)
+            D03478  Choriogonadotropin alfa (genetical recombination) (JAN)
+            D03490  Cicloprolol hydrochloride (USAN)
+            D03494  Ciladopa hydrochloride (USAN)
+            D03502  Cimaterol (USAN/INN)
+            D03503  Cimetidine hydrochloride (USP)
+            D03506  Cinanserin hydrochloride (USAN)
+            D03534  Clebopride (USAN)
+            D03535  Clemastine (USAN)
+            D03556  Zuclopenthixol (INN)
+            D03587  Colterol mesylate (USAN)
+            D03621  Cyclizine (INN)
+            D03622  Cyclizine hydrochloride (USP)
+            D03642  Daltroban (USAN/INN)
+            D03648  Dapiprazole hydrochloride (USAN)
+            D03654  Darifenacin (USAN/INN)
+            D03655  Darodipine (USAN/INN)
+            D03658  Dasatinib (INN)
+            D03677  Deltibant (USAN/INN)
+            D03679  Delucemine hydrochloride (USAN)
+            D03693  Desloratadine (JAN/USAN/INN)
+            D03704  Dexbrompheniramine maleate (USAN)
+            D03711  Dexetimide (USAN/INN)
+            D03729  Dexpropranolol hydrochloride (USAN)
+            D03742  Dextromethorphan (USP)
+            D03744  Dextromethorphan polistirex (USAN)
+            D03746  Dextrorphan hydrochloride (USAN)
+            D03759  Diacetolol hydrochloride (USAN)
+            D03814  Atropine methylbromide (JAN)
+            D03830  Diltiazem malate (USAN)
+            D03854  Diphenhydramine citrate (USP)
+            D03878  Dizocilpine maleate (USAN)
+            D03879  Dobutamine (USP/INN)
+            D03880  Dobutamine lactobionate (USAN)
+            D03881  Dobutamine tartrate (USP)
+            D03889  Donetidine (USAN)
+            D03891  Dopexamine (USAN/INN)
+            D03914  Dronedarone hydrochloride (USAN)
+            D03937  Ecopipam hydrochloride (USAN)
+            D03953  Edonentan (USAN)
+            D04018  Ephedrine sulfate (USP)
+            D04023  Erlotinib hydrochloride (JAN/USAN)
+            D04024  Lapatinib tosilate hydrate (JAN)
+            D04025  Mubritinib (USAN/INN)
+            D04034  Chlorpromazine phenolphthalinate (JAN)
+            D04040  Eprosartan (USAN/INN)
+            D04057  Esoxybutynin chloride (USAN)
+            D04074  Etalocib (USAN)
+            D04087  Ethybenztropine (USAN)
+            D04098  Etintidine hydrochloride (USAN)
+            D04116  Eucatropine hydrochloride (USP XXXII)
+            D04126  Saralasin acetate (USAN)
+            D04137  Felypressin (USAN/INN)
+            D04155  Fenobam (USAN)
+            D04157  Fenoterol (USAN/INN)
+            D04184  Fiduxosin hydrochloride (USAN)
+            D04190  Flestolol sulfate (USAN)
+            D04226  Flupirtine maleate (USAN)
+            D04243  Forasartan (USAN/INN)
+            D04308  Gavestinel (USAN/INN)
+            D04320  Glemanserin (USAN/INN)
+            D04479  Hyoscyamine hydrobromide (USP)
+            D04488  Ibopamine (USAN/INN)
+            D04492  Icatibant acetate (USAN)
+            D04494  Icotidine (USAN)
+            D04500  Ifetroban (USAN/INN)
+            D04501  Ifetroban sodium (USAN)
+            D04517  Impromidine hydrochloride (USAN)
+            D04531  Indoramin (USAN/INN)
+            D04532  Indoramin hydrochloride (USAN)
+            D04625  Isoetharine (USP)
+            D04626  Isoetharine mesylate (USP)
+            D04641  Istradefylline (JAN/USAN/INN)
+            D04657  Lacidipine (USAN/INN)
+            D04680  Lavoltidine succinate (USAN)
+            D04701  Levalbuterol sulfate (USAN)
+            D04703  Levalbuterol tartrate (USAN)
+            D04708  Levdobutamine lactobionate (USAN)
+            D04710  Levobetaxolol hydrochloride (USAN)
+            D04724  Lexipafant (USAN/INN)
+            D04728  Licostinel (USAN/INN)
+            D04788  Lubazodone hydrochloride (USAN)
+            D04794  Lupitidine hydrochloride (USAN)
+            D04820  Lurasidone hydrochloride (JAN/USAN)
+            D04824  Lutropin alfa (USAN/INN)
+            D04860  Maropitant citrate (USAN)
+            D04888  Medroxalol (USAN/INN)
+            D04889  Medroxalol hydrochloride (USAN)
+            D04905  Memantine hydrochloride (JAN/USAN)
+            D04954  Metaproterenol polistirex (USAN)
+            D04970  Methacholine chloride (JAN/USAN/INN)
+            D05004  Metiamide (USAN/INN)
+            D05008  Metoclopramide hydrochloride (USAN)
+            D05011  Metoprolol fumarate (USP)
+            D05015  Metrenperone (USAN/INN)
+            D05024  Mibefradil dihydrochloride (USAN)
+            D05029  Midostaurin (USAN/INN)
+            D05035  Milameline hydrochloride (USAN)
+            D05037  Trimetoquinol hydrochloride hydrate (JP17)
+            D05085  Moxilubant maleate (USAN)
+            D05107  Nafronyl oxalate (USAN)
+            D05127  Nebivolol (USAN/INN)
+            D05145  Neramexane mesylate (USAN)
+            D05196  Noberastine (USAN/INN)
+            D05206  Norepinephrine bitartrate (USP)
+            D05246  Olmesartan (USAN/INN)
+            D05258  Serum gonadotrophin (JAN)
+            D05276  Pirenzepine hydrochloride hydrate (JP17)
+            D05277  Formoterol fumarate hydrate (JP17)
+            D05306  Oxmetidine hydrochloride (USAN)
+            D05307  Oxmetidine mesylate (USAN)
+            D05339  Paliperidone (JAN/USAN/INN)
+            D05340  Paliperidone palmitate (JAN/USAN)
+            D05345  Pamatolol sulfate (USAN)
+            D05350  Panitumumab (genetical recombination) (JAN)
+            D05366  Procaterol hydrochloride hydrate (JP17)
+            D05380  Pazopanib hydrochloride (JAN/USAN)
+            D05395  Pelanserin hydrochloride (USAN)
+            D05399  Pelitinib (USAN/INN)
+            D05429  Aminophylline hydrate (JP17)
+            D05442  Perhexiline maleate (USAN)
+            D05446  Pertuzumab (genetical recombination) (JAN)
+            D05447  Perzinfotel (USAN/INN)
+            D05453  Phencyclidine hydrochloride (USAN)
+            D05471  Piboserod hydrochloride (USAN)
+            D05476  Picumeterol fumarate (USAN)
+            D05478  Pilocarpine nitrate (USP)
+            D05523  Pizotyline (USAN)
+            D05587  Practolol (USAN)
+            D05606  Prenalterol hydrochloride (USAN)
+            D05648  Pseudoephedrine polistirex (USAN)
+            D05649  Pseudoephedrine sulfate (USP)
+            D05660  Pyrilamine maleate (USP)
+            D05691  Ractopamine hydrochloride (USAN)
+            D05699  Ranitidine bismuth citrate (USAN)
+            D05711  Regadenoson (USAN/INN)
+            D05714  Remacemide hydrochloride (USAN)
+            D05718  Reproterol hydrochloride (USAN)
+            D05727  Ridogrel (USAN/INN)
+            D05730  Rimiterol hydrobromide (USAN)
+            D05738  Ritanserin (USAN/INN)
+            D05742  Rocastine hydrochloride (USAN)
+            D05779  Sabcomeline hydrochloride (USAN)
+            D05792  Salmeterol (USAN/INN)
+            D05832  Sibenadet hydrochloride (USAN)
+            D05879  Solabegron hydrochloride (USAN)
+            D05902  Soterenol hydrochloride (USAN)
+            D05939  Sufotidine (USAN/INN)
+            D05941  Sulamserod hydrochloride (USAN)
+            D05970  Sulotroban (USAN/INN)
+            D05996  Talnetant hydrochloride (USAN)
+            D06000  Talsaclidine fumarate (USAN)
+            D06005  Tandutinib (USAN/INN)
+            D06015  Tazomeline citrate (USAN)
+            D06021  Tecastemizole (USAN/INN)
+            D06056  Tegaserod (USAN/INN)
+            D06063  Temelastine (USAN/INN)
+            D06103  Theophylline (USP)
+            D06104  Theophylline sodium glycinate (USP)
+            D06120  Thyrotropin alfa (genetical recombination) (JAN)
+            D06140  Ticolubant (USAN/INN)
+            D06146  Tiletamine hydrochloride (USP)
+            D06157  Tiotidine (USAN/INN)
+            D06234  Trimazosin hydrochloride (USAN)
+            D06246  Tripelennamine citrate
+            D06253  Tropanserin hydrochloride (USAN)
+            D06272  Sorafenib tosilate (JAN)
+            D06273  Imidafenacin (JAN/INN)
+            D06274  Tafluprost (JAN/USAN/INN)
+            D06280  Vapiprost hydrochloride (JAN/USAN)
+            D06285  Vatalanib (USAN/INN)
+            D06293  Vestipitant mesylate (USAN)
+            D06317  Vofopitant dihydrochloride (USAN)
+            D06328  Xamoterol (USAN)
+            D06329  Xamoterol fumarate (USAN)
+            D06330  Xanomeline (USAN)
+            D06331  Xanomeline tartrate (USAN)
+            D06353  Zacopride hydrochloride (USAN)
+            D06355  Zaltidine hydrochloride (USAN)
+            D06374  Zinterol hydrochloride (USAN)
+            D06394  Dabuzalgron hydrochloride (USAN)
+            D06396  Renzapride (INN)
+            D06402  Sunitinib malate (JAN/USAN)
+            D06407  Vandetanib (JAN/USAN/INN)
+            D06413  Nilotinib hydrochloride hydrate (JAN)
+            D06414  Dasatinib hydrate (JAN)
+            D06457  Chorionic gonadotrophin (JP17)
+            D06459  Purified human menopausal gonadotrophin (JAN)
+            D06552  Alcaftadine (JAN/USAN/INN)
+            D06574  Casopitant mesylate (USAN)
+            D06597  Fosaprepitant meglumine (JAN)
+            D06613  Lorcaserin hydrochloride (USAN)
+            D06622  Nebivolol hydrochloride (USAN)
+            D06623  Olanzapine pamoate (USAN)
+            D06632  Pruvanserin (USAN/INN)
+            D06633  Pruvanserin hydrochloride (USAN)
+            D06646  Epanolol (USAN/INN)
+            D06659  Tipelukast (USAN)
+            D06672  Terlipressin (USAN/INN)
+            D06678  Motesanib
+            D07058  Acamprosate (INN)
+            D07072  Niperotidine (INN)
+            D07076  Camylofin (INN)
+            D07077  Ambrisentan (JAN/INN)
+            D07099  Cimetropium bromide (INN)
+            D07124  Alfuzosin (INN)
+            D07125  Alimemazine (INN)
+            D07140  Picotamide (BAN)
+            D07148  Oxedrine (BAN)
+            D07156  Alprenolol (INN)
+            D07171  Sitaxentan (USAN/INN)
+            D07181  Mepindolol (INN)
+            D07182  Tertatolol (INN)
+            D07183  Cloranolol (INN)
+            D07184  Talinolol (INN)
+            D07185  Fendiline (INN)
+            D07197  Bamipine (INN)
+            D07198  Chlorphenoxamine (INN)
+            D07218  Metergoline (INN)
+            D07226  Fesoterodine (INN)
+            D07227  Ornipressin (INN)
+            D07228  Demoxytocin (INN)
+            D07229  Carbetocin (INN/BAN)
+            D07283  Esketamine (INN)
+            D07349  Choline alfoscerate (INN)
+            D07377  Bambuterol (INN)
+            D07398  Chlorphenamine (INN)
+            D07402  Levocetirizine (USAN/INN)
+            D07406  Pimethixene (INN)
+            D07407  Rupatadine (INN)
+            D07441  Amantadine (INN)
+            D07450  Amlodipine (USAN/INN)
+            D07451  Amosulalol (INN)
+            D07458  Antazoline (INN)
+            D07459  Antazoline hydrochloride
+            D07460  Apomorphine (BAN)
+            D07463  Arformoterol (INN)
+            D07465  Arotinolol (INN)
+            D07475  Atosiban acetate
+            D07477  Atropine oxide (INN)
+            D07482  Azatadine (INN)
+            D07483  Azelastine (INN)
+            D07489  Bambuterol hydrochloride
+            D07492  Bamipine dihydrochloride
+            D07493  Bamipine lactate
+            D07494  Barnidipine (INN)
+            D07509  Benidipine (INN)
+            D07511  Benzatropine (INN)
+            D07513  Benzetimide (INN)
+            D07520  Bepridil (INN)
+            D07522  Betahistine (INN)
+            D07526  Betaxolol (INN)
+            D07534  Bitolterol (INN)
+            D07537  Bopindolol (INN)
+            D07538  Bosentan (INN)
+            D07543  Brompheniramine (INN)
+            D07550  Bunazosin (INN)
+            D07551  Buphenine (INN)
+            D07590  Bupranolol (INN)
+            D07603  Caffeine citrate (USP)
+            D07608  Carazolol (INN)
+            D07617  Carbinoxamine (INN)
+            D07624  Carteolol (INN)
+            D07660  Celiprolol (INN)
+            D07662  Cetirizine (INN)
+            D07667  Cevimeline (INN)
+            D07682  Clazosentan sodium (JAN)
+            D07684  Chlorphenoxamine hydrochloride
+            D07713  Clenbuterol (INN)
+            D07734  Cinnarizine dihydrochloride
+            D07741  Zibotentan (JAN/USAN/INN)
+            D07748  Conivaptan (INN)
+            D07759  Cyclopentolate (INN)
+            D07765  Cyproheptadine (INN)
+            D07803  Dexchlorpheniramine (INN)
+            D07804  Dexetimide hydrochloride
+            D07820  Dicycloverine (INN)
+            D07837  Dihydroergotamine (INN)
+            D07838  Dihydroergotamine tartrate
+            D07845  Diltiazem (INN)
+            D07853  Dimetindene (INN)
+            D07854  Dimetotiazine (INN)
+            D07860  Dioxopromethazine hydrochloride
+            D07862  Diphenylpyraline (INN)
+            D07870  Dopamine (INN)
+            D07874  Doxazosin (INN)
+            D07878  Doxylamine (INN)
+            D07886  Efonidipine (INN)
+            D07890  Emedastine (INN)
+            D07900  Epinastine (INN)
+            D07905  Ergometrine (INN)
+            D07906  Ergotamine (INN)
+            D07907  Erlotinib (INN)
+            D07916  Esmolol (INN)
+            D07931  Etilefrine (INN)
+            D07951  Fentonium bromide (INN)
+            D07958  Fexofenadine (INN)
+            D07971  Flunarizine (INN)
+            D07976  Flupentixol decanoate
+            D07978  Flupirtine (INN)
+            D07979  Flupirtine D-gluconate
+            D07990  Formoterol (INN)
+            D08009  Gallopamil (INN)
+            D08039  Hexoprenaline (INN)
+            D08040  Histamine (DCF)
+            D08041  Homochlorcyclizine (INN)
+            D08054  Hydroxyzine (INN)
+            D08057  Ibopamine hydrochloride
+            D08064  Ifenprodil (INN)
+            D08066  Imatinib (INN)
+            D08067  Azilsartan medoxomil (USAN)
+            D08074  Penbutolol (INN)
+            D08078  Indenolol (INN)
+            D08090  Isoprenaline (INN)
+            D08091  Isothipendyl (INN)
+            D08092  Isoxsuprine (INN)
+            D08093  Isoxsuprine lactate
+            D08098  Ketamine (INN)
+            D08099  Ketanserin tartrate
+            D08100  Ketobemidone (INN)
+            D08101  Ketobemidone hydrochloride
+            D08105  Ketotifen (INN)
+            D08106  Labetalol (INN)
+            D08108  Lapatinib (INN)
+            D08111  Lercanidipine (INN)
+            D08115  Levobunolol (INN)
+            D08117  Levocabastine (INN)
+            D08118  Levocetirizine hydrochloride (JAN/USAN)
+            D08121  Levomethadone (INN)
+            D08122  Levomethadone hydrochloride
+            D08124  Levosalbutamol (INN)
+            D08138  Lobeline sulfate
+            D08146  Losartan (INN)
+            D08155  Manidipine (INN)
+            D08157  Mazaticol (INN)
+            D08163  Meclozine (BAN)
+            D08174  Memantine (INN)
+            D08183  Mepyramine (INN)
+            D08184  Mepyramine theophyllineacetate
+            D08192  Metaraminol (INN)
+            D08195  Methadone (BAN)
+            D08201  Methoxamine (BAN)
+            D08206  Methylephedrine (BAN)
+            D08207  Methylergometrine (INN)
+            D08209  Metixene (INN)
+            D08212  Trimazosin (INN)
+            D08216  Mianserin (INN)
+            D08217  Mibefradil (INN)
+            D08220  Midodrine (INN)
+            D08229  Montelukast (INN)
+            D08235  Mosapramine (INN)
+            D08236  Mosapride (INN)
+            D08239  Moxisylyte (INN)
+            D08244  Naftidrofuryl (INN)
+            D08253  Naphazoline (INN)
+            D08257  Nefazodone (INN)
+            D08270  Nicardipine (INN)
+            D08271  Nicergoline tartrate
+            D08284  Norepinephrine hydrochoride
+            D08286  Norfenefrine (INN)
+            D08293  Olopatadine (INN)
+            D08297  Opipramol (INN)
+            D08300  Orciprenaline (INN)
+            D08305  Orphenadrine (INN)
+            D08308  Oxedrine tartrate
+            D08309  Oxedrine hydrochloride
+            D08318  Oxprenolol (INN)
+            D08322  Oxymetazoline (INN)
+            D08325  Oxyphencyclimine (INN)
+            D08339  Pergolide (INN)
+            D08353  Phenindamine (INN)
+            D08355  Pheniramine (INN)
+            D08358  Phenoxybenzamine (INN)
+            D08362  Phentolamine (INN)
+            D08365  Phenylephrine (INN)
+            D08366  Phenylephrine tartrate
+            D08376  Pilocarpine borate
+            D08382  Piperidolate (INN)
+            D08384  Pipethanate (INN)
+            D08387  Pirbuterol (INN)
+            D08389  Pirenzepine (INN)
+            D08395  Piroheptine (INN)
+            D08397  Pizotifen malate
+            D08408  Pranlukast (INN)
+            D08411  Prazosin (INN)
+            D08424  Procaterol (INN)
+            D08425  Procyclidine (INN)
+            D08426  Profenamine (INN)
+            D08432  Promethazine maleate
+            D08441  Propiverine (INN)
+            D08443  Propranolol (INN)
+            D08449  Pseudoephedrine (INN)
+            D08456  Quetiapine (INN)
+            D08474  Reproterol (INN)
+            D08494  Roxatidine (INN)
+            D08495  Roxatidine acetate (BAN)
+            D08497  Rupatadine fumarate (JAN)
+            D08503  Toceranib (USAN)
+            D08508  Sarpogrelate (INN)
+            D08511  Setiptiline (INN)
+            D08517  Sitaxentan sodium (USAN)
+            D08522  Solifenacin (INN)
+            D08524  Sorafenib (USAN/INN)
+            D08525  Sotalol (INN)
+            D08544  Toceranib phosphate (USAN)
+            D08552  Sunitinib (INN)
+            D08560  Tamsulosin (INN)
+            D08569  Terazosin (INN)
+            D08570  Terbutaline (INN)
+            D08571  Terlipressin acetate (JAN)
+            D08572  Tertatolol hydrochloride
+            D08578  Tetryzoline (INN)
+            D08587  Thonzylamine (INN)
+            D08591  Tiaprost (INN)
+            D08595  Tiemonium methylsulfate
+            D08596  Tiletamine (INN)
+            D08598  Tilisolol (INN)
+            D08600  Timolol (INN)
+            D08614  Tolazoline (INN)
+            D08624  Tramazoline (INN)
+            D08626  Trazodone (INN)
+            D08629  Tretoquinol (INN)
+            D08638  Trihexyphenidyl (INN)
+            D08639  Trimebutine (INN)
+            D08645  Tripelennamine (INN)
+            D08648  Triprolidine (INN)
+            D08661  Unoprostone (INN)
+            D08662  Urapidil hydrochloride
+            D08667  Calcium valproate
+            D08684  Xylometazoline (INN)
+            D08687  Ziprasidone (INN)
+            D08691  Zuclopenthixol acetate
+            D08692  Zuclopenthixol decanoate
+            D08693  Zuclopenthixol dihydrochloride
+            D08768  Promethazine hibenzate
+            D08837  Aclidinium bromide (JAN/USAN/INN)
+            D08850  Amibegron (USAN/INN)
+            D08851  Amibegron hydrochloride (USAN)
+            D08864  Azilsartan (JAN/USAN/INN)
+            D08865  Azilsartan kamedoxomil (USAN)
+            D08892  Clevidipine (USAN/INN)
+            D08923  Fesoterodine fumarate (JAN/USP)
+            D08937  Labradimil (INN/USAN)
+            D08945  Milveterol hydrochloride (USAN)
+            D08947  Motesanib phosphate (JAN)
+            D08950  Neratinib (INN/USAN)
+            D08953  Nilotinib (USAN/INN)
+            D08966  Phenylephrine bitartrate (USP)
+            D08969  Pimavanserin tartrate (USAN)
+            D08986  Retosiban (USAN)
+            D08988  Rolapitant hydrochloride (USAN)
+            D09003  Sonedenoson (USAN)
+            D09205  Prucalopride (USAN/INN)
+            D09318  Indacaterol (USAN/INN)
+            D09319  Indacaterol maleate (JAN/USAN)
+            D09344  Fasobegron (INN)
+            D09378  Serlopitant (USAN)
+            D09402  Darotropium bromide (USAN/INN)
+            D09535  Mirabegron (USAN/JAN)
+            D09570  Bilastine (JAN/INN)
+            D09645  Nelotanserin (USAN/INN)
+            D09650  Orvepitant (USAN/INN)
+            D09651  Orvepitant maleate (USAN)
+            D09689  Varlitinib (USAN/INN)
+            D09690  Varlitinib tosylate (USAN)
+            D09693  Velusetrag (USAN/INN)
+            D09694  Velusetrag hydrochloride (USAN)
+            D09696  Vilanterol (USAN)
+            D09697  Vilanterol trifenatate (JAN/USAN)
+            D09705  Bepotastine (USAN/INN)
+            D09717  Preladenant (USAN/INN)
+            D09724  Afatinib (USAN/INN)
+            D09732  Ritobegron ethyl hydrochloride (JAN)
+            D09733  Afatinib maleate (JAN)
+            D09752  Carpronium chloride hydrate (JAN)
+            D09765  Vorapaxar (USAN/INN)
+            D09766  Vorapaxar sulfate (JAN/USAN)
+            D09774  Imitrodast sodium (JAN)
+            D09784  Garomefrine hydrochloride (JAN)
+            D09789  Kirenidipine hydrochloride (JAN)
+            D09794  Norepinephrine hydrochloride (JAN)
+            D09797  Cargutocin (INN/JAN)
+            D09808  Carbinoxamine diphenyldisulfonate (JAN)
+            D09819  Chlorpromazine tannate (JAN)
+            D09820  Vasopressin tannate (JAN)
+            D09842  dl-Methylephedrine saccharinate (JAN)
+            D09845  Montirelin hydrate (JAN)
+            D09866  Atopaxar (USAN)
+            D09867  Atopaxar hydrobromide (USAN)
+            D09883  Dacomitinib (USAN/INN)
+            D09919  Lenvatinib (USAN/INN)
+            D09920  Lenvatinib mesilate (JAN)
+            D09933  Naronapride (USAN/INN)
+            D09934  Naronapride dihydrochloride (USAN)
+            D09939  Olaratumab (USAN/INN)
+            D09976  Temanogrel (USAN/INN)
+            D09977  Temanogrel hydrochloride (USAN)
+            D09980  Trastuzumab emtansine (genetical recombination) (JAN)
+            D09991  Vipadenant (USAN/INN)
+            D10006  Eplivanserin (USAN/INN)
+            D10018  Necitumumab (USAN/INN)
+            D10020  Olodaterol hydrochloride (JAN/USAN)
+            D10031  Zalutumumab (USAN/INN)
+            D10062  Cabozantinib (USAN)
+            D10099  Cerlapirdine (USAN)
+            D10100  Cerlapirdine hydrochloride (USAN)
+            D10102  Crenolanib (USAN)
+            D10103  Crenolanib besylate (USAN)
+            D10117  Epelsiban (USAN)
+            D10118  Epelsiban besylate (USAN)
+            D10135  Macitentan (JAN/USAN)
+            D10137  Regorafenib hydrate (JAN)
+            D10138  Regorafenib (USAN/INN)
+            D10145  Olodaterol (USAN/INN)
+            D10152  Prucalopride succinate (USAN)
+            D10174  Tozadenant (USAN)
+            D10180  Umeclidinium (USAN)
+            D10181  Umeclidinium bromide (JAN/USAN)
+            D10184  Vortioxetine (USAN)
+            D10185  Vortioxetine hydrobromide (JAN/USAN)
+            D10219  Abediterol (USAN/INN)
+            D10220  Abediterol napadisylate (USAN)
+            D10364  Aripiprazole lauroxil (USAN)
+            D10386  Cindunistat (USAN/INN)
+            D10391  Telmapitant (USAN)
+            D10419  Cindunistat hydrochloride maleate (USAN)
+            D10514  Dacomitinib hydrate (JAN)
+            D10516  Aripiprazole hydrate (JAN)
+            D10742  Rolapitant (USAN/INN)
+DBLINKS     BSID: 83050
+            GO: 0019722
+ORGANISM    Homo sapiens (human) [GN:hsa]
+GENE        6546  SLC8A1; solute carrier family 8 member A1 [KO:K05849]
+            6543  SLC8A2; solute carrier family 8 member A2 [KO:K05849]
+            6547  SLC8A3; solute carrier family 8 member A3 [KO:K05849]
+            490  ATP2B1; ATPase plasma membrane Ca2+ transporting 1 [KO:K05850] [EC:3.6.3.8]
+            492  ATP2B3; ATPase plasma membrane Ca2+ transporting 3 [KO:K05850] [EC:3.6.3.8]
+            493  ATP2B4; ATPase plasma membrane Ca2+ transporting 4 [KO:K05850] [EC:3.6.3.8]
+            491  ATP2B2; ATPase plasma membrane Ca2+ transporting 2 [KO:K05850] [EC:3.6.3.8]
+            1128  CHRM1; cholinergic receptor muscarinic 1 [KO:K04129]
+            1131  CHRM3; cholinergic receptor muscarinic 3 [KO:K04131]
+            1133  CHRM5; cholinergic receptor muscarinic 5 [KO:K04133]
+            135  ADORA2A; adenosine A2a receptor [KO:K04266]
+            136  ADORA2B; adenosine A2b receptor [KO:K04267]
+            153  ADRB1; adrenoceptor beta 1 [KO:K04141]
+            154  ADRB2; adrenoceptor beta 2 [KO:K04142]
+            155  ADRB3; adrenoceptor beta 3 [KO:K04143]
+            1812  DRD1; dopamine receptor D1 [KO:K04144]
+            1816  DRD5; dopamine receptor D5 [KO:K05840]
+            3274  HRH2; histamine receptor H2 [KO:K04150]
+            3360  HTR4; 5-hydroxytryptamine receptor 4 [KO:K04160]
+            3361  HTR5A; 5-hydroxytryptamine receptor 5A [KO:K04161]
+            3362  HTR6; 5-hydroxytryptamine receptor 6 [KO:K04162]
+            3363  HTR7; 5-hydroxytryptamine receptor 7 [KO:K04163]
+            2778  GNAS; GNAS complex locus [KO:K04632]
+            2774  GNAL; G protein subunit alpha L [KO:K04633]
+            107  ADCY1; adenylate cyclase 1 (brain) [KO:K08041] [EC:4.6.1.1]
+            108  ADCY2; adenylate cyclase 2 (brain) [KO:K08042] [EC:4.6.1.1]
+            109  ADCY3; adenylate cyclase 3 [KO:K08043] [EC:4.6.1.1]
+            196883  ADCY4; adenylate cyclase 4 [KO:K08044] [EC:4.6.1.1]
+            113  ADCY7; adenylate cyclase 7 [KO:K08047] [EC:4.6.1.1]
+            114  ADCY8; adenylate cyclase 8 (brain) [KO:K08048] [EC:4.6.1.1]
+            115  ADCY9; adenylate cyclase 9 [KO:K08049] [EC:4.6.1.1]
+            5566  PRKACA; protein kinase cAMP-activated catalytic subunit alpha [KO:K04345] [EC:2.7.11.11]
+            5567  PRKACB; protein kinase cAMP-activated catalytic subunit beta [KO:K04345] [EC:2.7.11.11]
+            5568  PRKACG; protein kinase cAMP-activated catalytic subunit gamma [KO:K04345] [EC:2.7.11.11]
+            5350  PLN; phospholamban [KO:K05852]
+            487  ATP2A1; ATPase sarcoplasmic/endoplasmic reticulum Ca2+ transporting 1 [KO:K05853] [EC:3.6.3.8]
+            489  ATP2A3; ATPase sarcoplasmic/endoplasmic reticulum Ca2+ transporting 3 [KO:K05853] [EC:3.6.3.8]
+            488  ATP2A2; ATPase sarcoplasmic/endoplasmic reticulum Ca2+ transporting 2 [KO:K05853] [EC:3.6.3.8]
+            6786  STIM1; stromal interaction molecule 1 [KO:K16059]
+            57620  STIM2; stromal interaction molecule 2 [KO:K18196]
+            84876  ORAI1; ORAI calcium release-activated calcium modulator 1 [KO:K16056]
+            80228  ORAI2; ORAI calcium release-activated calcium modulator 2 [KO:K16057]
+            93129  ORAI3; ORAI calcium release-activated calcium modulator 3 [KO:K16058]
+            775  CACNA1C; calcium voltage-gated channel subunit alpha1 C [KO:K04850]
+            776  CACNA1D; calcium voltage-gated channel subunit alpha1 D [KO:K04851]
+            778  CACNA1F; calcium voltage-gated channel subunit alpha1 F [KO:K04853]
+            779  CACNA1S; calcium voltage-gated channel subunit alpha1 S [KO:K04857]
+            773  CACNA1A; calcium voltage-gated channel subunit alpha1 A [KO:K04344]
+            774  CACNA1B; calcium voltage-gated channel subunit alpha1 B [KO:K04849]
+            777  CACNA1E; calcium voltage-gated channel subunit alpha1 E [KO:K04852]
+            8913  CACNA1G; calcium voltage-gated channel subunit alpha1 G [KO:K04854]
+            8912  CACNA1H; calcium voltage-gated channel subunit alpha1 H [KO:K04855]
+            8911  CACNA1I; calcium voltage-gated channel subunit alpha1 I [KO:K04856]
+            1139  CHRNA7; cholinergic receptor nicotinic alpha 7 subunit [KO:K04809]
+            5023  P2RX1; purinergic receptor P2X 1 [KO:K05215]
+            22953  P2RX2; purinergic receptor P2X 2 [KO:K05216]
+            5024  P2RX3; purinergic receptor P2X 3 [KO:K05217]
+            5025  P2RX4; purinergic receptor P2X 4 [KO:K05218]
+            5026  P2RX5; purinergic receptor P2X 5 [KO:K05219]
+            5027  P2RX7; purinergic receptor P2X 7 [KO:K05220]
+            9127  P2RX6; purinergic receptor P2X 6 [KO:K05221]
+            2902  GRIN1; glutamate ionotropic receptor NMDA type subunit 1 [KO:K05208]
+            2903  GRIN2A; glutamate ionotropic receptor NMDA type subunit 2A [KO:K05209]
+            2905  GRIN2C; glutamate ionotropic receptor NMDA type subunit 2C [KO:K05211]
+            2906  GRIN2D; glutamate ionotropic receptor NMDA type subunit 2D [KO:K05212]
+            6261  RYR1; ryanodine receptor 1 [KO:K04961]
+            6262  RYR2; ryanodine receptor 2 [KO:K04962]
+            6263  RYR3; ryanodine receptor 3 [KO:K04963]
+            10800  CYSLTR1; cysteinyl leukotriene receptor 1 [KO:K04322]
+            57105  CYSLTR2; cysteinyl leukotriene receptor 2 [KO:K04323]
+            1129  CHRM2; cholinergic receptor muscarinic 2 [KO:K04130]
+            148  ADRA1A; adrenoceptor alpha 1A [KO:K04135]
+            147  ADRA1B; adrenoceptor alpha 1B [KO:K04136]
+            146  ADRA1D; adrenoceptor alpha 1D [KO:K04137]
+            185  AGTR1; angiotensin II receptor type 1 [KO:K04166]
+            1909  EDNRA; endothelin receptor type A [KO:K04197]
+            1910  EDNRB; endothelin receptor type B [KO:K04198]
+            2149  F2R; coagulation factor II thrombin receptor [KO:K03914]
+            2911  GRM1; glutamate receptor, metabotropic 1 [KO:K04603]
+            2915  GRM5; glutamate receptor, metabotropic 5 [KO:K04604]
+            2925  GRPR; gastrin releasing peptide receptor [KO:K04169]
+            3269  HRH1; histamine receptor H1 [KO:K04149]
+            3356  HTR2A; 5-hydroxytryptamine receptor 2A [KO:K04157]
+            3357  HTR2B; 5-hydroxytryptamine receptor 2B [KO:K04157]
+            3358  HTR2C; 5-hydroxytryptamine receptor 2C [KO:K04157]
+            3973  LHCGR; luteinizing hormone/choriogonadotropin receptor [KO:K04248]
+            4923  NTSR1; neurotensin receptor 1 (high affinity) [KO:K04211]
+            5021  OXTR; oxytocin receptor [KO:K04229]
+            552  AVPR1A; arginine vasopressin receptor 1A [KO:K04226]
+            553  AVPR1B; arginine vasopressin receptor 1B [KO:K04227]
+            56413  LTB4R2; leukotriene B4 receptor 2 [KO:K04297]
+            5724  PTAFR; platelet activating factor receptor [KO:K04279]
+            5731  PTGER1; prostaglandin E receptor 1 [KO:K04258]
+            5733  PTGER3; prostaglandin E receptor 3 [KO:K04260]
+            5737  PTGFR; prostaglandin F receptor [KO:K04262]
+            623  BDKRB1; bradykinin receptor B1 [KO:K03915]
+            624  BDKRB2; bradykinin receptor B2 [KO:K03916]
+            6869  TACR1; tachykinin receptor 1 [KO:K04222]
+            6865  TACR2; tachykinin receptor 2 [KO:K04223]
+            6870  TACR3; tachykinin receptor 3 [KO:K04224]
+            6915  TBXA2R; thromboxane A2 receptor [KO:K04264]
+            7201  TRHR; thyrotropin releasing hormone receptor [KO:K04282]
+            886  CCKAR; cholecystokinin A receptor [KO:K04194]
+            887  CCKBR; cholecystokinin B receptor [KO:K04195]
+            1956  EGFR; epidermal growth factor receptor [KO:K04361] [EC:2.7.10.1]
+            2064  ERBB2; erb-b2 receptor tyrosine kinase 2 [KO:K05083] [EC:2.7.10.1]
+            2065  ERBB3; erb-b2 receptor tyrosine kinase 3 [KO:K05084] [EC:2.7.10.1]
+            2066  ERBB4; erb-b2 receptor tyrosine kinase 4 [KO:K05085] [EC:2.7.10.1]
+            5156  PDGFRA; platelet derived growth factor receptor alpha [KO:K04363] [EC:2.7.10.1]
+            5159  PDGFRB; platelet derived growth factor receptor beta [KO:K05089] [EC:2.7.10.1]
+            2776  GNAQ; G protein subunit alpha q [KO:K04634]
+            2767  GNA11; G protein subunit alpha 11 [KO:K04635]
+            9630  GNA14; G protein subunit alpha 14 [KO:K04636]
+            2769  GNA15; G protein subunit alpha 15 [KO:K04637]
+            102723407  putative V-set and immunoglobulin domain-containing-like protein IGHV4OR15-8; K06856 immunoglobulin heavy chain [KO:K06856]
+            5333  PLCD1; phospholipase C delta 1 [KO:K05857] [EC:3.1.4.11]
+            113026  PLCD3; phospholipase C delta 3 [KO:K05857] [EC:3.1.4.11]
+            84812  PLCD4; phospholipase C delta 4 [KO:K05857] [EC:3.1.4.11]
+            23236  PLCB1; phospholipase C beta 1 [KO:K05858] [EC:3.1.4.11]
+            5330  PLCB2; phospholipase C beta 2 [KO:K05858] [EC:3.1.4.11]
+            5331  PLCB3; phospholipase C beta 3 [KO:K05858] [EC:3.1.4.11]
+            5332  PLCB4; phospholipase C beta 4 [KO:K05858] [EC:3.1.4.11]
+            5335  PLCG1; phospholipase C gamma 1 [KO:K01116] [EC:3.1.4.11]
+            5336  PLCG2; phospholipase C gamma 2 [KO:K05859] [EC:3.1.4.11]
+            51196  PLCE1; phospholipase C epsilon 1 [KO:K05860] [EC:3.1.4.11]
+            89869  PLCZ1; phospholipase C zeta 1 [KO:K05861] [EC:3.1.4.11]
+            3708  ITPR1; inositol 1,4,5-trisphosphate receptor type 1 [KO:K04958]
+            3709  ITPR2; inositol 1,4,5-trisphosphate receptor type 2 [KO:K04959]
+            3710  ITPR3; inositol 1,4,5-trisphosphate receptor type 3 [KO:K04960]
+            952  CD38; CD38 molecule [KO:K01242] [EC:2.4.99.20 3.2.2.6]
+            8877  SPHK1; sphingosine kinase 1 [KO:K04718] [EC:2.7.1.91]
+            56848  SPHK2; sphingosine kinase 2 [KO:K04718] [EC:2.7.1.91]
+            7416  VDAC1; voltage dependent anion channel 1 [KO:K05862]
+            7417  VDAC2; voltage dependent anion channel 2 [KO:K15040]
+            7419  VDAC3; voltage dependent anion channel 3 [KO:K15041]
+            291  SLC25A4; solute carrier family 25 member 4 [KO:K05863]
+            292  SLC25A5; solute carrier family 25 member 5 [KO:K05863]
+            293  SLC25A6; solute carrier family 25 member 6 [KO:K05863]
+            83447  SLC25A31; solute carrier family 25 member 31 [KO:K05863]
+            10105  PPIF; peptidylprolyl isomerase F [KO:K09565] [EC:5.2.1.8]
+            7134  TNNC1; troponin C1, slow skeletal and cardiac type [KO:K05865]
+            7125  TNNC2; troponin C2, fast skeletal type [KO:K12042]
+            810  CALML3; calmodulin like 3 [KO:K02183]
+            805  CALM2; calmodulin 2 (phosphorylase kinase, delta) [KO:K02183]
+            808  CALM3; calmodulin 3 (phosphorylase kinase, delta) [KO:K02183]
+            801  CALM1; calmodulin 1 (phosphorylase kinase, delta) [KO:K02183]
+            163688  CALML6; calmodulin like 6 [KO:K02183]
+            51806  CALML5; calmodulin like 5 [KO:K02183]
+            5260  PHKG1; phosphorylase kinase gamma subunit 1 [KO:K00871] [EC:2.7.11.19]
+            5261  PHKG2; phosphorylase kinase gamma subunit 2 [KO:K00871] [EC:2.7.11.19]
+            5257  PHKB; phosphorylase kinase, beta [KO:K07190]
+            5256  PHKA2; phosphorylase kinase, alpha 2 (liver) [KO:K07190]
+            5255  PHKA1; phosphorylase kinase, alpha 1 (muscle) [KO:K07190]
+            4638  MYLK; myosin light chain kinase [KO:K00907] [EC:2.7.11.18]
+            85366  MYLK2; myosin light chain kinase 2 [KO:K00907] [EC:2.7.11.18]
+            91807  MYLK3; myosin light chain kinase 3 [KO:K00907] [EC:2.7.11.18]
+            340156  MYLK4; myosin light chain kinase family member 4 [KO:K00907] [EC:2.7.11.18]
+            815  CAMK2A; calcium/calmodulin-dependent protein kinase II alpha [KO:K04515] [EC:2.7.11.17]
+            817  CAMK2D; calcium/calmodulin-dependent protein kinase II delta [KO:K04515] [EC:2.7.11.17]
+            816  CAMK2B; calcium/calmodulin-dependent protein kinase II beta [KO:K04515] [EC:2.7.11.17]
+            818  CAMK2G; calcium/calmodulin-dependent protein kinase II gamma [KO:K04515] [EC:2.7.11.17]
+            814  CAMK4; calcium/calmodulin-dependent protein kinase IV [KO:K05869] [EC:2.7.11.17]
+            5530  PPP3CA; protein phosphatase 3 catalytic subunit alpha [KO:K04348] [EC:3.1.3.16]
+            5532  PPP3CB; protein phosphatase 3 catalytic subunit beta [KO:K04348] [EC:3.1.3.16]
+            5533  PPP3CC; protein phosphatase 3 catalytic subunit gamma [KO:K04348] [EC:3.1.3.16]
+            5534  PPP3R1; protein phosphatase 3 regulatory subunit B, alpha [KO:K06268]
+            5535  PPP3R2; protein phosphatase 3 regulatory subunit B, beta [KO:K06268]
+            4842  NOS1; nitric oxide synthase 1 [KO:K13240] [EC:1.14.13.39]
+            4843  NOS2; nitric oxide synthase 2 [KO:K13241] [EC:1.14.13.39]
+            4846  NOS3; nitric oxide synthase 3 [KO:K13242] [EC:1.14.13.39]
+            5136  PDE1A; phosphodiesterase 1A [KO:K13755] [EC:3.1.4.17]
+            5153  PDE1B; phosphodiesterase 1B [KO:K13755] [EC:3.1.4.17]
+            5137  PDE1C; phosphodiesterase 1C [KO:K13755] [EC:3.1.4.17]
+            2185  PTK2B; protein tyrosine kinase 2 beta [KO:K05871] [EC:2.7.10.2]
+            3707  ITPKB; inositol-trisphosphate 3-kinase B [KO:K00911] [EC:2.7.1.127]
+            3706  ITPKA; inositol-trisphosphate 3-kinase A [KO:K00911] [EC:2.7.1.127]
+            80271  ITPKC; inositol-trisphosphate 3-kinase C [KO:K00911] [EC:2.7.1.127]
+            5578  PRKCA; protein kinase C alpha [KO:K02677] [EC:2.7.11.13]
+            5579  PRKCB; protein kinase C beta [KO:K19662] [EC:2.7.11.13]
+            5582  PRKCG; protein kinase C gamma [KO:K19663] [EC:2.7.11.13]
+COMPOUND    C00002  ATP
+            C00004  NADH
+            C00076  Calcium cation
+            C00165  Diacylglycerol
+            C00575  3',5'-Cyclic AMP
+            C01245  D-myo-Inositol 1,4,5-trisphosphate
+            C01330  Sodium cation
+            C06124  Sphingosine 1-phosphate
+            C13050  Cyclic ADP-ribose
+            C13051  Nicotinic acid adenine dinucleotide phosphate
+REFERENCE   PMID:12838335
+  AUTHORS   Berridge MJ, Bootman MD, Roderick HL.
+  TITLE     Calcium signalling: dynamics, homeostasis and remodelling.
+  JOURNAL   Nat Rev Mol Cell Biol 4:517-29 (2003)
+REFERENCE   PMID:11413485
+  AUTHORS   Berridge MJ, Lipp P, Bootman MD.
+  TITLE     The versatility and universality of calcium signalling.
+  JOURNAL   Nat Rev Mol Cell Biol 1:11-21 (2000)
+REFERENCE   PMID:15111104
+  AUTHORS   Wang MC, Dolphin A, Kitmitto A.
+  TITLE     L-type voltage-gated calcium channels: understanding function through structure.
+  JOURNAL   FEBS Lett 564:245-50 (2004)
+REFERENCE   PMID:11299192
+  AUTHORS   Ferrier GR, Howlett SE.
+  TITLE     Cardiac excitation-contraction coupling: role of membrane potential in regulation of contraction.
+  JOURNAL   Am J Physiol Heart Circ Physiol 280:H1928-44 (2001)
+REFERENCE   PMID:11698232
+  AUTHORS   Keef KD, Hume JR, Zhong J.
+  TITLE     Regulation of cardiac and smooth muscle Ca(2+) channels (Ca(V)1.2a,b) by protein kinases.
+  JOURNAL   Am J Physiol Cell Physiol 281:C1743-56 (2001)
+REFERENCE   PMID:8125957
+  AUTHORS   Hell JW, Appleyard SM, Yokoyama CT, Warner C, Catterall WA.
+  TITLE     Differential phosphorylation of two size forms of the N-type calcium channel alpha 1 subunit which have different COOH termini.
+  JOURNAL   J Biol Chem 269:7390-6 (1994)
+REFERENCE   PMID:15000521
+  AUTHORS   Yunker AM.
+  TITLE     Modulation and pharmacology of low voltage-activated (&quot;T-Type&quot;) calcium channels.
+  JOURNAL   J Bioenerg Biomembr 35:577-98 (2003)
+REFERENCE   PMID:9149541
+  AUTHORS   Yakel JL.
+  TITLE     Calcineurin regulation of synaptic function: from ion channels to transmitter release and gene transcription.
+  JOURNAL   Trends Pharmacol Sci 18:124-34 (1997)
+REFERENCE   PMID:10997573
+  AUTHORS   Fukunaga K, Miyamoto E.
+  TITLE     A working model of CaM kinase II activity in hippocampal long-term potentiation and memory.
+  JOURNAL   Neurosci Res 38:3-17 (2000)
+REFERENCE   PMID:9235901
+  AUTHORS   Della Rocca GJ, van Biesen T, Daaka Y, Luttrell DK, Luttrell LM, Lefkowitz RJ.
+  TITLE     Ras-dependent mitogen-activated protein kinase activation by G protein-coupled receptors. Convergence of Gi- and Gq-mediated pathways on calcium/calmodulin, Pyk2, and Src kinase.
+  JOURNAL   J Biol Chem 272:19125-32 (1997)
+REFERENCE   PMID:7861177
+  AUTHORS   Furuichi T, Mikoshiba K.
+  TITLE     Inositol 1, 4, 5-trisphosphate receptor-mediated Ca2+ signaling in the brain.
+  JOURNAL   J Neurochem 64:953-60 (1995)
+REFERENCE   PMID:14572802
+  AUTHORS   Bruce JI, Straub SV, Yule DI.
+  TITLE     Crosstalk between cAMP and Ca2+ signaling in non-excitable cells.
+  JOURNAL   Cell Calcium 34:431-44 (2003)
+REFERENCE   PMID:10331643
+  AUTHORS   Lee HC, Munshi C, Graeff R.
+  TITLE     Structures and activities of cyclic ADP-ribose, NAADP and their metabolic enzymes.
+  JOURNAL   Mol Cell Biochem 193:89-98 (1999)
+REFERENCE   PMID:11080247
+  AUTHORS   Crompton M.
+  TITLE     Mitochondrial intermembrane junctional complexes and their role in cell death.
+  JOURNAL   J Physiol 529 Pt 1:11-21 (2000)
+REFERENCE   PMID:10508738
+  AUTHORS   Grewal SS, York RD, Stork PJ.
+  TITLE     Extracellular-signal-regulated kinase signalling in neurons.
+  JOURNAL   Curr Opin Neurobiol 9:544-53 (1999)
+REFERENCE   PMID:12972622
+  AUTHORS   Trushin SA, Pennington KN, Carmona EM, Asin S, Savoy DN, Billadeau DD, Paya CV.
+  TITLE     Protein kinase Calpha (PKCalpha) acts upstream of PKCtheta to activate IkappaB kinase and NF-kappaB in T lymphocytes.
+  JOURNAL   Mol Cell Biol 23:7068-81 (2003)
+REFERENCE   PMID:14517314
+  AUTHORS   Hutchins JR, Dikovskaya D, Clarke PR.
+  TITLE     Regulation of Cdc2/cyclin B activation in Xenopus egg extracts via inhibitory phosphorylation of Cdc25C phosphatase by Ca(2+)/calmodulin-dependent protein [corrected] kinase II.
+  JOURNAL   Mol Biol Cell 14:4003-14 (2003)
+REFERENCE   PMID:21338471
+  AUTHORS   Tornquist K
+  TITLE     Sphingosine 1-phosphate, sphingosine kinase and autocrine calcium signalling in thyroid cells.
+  JOURNAL   Acta Physiol (Oxf) 204:151-7 (2012)
+REFERENCE   PMID:22129055
+  AUTHORS   Feske S
+  TITLE     Immunodeficiency due to defects in store-operated calcium entry.
+  JOURNAL   Ann N Y Acad Sci 1238:74-90 (2011)
+REFERENCE   PMID:22002090
+  AUTHORS   Giachini FR, Lima VV, Hannan JL, Carneiro FS, Webb RC, Tostes RC
+  TITLE     STIM1/Orai1-mediated store-operated Ca2+ entry: the tip of the iceberg.
+  JOURNAL   Braz J Med Biol Res 44:1080-7 (2011)
+REFERENCE   PMID:19172794
+  AUTHORS   Baba Y, Kurosaki T
+  TITLE     [Regulation of store-operated calcium entry by STIM1].
+  JOURNAL   Seikagaku 80:1123-8 (2008)
+KO_PATHWAY  ko04020
+///

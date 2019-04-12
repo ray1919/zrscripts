@@ -26,7 +26,7 @@
 snpeff_dir=/home/zhaorui/ct208/tool/SnpEff/snpEff
 script_dir=./
 gene_filtration_script=${script_dir}/GATK_filter_gene.sh
-r_report_script=${script_dir}/internal.GATK_vcf_report.R
+r_report_script=./internal.GATK_vcf_report.R
 
 ##-------------
 ##Step0-2: Other Parametres
@@ -281,7 +281,9 @@ vcftools --vcf ${in_file} --counts --out ${prefix}.alleles
 ##-------------
 ##Step4: Creating Gene-Phenotype File
 ##-------------
-(for gene_file in ${gene_file_list[*]} ; do awk '{print $1"\t"FILENAME}' ${gene_file} ; done ) | sed 's/\t\(.*\)\..*/\t\1/g' | sed 's/\t.*\/\(.*\)/\t\1/g' > ${prefix}_gene_pheno.txt
+if [[ ${filtration} == 'YES' ]] ; then
+    (for gene_file in ${gene_file_list[*]} ; do awk '{print $1"\t"FILENAME}' ${gene_file} ; done ) | sed 's/\t\(.*\)\..*/\t\1/g' | sed 's/\t.*\/\(.*\)/\t\1/g' > ${prefix}_gene_pheno.txt
+fi
 
 
 

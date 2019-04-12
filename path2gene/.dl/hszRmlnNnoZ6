@@ -1,0 +1,1246 @@
+ENTRY       hsa00190                    Pathway
+NAME        Oxidative phosphorylation - Homo sapiens (human)
+CLASS       Metabolism; Energy metabolism
+PATHWAY_MAP hsa00190  Oxidative phosphorylation
+MODULE      hsa_M00142  NADH:ubiquinone oxidoreductase, mitochondria [PATH:hsa00190]
+            hsa_M00143  NADH dehydrogenase (ubiquinone) Fe-S protein/flavoprotein complex, mitochondria [PATH:hsa00190]
+            hsa_M00146  NADH dehydrogenase (ubiquinone) 1 alpha subcomplex [PATH:hsa00190]
+            hsa_M00147  NADH dehydrogenase (ubiquinone) 1 beta subcomplex [PATH:hsa00190]
+            hsa_M00148  Succinate dehydrogenase (ubiquinone) [PATH:hsa00190]
+            hsa_M00151  Cytochrome bc1 complex respiratory unit [PATH:hsa00190]
+            hsa_M00152  Cytochrome bc1 complex [PATH:hsa00190]
+            hsa_M00154  Cytochrome c oxidase [PATH:hsa00190]
+            hsa_M00158  F-type ATPase, eukaryotes [PATH:hsa00190]
+            hsa_M00160  V-type ATPase, eukaryotes [PATH:hsa00190]
+DISEASE     H00068  Leber optic atrophy
+            H00473  Mitochondrial respiratory chain deficiencies (MRCD)
+            H00920  Exocrine pancreatic insufficiency, dyserythropoietic anemia, and calvarial hyperostosis
+            H01177  Infantile bilateral striatal necrosis (IBSN)
+            H01200  Fatal infantile cardioencephalomyopathy
+            H01222  Cowden-like syndrome
+            H01347  MELAS Syndrome
+            H01354  Leigh syndrome
+            H01355  Kearns-Sayre Syndrome
+            H01356  Myoclonic Epilepsy and Ragged-Red Fiber Disease
+            H01363  NARP syndrome
+            H01365  Leber hereditary optic neuropathy and dystonia (LDYT)
+            H01368  Cytochrome c oxidase (COX) deficiency
+            H01369  ATP synthase deficiency
+DRUG        D00355  Lansoprazole (JP17/USP/INN)
+            D00455  Omeprazole (JP17/USP/INN)
+            D00724  Sodium rabeprazole (JP17)
+            D01207  Omeprazole sodium (USAN)
+            D01920  Tenatoprazole (JAN/INN)
+            D01984  Esomeprazole magnesium hydrate (JAN)
+            D02593  Pantoprazole Sodium Hydrate (JAN)
+            D04056  Esomeprazole sodium (USAN)
+            D05259  Omeprazole magnesium (USAN)
+            D05261  Omeprazole sodium injection (JAN)
+            D05353  Pantoprazole (USAN/INN)
+            D05900  Timoprazole (INN)
+            D05901  Picoprazole (INN)
+            D05906  Leminoprazole (INN)
+            D07917  Esomeprazole (INN)
+            D08463  Rabeprazole (INN)
+            D08903  Dexlansoprazole (INN/USAN)
+            D09339  Esomeprazole potassium (USAN)
+ORGANISM    Homo sapiens (human) [GN:hsa]
+GENE        4535  ND1; NADH dehydrogenase, subunit 1 (complex I) [KO:K03878] [EC:1.6.5.3]
+            4536  ND2; MTND2 [KO:K03879] [EC:1.6.5.3]
+            4537  ND3; NADH dehydrogenase, subunit 3 (complex I) [KO:K03880] [EC:1.6.5.3]
+            4538  ND4; NADH dehydrogenase, subunit 4 (complex I) [KO:K03881] [EC:1.6.5.3]
+            4539  ND4L; NADH dehydrogenase, subunit 4L (complex I) [KO:K03882] [EC:1.6.5.3]
+            4540  ND5; NADH dehydrogenase, subunit 5 (complex I) [KO:K03883] [EC:1.6.5.3]
+            4541  ND6; NADH dehydrogenase, subunit 6 (complex I) [KO:K03884] [EC:1.6.5.3]
+            4719  NDUFS1; NADH:ubiquinone oxidoreductase core subunit S1 [KO:K03934] [EC:1.6.99.3 1.6.5.3]
+            4720  NDUFS2; NADH:ubiquinone oxidoreductase core subunit S2 [KO:K03935] [EC:1.6.99.3 1.6.5.3]
+            4722  NDUFS3; NADH:ubiquinone oxidoreductase core subunit S3 [KO:K03936] [EC:1.6.99.3 1.6.5.3]
+            4724  NDUFS4; NADH:ubiquinone oxidoreductase subunit S4 [KO:K03937]
+            4725  NDUFS5; NADH:ubiquinone oxidoreductase subunit S5 [KO:K03938]
+            4726  NDUFS6; NADH:ubiquinone oxidoreductase subunit S6 [KO:K03939]
+            374291  NDUFS7; NADH:ubiquinone oxidoreductase core subunit S7 [KO:K03940] [EC:1.6.99.3 1.6.5.3]
+            4728  NDUFS8; NADH:ubiquinone oxidoreductase core subunit S8 [KO:K03941] [EC:1.6.99.3 1.6.5.3]
+            4723  NDUFV1; NADH:ubiquinone oxidoreductase core subunit V1 [KO:K03942] [EC:1.6.99.3 1.6.5.3]
+            4729  NDUFV2; NADH:ubiquinone oxidoreductase core subunit V2 [KO:K03943] [EC:1.6.99.3 1.6.5.3]
+            4731  NDUFV3; NADH:ubiquinone oxidoreductase subunit V3 [KO:K03944]
+            4694  NDUFA1; NADH:ubiquinone oxidoreductase subunit A1 [KO:K03945]
+            4695  NDUFA2; NADH:ubiquinone oxidoreductase subunit A2 [KO:K03946]
+            4696  NDUFA3; NADH:ubiquinone oxidoreductase subunit A3 [KO:K03947]
+            4697  NDUFA4; NDUFA4, mitochondrial complex associated [KO:K03948]
+            56901  NDUFA4L2; NADH dehydrogenase (ubiquinone) 1 alpha subcomplex, 4-like 2 [KO:K03948]
+            4698  NDUFA5; NADH:ubiquinone oxidoreductase subunit A5 [KO:K03949]
+            4700  NDUFA6; NADH:ubiquinone oxidoreductase subunit A6 [KO:K03950]
+            4701  NDUFA7; NADH:ubiquinone oxidoreductase subunit A7 [KO:K03951]
+            4702  NDUFA8; NADH:ubiquinone oxidoreductase subunit A8 [KO:K03952]
+            4704  NDUFA9; NADH:ubiquinone oxidoreductase subunit A9 [KO:K03953]
+            4705  NDUFA10; NADH:ubiquinone oxidoreductase subunit A10 [KO:K03954]
+            4706  NDUFAB1; NADH:ubiquinone oxidoreductase subunit AB1 [KO:K03955]
+            126328  NDUFA11; NADH:ubiquinone oxidoreductase subunit A11 [KO:K03956]
+            55967  NDUFA12; NADH:ubiquinone oxidoreductase subunit A12 [KO:K11352]
+            51079  NDUFA13; NADH:ubiquinone oxidoreductase subunit A13 [KO:K11353]
+            4707  NDUFB1; NADH:ubiquinone oxidoreductase subunit B1 [KO:K03957]
+            4708  NDUFB2; NADH:ubiquinone oxidoreductase subunit B2 [KO:K03958]
+            4709  NDUFB3; NADH:ubiquinone oxidoreductase subunit B3 [KO:K03959]
+            4710  NDUFB4; NADH:ubiquinone oxidoreductase subunit B4 [KO:K03960]
+            4711  NDUFB5; NADH:ubiquinone oxidoreductase subunit B5 [KO:K03961]
+            4712  NDUFB6; NADH:ubiquinone oxidoreductase subunit B6 [KO:K03962]
+            4713  NDUFB7; NADH:ubiquinone oxidoreductase subunit B7 [KO:K03963]
+            4714  NDUFB8; NADH:ubiquinone oxidoreductase subunit B8 [KO:K03964]
+            4715  NDUFB9; NADH:ubiquinone oxidoreductase subunit B9 [KO:K03965]
+            4716  NDUFB10; NADH:ubiquinone oxidoreductase subunit B10 [KO:K03966]
+            54539  NDUFB11; NADH:ubiquinone oxidoreductase subunit B11 [KO:K11351]
+            4717  NDUFC1; NADH:ubiquinone oxidoreductase subunit C1 [KO:K03967]
+            4718  NDUFC2; NADH:ubiquinone oxidoreductase subunit C2 [KO:K03968]
+            100532726  NDUFC2-KCTD14; NDUFC2-KCTD14 readthrough [KO:K03968]
+            6389  SDHA; succinate dehydrogenase complex flavoprotein subunit A [KO:K00234] [EC:1.3.5.1]
+            6390  SDHB; succinate dehydrogenase complex iron sulfur subunit B [KO:K00235] [EC:1.3.5.1]
+            6391  SDHC; succinate dehydrogenase complex subunit C [KO:K00236]
+            6392  SDHD; succinate dehydrogenase complex subunit D [KO:K00237]
+            7386  UQCRFS1; ubiquinol-cytochrome c reductase, Rieske iron-sulfur polypeptide 1 [KO:K00411] [EC:1.10.2.2]
+            4519  CYTB; cytochrome b [KO:K00412]
+            1537  CYC1; cytochrome c1 [KO:K00413]
+            7384  UQCRC1; ubiquinol-cytochrome c reductase core protein I [KO:K00414]
+            7385  UQCRC2; ubiquinol-cytochrome c reductase core protein II [KO:K00415]
+            7388  UQCRH; ubiquinol-cytochrome c reductase hinge protein [KO:K00416]
+            440567  UQCRHL; ubiquinol-cytochrome c reductase hinge protein like [KO:K00416]
+            7381  UQCRB; ubiquinol-cytochrome c reductase binding protein [KO:K00417]
+            27089  UQCRQ; ubiquinol-cytochrome c reductase complex III subunit VII [KO:K00418]
+            29796  UQCR10; ubiquinol-cytochrome c reductase, complex III subunit X [KO:K00419]
+            10975  UQCR11; ubiquinol-cytochrome c reductase, complex III subunit XI [KO:K00420]
+            1352  COX10; COX10 heme A:farnesyltransferase cytochrome c oxidase assembly factor [KO:K02257] [EC:2.5.1.-]
+            4514  COX3; cytochrome c oxidase III [KO:K02262]
+            4512  COX1; cytochrome c oxidase subunit I [KO:K02256] [EC:1.9.3.1]
+            4513  COX2; cytochrome c oxidase subunit II [KO:K02261]
+            84701  COX4I2; cytochrome c oxidase subunit 4I2 [KO:K02263]
+            1327  COX4I1; cytochrome c oxidase subunit 4I1 [KO:K02263]
+            9377  COX5A; cytochrome c oxidase subunit 5A [KO:K02264]
+            1329  COX5B; cytochrome c oxidase subunit 5B [KO:K02265]
+            1337  COX6A1; cytochrome c oxidase subunit 6A1 [KO:K02266]
+            1339  COX6A2; cytochrome c oxidase subunit 6A2 [KO:K02266]
+            1340  COX6B1; cytochrome c oxidase subunit 6B1 [KO:K02267]
+            125965  COX6B2; cytochrome c oxidase subunit 6B2 [KO:K02267]
+            1345  COX6C; cytochrome c oxidase subunit 6C [KO:K02268]
+            1346  COX7A1; cytochrome c oxidase subunit 7A1 [KO:K02270]
+            1347  COX7A2; cytochrome c oxidase subunit 7A2 [KO:K02270]
+            9167  COX7A2L; cytochrome c oxidase subunit 7A2 like [KO:K02270]
+            1349  COX7B; cytochrome c oxidase subunit 7B [KO:K02271]
+            170712  COX7B2; cytochrome c oxidase subunit 7B2 [KO:K02271]
+            1350  COX7C; cytochrome c oxidase subunit 7C [KO:K02272]
+            341947  COX8C; cytochrome c oxidase subunit 8C [KO:K02273]
+            1351  COX8A; cytochrome c oxidase subunit 8A [KO:K02273]
+            1353  COX11; COX11 cytochrome c oxidase copper chaperone [KO:K02258]
+            1355  COX15; COX15 cytochrome c oxidase assembly homolog [KO:K02259]
+            10063  COX17; COX17 cytochrome c oxidase copper chaperone [KO:K02260]
+            498  ATP5A1; ATP synthase, H+ transporting, mitochondrial F1 complex, alpha subunit 1, cardiac muscle [KO:K02132]
+            506  ATP5B; ATP synthase, H+ transporting, mitochondrial F1 complex, beta polypeptide [KO:K02133] [EC:3.6.3.14]
+            509  ATP5C1; ATP synthase, H+ transporting, mitochondrial F1 complex, gamma polypeptide 1 [KO:K02136]
+            513  ATP5D; ATP synthase, H+ transporting, mitochondrial F1 complex, delta subunit [KO:K02134]
+            514  ATP5E; ATP synthase, H+ transporting, mitochondrial F1 complex, epsilon subunit [KO:K02135]
+            539  ATP5O; ATP synthase, H+ transporting, mitochondrial F1 complex, O subunit [KO:K02137]
+            4508  ATP6; ATP synthase F0 subunit 6 [KO:K02126]
+            515  ATP5F1; ATP synthase, H+ transporting, mitochondrial Fo complex subunit B1 [KO:K02127]
+            516  ATP5G1; ATP synthase, H+ transporting, mitochondrial Fo complex subunit C1 (subunit 9) [KO:K02128]
+            517  ATP5G2; ATP synthase, H+ transporting, mitochondrial Fo complex subunit C2 (subunit 9) [KO:K02128]
+            518  ATP5G3; ATP synthase, H+ transporting, mitochondrial Fo complex subunit C3 (subunit 9) [KO:K02128]
+            10476  ATP5H; ATP synthase, H+ transporting, mitochondrial Fo complex subunit D [KO:K02138]
+            521  ATP5I; ATP synthase, H+ transporting, mitochondrial Fo complex subunit E [KO:K02129]
+            9551  ATP5J2; ATP synthase, H+ transporting, mitochondrial Fo complex subunit F2 [KO:K02130]
+            10632  ATP5L; ATP synthase, H+ transporting, mitochondrial Fo complex subunit G [KO:K02140]
+            522  ATP5J; ATP synthase, H+ transporting, mitochondrial Fo complex subunit F6 [KO:K02131]
+            4509  ATP8; ATP synthase F0 subunit 8 [KO:K02125]
+            523  ATP6V1A; ATPase H+ transporting V1 subunit A [KO:K02145] [EC:3.6.3.14]
+            525  ATP6V1B1; ATPase H+ transporting V1 subunit B1 [KO:K02147]
+            526  ATP6V1B2; ATPase H+ transporting V1 subunit B2 [KO:K02147]
+            245973  ATP6V1C2; ATPase H+ transporting V1 subunit C2 [KO:K02148]
+            528  ATP6V1C1; ATPase H+ transporting V1 subunit C1 [KO:K02148]
+            51382  ATP6V1D; ATPase H+ transporting V1 subunit D [KO:K02149]
+            90423  ATP6V1E2; ATPase H+ transporting V1 subunit E2 [KO:K02150]
+            529  ATP6V1E1; ATPase H+ transporting V1 subunit E1 [KO:K02150]
+            9296  ATP6V1F; ATPase H+ transporting V1 subunit F [KO:K02151]
+            9550  ATP6V1G1; ATPase H+ transporting V1 subunit G1 [KO:K02152]
+            127124  ATP6V1G3; ATPase H+ transporting V1 subunit G3 [KO:K02152]
+            534  ATP6V1G2; ATPase H+ transporting V1 subunit G2 [KO:K02152]
+            51606  ATP6V1H; ATPase H+ transporting V1 subunit H [KO:K02144]
+            10312  TCIRG1; T-cell immune regulator 1, ATPase H+ transporting V0 subunit a3 [KO:K02154]
+            23545  ATP6V0A2; ATPase H+ transporting V0 subunit a2 [KO:K02154]
+            50617  ATP6V0A4; ATPase H+ transporting V0 subunit a4 [KO:K02154]
+            535  ATP6V0A1; ATPase H+ transporting V0 subunit a1 [KO:K02154]
+            527  ATP6V0C; ATPase H+ transporting V0 subunit c [KO:K02155]
+            533  ATP6V0B; ATPase H+ transporting V0 subunit b [KO:K03661]
+            9114  ATP6V0D1; ATPase H+ transporting V0 subunit d1 [KO:K02146]
+            245972  ATP6V0D2; ATPase H+ transporting V0 subunit d2 [KO:K02146]
+            8992  ATP6V0E1; ATPase H+ transporting V0 subunit e1 [KO:K02153]
+            155066  ATP6V0E2; ATPase H+ transporting V0 subunit e2 [KO:K02153]
+            537  ATP6AP1; ATPase H+ transporting accessory protein 1 [KO:K03662]
+            495  ATP4A; ATPase H+/K+ transporting alpha subunit [KO:K01542] [EC:3.6.3.10]
+            496  ATP4B; ATPase H+/K+ transporting beta subunit [KO:K01543] [EC:3.6.3.10]
+            479  ATP12A; ATPase H+/K+ transporting non-gastric alpha2 subunit [KO:K01544] [EC:3.6.3.10]
+            27068  PPA2; pyrophosphatase (inorganic) 2 [KO:K01507] [EC:3.6.1.1]
+            5464  PPA1; pyrophosphatase (inorganic) 1 [KO:K01507] [EC:3.6.1.1]
+            64077  LHPP; phospholysine phosphohistidine inorganic pyrophosphate phosphatase [KO:K11725] [EC:3.1.3.- 3.6.1.1]
+COMPOUND    C00001  H2O
+            C00002  ATP
+            C00003  NAD+
+            C00004  NADH
+            C00007  Oxygen
+            C00008  ADP
+            C00009  Orthophosphate
+            C00013  Diphosphate
+            C00042  Succinate
+            C00061  FMN
+            C00080  H+
+            C00122  Fumarate
+            C00390  Ubiquinol
+            C00399  Ubiquinone
+            C00524  Cytochrome c
+            C00536  Triphosphate
+REFERENCE   PMID:16469879
+  AUTHORS   Sazanov LA, Hinchliffe P.
+  TITLE     Structure of the hydrophilic domain of respiratory complex I from Thermus thermophilus.
+  JOURNAL   Science 311:1430-6 (2006)
+REFERENCE   PMID:16584177
+  AUTHORS   Hinchliffe P, Carroll J, Sazanov LA.
+  TITLE     Identification of a novel subunit of respiratory complex I from Thermus thermophilus.
+  JOURNAL   Biochemistry 45:4413-20 (2006)
+KO_PATHWAY  ko00190
+///
+ENTRY       hsa03013                    Pathway
+NAME        RNA transport - Homo sapiens (human)
+DESCRIPTION RNA transport from the nucleus to the cytoplasm is  fundamental for gene expression. The different RNA species that are produced in the nucleus are exported through the nuclear pore complexes (NPCs) via mobile export receptors. The majority of RNAs, such as tRNAs, rRNAs, and U snRNAs, are transported by specific export receptors, which belong to the karyopherin-beta family proteins. A feature of karyopherins is their regulation by the small GTPase Ran. However, general mRNA export is mechanistically different. Nuclear export of mRNAs is functionally coupled to different steps in gene expression processes, such as transcription, splicing, 3'-end formation and even translation.
+CLASS       Genetic Information Processing; Translation
+PATHWAY_MAP hsa03013  RNA transport
+MODULE      hsa_M00399  Cap binding complex [PATH:hsa03013]
+            hsa_M00405  THC complex [PATH:hsa03013]
+            hsa_M00406  TREX complex [PATH:hsa03013]
+            hsa_M00426  Survival motor neuron (SMN) complex [PATH:hsa03013]
+            hsa_M00427  Nuclear pore complex [PATH:hsa03013]
+            hsa_M00428  eIF4F complex [PATH:hsa03013]
+            hsa_M00430  Exon junction complex (EJC) [PATH:hsa03013]
+DISEASE     H00455  Spinal muscular atrophy (SMA)
+            H00465  Fragile X Syndrome
+            H00869  Leukoencephalopathy with vanishing white matter
+            H01177  Infantile bilateral striatal necrosis (IBSN)
+DBLINKS     GO: 0050658
+ORGANISM    Homo sapiens (human) [GN:hsa]
+GENE        10940  POP1; POP1 homolog, ribonuclease P/MRP subunit [KO:K01164] [EC:3.1.26.5]
+            10557  RPP38; ribonuclease P/MRP 38kDa subunit [KO:K14523] [EC:3.1.26.5]
+            10775  POP4; POP4 homolog, ribonuclease P/MRP subunit [KO:K03538] [EC:3.1.26.5]
+            51367  POP5; POP5 homolog, ribonuclease P/MRP subunit [KO:K03537] [EC:3.1.26.5]
+            138716  RPP25L; ribonuclease P/MRP 25kDa subunit-like [KO:K14525] [EC:3.1.26.5]
+            54913  RPP25; ribonuclease P/MRP 25kDa subunit [KO:K14525] [EC:3.1.26.5]
+            10248  POP7; POP7 homolog, ribonuclease P/MRP subunit [KO:K14527] [EC:3.1.26.5]
+            11102  RPP14; ribonuclease P/MRP 14kDa subunit [KO:K14529] [EC:3.1.26.5]
+            10556  RPP30; ribonuclease P/MRP 30kDa subunit [KO:K03539] [EC:3.1.26.5]
+            79897  RPP21; ribonuclease P/MRP 21kDa subunit [KO:K03540] [EC:3.1.26.5]
+            10799  RPP40; ribonuclease P/MRP 40kDa subunit [KO:K14530] [EC:3.1.26.5]
+            60528  ELAC2; elaC ribonuclease Z 2 [KO:K00784] [EC:3.1.26.11]
+            55520  ELAC1; elaC ribonuclease Z 1 [KO:K00784] [EC:3.1.26.11]
+            51095  TRNT1; tRNA nucleotidyl transferase, CCA-adding, 1 [KO:K00974] [EC:3.1.4.- 3.1.3.- 2.7.7.72]
+            5901  RAN; RAN, member RAS oncogene family [KO:K07936]
+            11260  XPOT; exportin for tRNA [KO:K14288]
+            57510  XPO5; exportin 5 [KO:K14289]
+            1915  EEF1A1; eukaryotic translation elongation factor 1 alpha 1 [KO:K03231]
+            1917  EEF1A2; eukaryotic translation elongation factor 1 alpha 2 [KO:K03231]
+            7514  XPO1; exportin 1 [KO:K14290]
+            51808  PHAX; phosphorylated adaptor for RNA export [KO:K14291]
+            4686  NCBP1; nuclear cap binding protein subunit 1 [KO:K12882]
+            22916  NCBP2; nuclear cap binding protein subunit 2 [KO:K12883]
+            1207  CLNS1A; chloride nucleotide-sensitive channel 1A [KO:K05019]
+            10419  PRMT5; protein arginine methyltransferase 5 [KO:K02516] [EC:2.1.1.320]
+            96764  TGS1; trimethylguanosine synthase 1 [KO:K14292] [EC:2.1.1.-]
+            3837  KPNB1; karyopherin subunit beta 1 [KO:K14293]
+            10073  SNUPN; snurportin 1 [KO:K13151]
+            51068  NMD3; NMD3 ribosome export adaptor [KO:K07562]
+            84305  PYM1; PYM homolog 1, exon junction complex associated factor [KO:K14294]
+            7175  TPR; translocated promoter region, nuclear basket protein [KO:K09291]
+            10762  NUP50; nucleoporin 50kDa [KO:K14295]
+            9972  NUP153; nucleoporin 153kDa [KO:K14296]
+            59343  SENP2; SUMO1/sentrin/SMT3 specific peptidase 2 [KO:K03345] [EC:3.4.22.68]
+            4928  NUP98; nucleoporin 98kDa [KO:K14297]
+            8480  RAE1; ribonucleic acid export 1 [KO:K14298]
+            6396  SEC13; SEC13 homolog, nuclear pore and COPII coat complex component [KO:K14004]
+            81929  SEH1L; SEH1 like nucleoporin [KO:K14299]
+            55746  NUP133; nucleoporin 133kDa [KO:K14300]
+            57122  NUP107; nucleoporin 107kDa [KO:K14301]
+            79023  NUP37; nucleoporin 37kDa [KO:K14302]
+            23279  NUP160; nucleoporin 160kDa [KO:K14303]
+            79902  NUP85; nucleoporin 85kDa [KO:K14304]
+            348995  NUP43; nucleoporin 43kDa [KO:K14305]
+            23636  NUP62; nucleoporin 62kDa [KO:K14306]
+            9818  NUP58; nucleoporin 58kDa [KO:K14307]
+            53371  NUP54; nucleoporin 54kDa [KO:K14308]
+            9688  NUP93; nucleoporin 93kDa [KO:K14309]
+            23165  NUP205; nucleoporin 205kDa [KO:K14310]
+            23511  NUP188; nucleoporin 188kDa [KO:K14311]
+            9631  NUP155; nucleoporin 155kDa [KO:K14312]
+            129401  NUP35; nucleoporin 35kDa [KO:K14313]
+            23225  NUP210; nucleoporin 210kDa [KO:K14314]
+            91181  NUP210L; nucleoporin 210kDa like [KO:K14314]
+            55706  NDC1; NDC1 transmembrane nucleoporin [KO:K14315]
+            100101267  POM121C; POM121 transmembrane nucleoporin C [KO:K14316]
+            9883  POM121; POM121 transmembrane nucleoporin [KO:K14316]
+            94026  POM121L2; POM121 transmembrane nucleoporin like 2 [KO:K14316]
+            8021  NUP214; nucleoporin 214kDa [KO:K14317]
+            4927  NUP88; nucleoporin 88kDa [KO:K14318]
+            5903  RANBP2; RAN binding protein 2 [KO:K12172]
+            285190  RGPD4; RANBP2-like and GRIP domain containing 4 [KO:K12172]
+            400966  RGPD1; RANBP2-like and GRIP domain containing 1 [KO:K12172]
+            653489  RGPD3; RANBP2-like and GRIP domain containing 3 [KO:K12172]
+            727851  RGPD8; RANBP2-like and GRIP domain containing 8 [KO:K12172]
+            729857  RGPD2; RANBP2-like and GRIP domain containing 2 [KO:K12172]
+            84220  RGPD5; RANBP2-like and GRIP domain containing 5 [KO:K12172]
+            5905  RANGAP1; Ran GTPase activating protein 1 [KO:K14319]
+            7329  UBE2I; ubiquitin conjugating enzyme E2 I [KO:K10577]
+            6612  SUMO3; small ubiquitin-like modifier 3 [KO:K12160]
+            6613  SUMO2; small ubiquitin-like modifier 2 [KO:K12160]
+            7341  SUMO1; small ubiquitin-like modifier 1 [KO:K12160]
+            387082  SUMO4; small ubiquitin-like modifier 4 [KO:K12160]
+            101929087  small ubiquitin-related modifier 2-like; K12160 small ubiquitin-related modifier [KO:K12160]
+            8086  AAAS; aladin WD repeat nucleoporin [KO:K14320]
+            11097  NUPL2; nucleoporin like 2 [KO:K14321]
+            6606  SMN1; survival of motor neuron 1, telomeric [KO:K13129]
+            6607  SMN2; survival of motor neuron 2, centromeric [KO:K13129]
+            8487  GEMIN2; gem nuclear organelle associated protein 2 [KO:K13130]
+            11218  DDX20; DEAD-box helicase 20 [KO:K13131] [EC:3.6.4.13]
+            50628  GEMIN4; gem nuclear organelle associated protein 4 [KO:K13132]
+            25929  GEMIN5; gem nuclear organelle associated protein 5 [KO:K13133]
+            79833  GEMIN6; gem nuclear organelle associated protein 6 [KO:K13134]
+            79760  GEMIN7; gem nuclear organelle associated protein 7 [KO:K13135]
+            54960  GEMIN8; gem nuclear organelle associated protein 8 [KO:K13136]
+            11171  STRAP; serine/threonine kinase receptor associated protein [KO:K13137]
+            8669  EIF3J; eukaryotic translation initiation factor 3 subunit J [KO:K03245]
+            8668  EIF3I; eukaryotic translation initiation factor 3 subunit I [KO:K03246]
+            8667  EIF3H; eukaryotic translation initiation factor 3 subunit H [KO:K03247]
+            8666  EIF3G; eukaryotic translation initiation factor 3 subunit G [KO:K03248]
+            8665  EIF3F; eukaryotic translation initiation factor 3 subunit F [KO:K03249]
+            3646  EIF3E; eukaryotic translation initiation factor 3 subunit E [KO:K03250]
+            8664  EIF3D; eukaryotic translation initiation factor 3 subunit D [KO:K03251]
+            8663  EIF3C; eukaryotic translation initiation factor 3 subunit C [KO:K03252]
+            728689  EIF3CL; eukaryotic translation initiation factor 3 subunit C-like [KO:K03252]
+            8662  EIF3B; eukaryotic translation initiation factor 3 subunit B [KO:K03253]
+            8661  EIF3A; eukaryotic translation initiation factor 3 subunit A [KO:K03254]
+            9086  EIF1AY; eukaryotic translation initiation factor 1A, Y-linked [KO:K03236]
+            1964  EIF1AX; eukaryotic translation initiation factor 1A, X-linked [KO:K03236]
+            10289  EIF1B; eukaryotic translation initiation factor 1B [KO:K03113]
+            10209  EIF1; eukaryotic translation initiation factor 1 [KO:K03113]
+            1983  EIF5; eukaryotic translation initiation factor 5 [KO:K03262]
+            1965  EIF2S1; eukaryotic translation initiation factor 2 subunit alpha [KO:K03237]
+            8894  EIF2S2; eukaryotic translation initiation factor 2 subunit beta [KO:K03238]
+            1968  EIF2S3; eukaryotic translation initiation factor 2 subunit gamma [KO:K03242]
+            1967  EIF2B1; eukaryotic translation initiation factor 2B subunit alpha [KO:K03239]
+            8892  EIF2B2; eukaryotic translation initiation factor 2B subunit beta [KO:K03754]
+            8890  EIF2B4; eukaryotic translation initiation factor 2B subunit delta [KO:K03680]
+            8891  EIF2B3; eukaryotic translation initiation factor 2B subunit gamma [KO:K03241]
+            8893  EIF2B5; eukaryotic translation initiation factor 2B subunit epsilon [KO:K03240]
+            9669  EIF5B; eukaryotic translation initiation factor 5B [KO:K03243]
+            8672  EIF4G3; eukaryotic translation initiation factor 4 gamma 3 [KO:K03260]
+            1981  EIF4G1; eukaryotic translation initiation factor 4 gamma 1 [KO:K03260]
+            1982  EIF4G2; eukaryotic translation initiation factor 4 gamma 2 [KO:K03260]
+            1977  EIF4E; eukaryotic translation initiation factor 4E [KO:K03259]
+            9470  EIF4E2; eukaryotic translation initiation factor 4E family member 2 [KO:K03259]
+            253314  EIF4E1B; eukaryotic translation initiation factor 4E family member 1B [KO:K03259]
+            1973  EIF4A1; eukaryotic translation initiation factor 4A1 [KO:K03257]
+            1974  EIF4A2; eukaryotic translation initiation factor 4A2 [KO:K03257]
+            1975  EIF4B; eukaryotic translation initiation factor 4B [KO:K03258]
+            26986  PABPC1; poly(A) binding protein, cytoplasmic 1 [KO:K13126]
+            140886  PABPC5; poly(A) binding protein, cytoplasmic 5 [KO:K13126]
+            5042  PABPC3; poly(A) binding protein, cytoplasmic 3 [KO:K13126]
+            645974  PABPC1L2B; poly(A) binding protein, cytoplasmic 1-like 2B [KO:K13126]
+            80336  PABPC1L; poly(A) binding protein, cytoplasmic 1-like [KO:K13126]
+            340529  PABPC1L2A; poly(A) binding protein, cytoplasmic 1-like 2A [KO:K13126]
+            8761  PABPC4; poly(A) binding protein, cytoplasmic 4 (inducible form) [KO:K13126]
+            132430  PABPC4L; poly(A) binding protein, cytoplasmic 4-like [KO:K13126]
+            10605  PAIP1; poly(A) binding protein interacting protein 1 [KO:K14322]
+            1978  EIF4EBP1; eukaryotic translation initiation factor 4E binding protein 1 [KO:K07205]
+            1979  EIF4EBP2; eukaryotic translation initiation factor 4E binding protein 2 [KO:K18644]
+            8637  EIF4EBP3; eukaryotic translation initiation factor 4E binding protein 3 [KO:K18645]
+            10460  TACC3; transforming acidic coiled-coil containing protein 3 [KO:K14283]
+            23191  CYFIP1; cytoplasmic FMR1 interacting protein 1 [KO:K05749]
+            26999  CYFIP2; cytoplasmic FMR1 interacting protein 2 [KO:K05749]
+            2332  FMR1; fragile X mental retardation 1 [KO:K15516]
+            8087  FXR1; FMR1 autosomal homolog 1 [KO:K15516]
+            9513  FXR2; FMR1 autosomal homolog 2 [KO:K15516]
+            9939  RBM8A; RNA binding motif protein 8A [KO:K12876]
+            4116  MAGOH; mago homolog, exon junction complex core component [KO:K12877]
+            55110  MAGOHB; mago homolog B, exon junction complex core component [KO:K12877]
+            22794  CASC3; cancer susceptibility candidate 3 [KO:K14323]
+            9775  EIF4A3; eukaryotic translation initiation factor 4A3 [KO:K13025] [EC:3.6.4.13]
+            10284  SAP18; Sin3A associated protein 18kDa [KO:K14324]
+            5411  PNN; pinin, desmosome associated protein [KO:K13114]
+            22985  ACIN1; apoptotic chromatin condensation inducer 1 [KO:K12875]
+            10921  RNPS1; RNA binding protein S1, serine-rich domain [KO:K14325]
+            10189  ALYREF; Aly/REF export factor [KO:K12881]
+            7919  DDX39B; DEAD-box helicase 39B [KO:K12812] [EC:3.6.4.13]
+            9984  THOC1; THO complex 1 [KO:K12878]
+            57187  THOC2; THO complex 2 [KO:K12879]
+            8563  THOC5; THO complex 5 [KO:K13174]
+            79228  THOC6; THO complex 6 [KO:K13175]
+            80145  THOC7; THO complex 7 [KO:K13176]
+            84321  THOC3; THO complex 3 [KO:K12880]
+            10250  SRRM1; serine and arginine repetitive matrix 1 [KO:K13171]
+            10482  NXF1; nuclear RNA export factor 1 [KO:K14284]
+            56001  NXF2; nuclear RNA export factor 2 [KO:K14284]
+            728343  NXF2B; nuclear RNA export factor 2B [KO:K14284]
+            55998  NXF5; nuclear RNA export factor 5 [KO:K14284]
+            56000  NXF3; nuclear RNA export factor 3 [KO:K14284]
+            29107  NXT1; nuclear transport factor 2-like export factor 1 [KO:K14285]
+            55916  NXT2; nuclear transport factor 2-like export factor 2 [KO:K14285]
+            5976  UPF1; UPF1, RNA helicase and ATPase [KO:K14326] [EC:3.6.4.-]
+            26019  UPF2; UPF2 regulator of nonsense transcripts homolog (yeast) [KO:K14327]
+            65109  UPF3B; UPF3 regulator of nonsense transcripts homolog B (yeast) [KO:K14328]
+            65110  UPF3A; UPF3 regulator of nonsense transcripts homolog A (yeast) [KO:K14328]
+            26827  RNU6-1; RNA, U6 small nuclear 1 [KO:K14280]
+            780851  SNORD3A; small nucleolar RNA, C/D box 3A [KO:K14483]
+            780853  SNORD3C; small nucleolar RNA, C/D box 3C [KO:K14483]
+            780852  SNORD3B-2; small nucleolar RNA, C/D box 3B-2 [KO:K14483]
+            26851  SNORD3B-1; small nucleolar RNA, C/D box 3B-1 [KO:K14483]
+COMPOUND    C00035  GDP
+            C00044  GTP
+            C01647  tRNA(Met)
+REFERENCE   PMID:15519698
+  AUTHORS   Rodriguez MS, Dargemont C, Stutz F
+  TITLE     Nuclear export of RNA.
+  JOURNAL   Biol Cell 96:639-55 (2004)
+REFERENCE   PMID:20733056
+  AUTHORS   Suzuki T, Izumi H, Ohno M
+  TITLE     Cajal body surveillance of U snRNA export complex assembly.
+  JOURNAL   J Cell Biol 190:603-12 (2010)
+REFERENCE   PMID:18313922
+  AUTHORS   Palancade B, Doye V
+  TITLE     Sumoylating and desumoylating enzymes at nuclear pores: underpinning their unexpected duties?
+  JOURNAL   Trends Cell Biol 18:174-83 (2008)
+REFERENCE   PMID:17401408
+  AUTHORS   Pellizzoni L
+  TITLE     Chaperoning ribonucleoprotein biogenesis in health and disease.
+  JOURNAL   EMBO Rep 8:340-5 (2007)
+REFERENCE   PMID:10872469
+  AUTHORS   Gingras AC, Raught B, Sonenberg N
+  TITLE     eIF4 initiation factors: effectors of mRNA recruitment to ribosomes and regulators of translation.
+  JOURNAL   Annu Rev Biochem 68:913-63 (1999)
+REFERENCE   PMID:11018020
+  AUTHORS   Asano K, Clayton J, Shalev A, Hinnebusch AG
+  TITLE     A multifactor complex of eukaryotic initiation factors, eIF1, eIF2, eIF3, eIF5, and initiator tRNA(Met) is an important translation initiation intermediate in vivo.
+  JOURNAL   Genes Dev 14:2534-46 (2000)
+REFERENCE   PMID:9548260
+  AUTHORS   Craig AW, Haghighat A, Yu AT, Sonenberg N
+  TITLE     Interaction of polyadenylate-binding protein with the eIF4G homologue PAIP enhances translation.
+  JOURNAL   Nature 392:520-3 (1998)
+REFERENCE   PMID:15901496
+  AUTHORS   Reed R, Cheng H
+  TITLE     TREX, SR proteins and export of mRNA.
+  JOURNAL   Curr Opin Cell Biol 17:269-73 (2005)
+REFERENCE   PMID:16314458
+  AUTHORS   Tange TO, Shibuya T, Jurica MS, Moore MJ
+  TITLE     Biochemical analysis of the EJC reveals two new factors and a stable tetrameric protein core.
+  JOURNAL   RNA 11:1869-83 (2005)
+KO_PATHWAY  ko03013
+///
+ENTRY       hsa03015                    Pathway
+NAME        mRNA surveillance pathway - Homo sapiens (human)
+DESCRIPTION The mRNA surveillance pathway is a quality control mechanism that detects and degrades abnormal mRNAs. These  pathways include nonsense-mediated mRNA decay (NMD), nonstop mRNA decay (NSD), and no-go decay (NGD). NMD is a mechanism that eliminates mRNAs containing premature translation-termination codons (PTCs). In vertebrates, PTCs trigger efficient NMD when located upstream of an exon junction complex (EJC). Upf3, together with Upf1 and Upf2, may signal the presence of the PTC to the 5'end of the transcript, resulting in decapping and rapid exonucleolytic digestion of the mRNA. In the NSD pathway, which targets mRNAs lacking termination codons, the ribosome is believed to translate through the 3' untranslated region and stall at the end of the poly(A) tail. NSD involves an eRF3-like protein, Ski7p, which is hypothesized to bind the empty A site of the ribosome and recruit the exosome to degrade the mRNA from the 3' end. NGD targets mRNAs with stalls in translation elongation for endonucleolytic cleavage in a process involving the Dom34 and Hbs1 proteins.
+CLASS       Genetic Information Processing; Translation
+PATHWAY_MAP hsa03015  mRNA surveillance pathway
+MODULE      hsa_M00399  Cap binding complex [PATH:hsa03015]
+            hsa_M00430  Exon junction complex (EJC) [PATH:hsa03015]
+DISEASE     H00658  Syndromic X-linked mental retardation
+            H00704  Oculopharyngeal muscular dystrophy (OPMD)
+DBLINKS     GO: 0071028
+ORGANISM    Homo sapiens (human) [GN:hsa]
+GENE        4686  NCBP1; nuclear cap binding protein subunit 1 [KO:K12882]
+            22916  NCBP2; nuclear cap binding protein subunit 2 [KO:K12883]
+            65109  UPF3B; UPF3 regulator of nonsense transcripts homolog B (yeast) [KO:K14328]
+            65110  UPF3A; UPF3 regulator of nonsense transcripts homolog A (yeast) [KO:K14328]
+            9939  RBM8A; RNA binding motif protein 8A [KO:K12876]
+            4116  MAGOH; mago homolog, exon junction complex core component [KO:K12877]
+            55110  MAGOHB; mago homolog B, exon junction complex core component [KO:K12877]
+            22794  CASC3; cancer susceptibility candidate 3 [KO:K14323]
+            9775  EIF4A3; eukaryotic translation initiation factor 4A3 [KO:K13025] [EC:3.6.4.13]
+            10284  SAP18; Sin3A associated protein 18kDa [KO:K14324]
+            5411  PNN; pinin, desmosome associated protein [KO:K13114]
+            22985  ACIN1; apoptotic chromatin condensation inducer 1 [KO:K12875]
+            10921  RNPS1; RNA binding protein S1, serine-rich domain [KO:K14325]
+            10189  ALYREF; Aly/REF export factor [KO:K12881]
+            10482  NXF1; nuclear RNA export factor 1 [KO:K14284]
+            56001  NXF2; nuclear RNA export factor 2 [KO:K14284]
+            728343  NXF2B; nuclear RNA export factor 2B [KO:K14284]
+            55998  NXF5; nuclear RNA export factor 5 [KO:K14284]
+            56000  NXF3; nuclear RNA export factor 3 [KO:K14284]
+            29107  NXT1; nuclear transport factor 2-like export factor 1 [KO:K14285]
+            55916  NXT2; nuclear transport factor 2-like export factor 2 [KO:K14285]
+            7919  DDX39B; DEAD-box helicase 39B [KO:K12812] [EC:3.6.4.13]
+            84305  PYM1; PYM homolog 1, exon junction complex associated factor [KO:K14294]
+            10250  SRRM1; serine and arginine repetitive matrix 1 [KO:K13171]
+            8732  RNGTT; RNA guanylyltransferase and 5'-phosphatase [KO:K13917] [EC:3.6.1.- 2.7.7.50]
+            8731  RNMT; RNA (guanine-7-) methyltransferase [KO:K00565] [EC:2.1.1.56]
+            8106  PABPN1; poly(A) binding protein, nuclear 1 [KO:K14396]
+            390748  PABPN1L; poly(A) binding protein, nuclear 1-like (cytoplasmic) [KO:K14396]
+            100529063  BCL2L2-PABPN1; BCL2L2-PABPN1 readthrough [KO:K14396]
+            11051  NUDT21; nudix hydrolase 21 [KO:K14397]
+            11052  CPSF6; cleavage and polyadenylation specific factor 6 [KO:K14398]
+            79869  CPSF7; cleavage and polyadenylation specific factor 7 [KO:K14398]
+            64895  PAPOLG; poly(A) polymerase gamma [KO:K14376] [EC:2.7.7.19]
+            56903  PAPOLB; poly(A) polymerase beta [KO:K14376] [EC:2.7.7.19]
+            10914  PAPOLA; poly(A) polymerase alpha [KO:K14376] [EC:2.7.7.19]
+            10978  CLP1; cleavage and polyadenylation factor I subunit 1 [KO:K14399] [EC:2.7.1.78]
+            51585  PCF11; PCF11 cleavage and polyadenylation factor subunit [KO:K14400]
+            29894  CPSF1; cleavage and polyadenylation specific factor 1 [KO:K14401]
+            53981  CPSF2; cleavage and polyadenylation specific factor 2 [KO:K14402]
+            51692  CPSF3; cleavage and polyadenylation specific factor 3 [KO:K14403] [EC:3.1.27.-]
+            10898  CPSF4; cleavage and polyadenylation specific factor 4 [KO:K14404]
+            81608  FIP1L1; factor interacting with PAPOLA and CPSF1 [KO:K14405]
+            55339  WDR33; WD repeat domain 33 [KO:K15542]
+            80335  WDR82; WD repeat domain 82 [KO:K14962]
+            5499  PPP1CA; protein phosphatase 1 catalytic subunit alpha [KO:K06269] [EC:3.1.3.16]
+            5500  PPP1CB; protein phosphatase 1 catalytic subunit beta [KO:K06269] [EC:3.1.3.16]
+            5501  PPP1CC; protein phosphatase 1 catalytic subunit gamma [KO:K06269] [EC:3.1.3.16]
+            29101  SSU72; SSU72 homolog, RNA polymerase II CTD phosphatase [KO:K15544] [EC:3.1.3.16]
+            1477  CSTF1; cleavage stimulation factor, 3' pre-RNA, subunit 1 [KO:K14406]
+            1478  CSTF2; cleavage stimulation factor, 3' pre-RNA, subunit 2 [KO:K14407]
+            23283  CSTF2T; cleavage stimulation factor, 3' pre-RNA, subunit 2, tau variant [KO:K14407]
+            1479  CSTF3; cleavage stimulation factor, 3' pre-RNA, subunit 3 [KO:K14408]
+            8189  SYMPK; symplekin [KO:K06100]
+            26528  DAZAP1; DAZ associated protein 1 [KO:K14411]
+            4440  MSI1; musashi RNA binding protein 1 [KO:K14411]
+            124540  MSI2; musashi RNA binding protein 2 [KO:K14411]
+            26986  PABPC1; poly(A) binding protein, cytoplasmic 1 [KO:K13126]
+            140886  PABPC5; poly(A) binding protein, cytoplasmic 5 [KO:K13126]
+            5042  PABPC3; poly(A) binding protein, cytoplasmic 3 [KO:K13126]
+            645974  PABPC1L2B; poly(A) binding protein, cytoplasmic 1-like 2B [KO:K13126]
+            80336  PABPC1L; poly(A) binding protein, cytoplasmic 1-like [KO:K13126]
+            340529  PABPC1L2A; poly(A) binding protein, cytoplasmic 1-like 2A [KO:K13126]
+            8761  PABPC4; poly(A) binding protein, cytoplasmic 4 (inducible form) [KO:K13126]
+            132430  PABPC4L; poly(A) binding protein, cytoplasmic 4-like [KO:K13126]
+            2107  ETF1; eukaryotic translation termination factor 1 [KO:K03265]
+            23708  GSPT2; G1 to S phase transition 2 [KO:K03267]
+            2935  GSPT1; G1 to S phase transition 1 [KO:K03267]
+            5976  UPF1; UPF1, RNA helicase and ATPase [KO:K14326] [EC:3.6.4.-]
+            26019  UPF2; UPF2 regulator of nonsense transcripts homolog (yeast) [KO:K14327]
+            23049  SMG1; SMG1 phosphatidylinositol 3-kinase-related kinase [KO:K08873] [EC:2.7.11.1]
+            9887  SMG7; SMG7 nonsense mediated mRNA decay factor [KO:K14409]
+            23381  SMG5; SMG5 nonsense mediated mRNA decay factor [KO:K11125]
+            23293  SMG6; SMG6 nonsense mediated mRNA decay factor [KO:K11124] [EC:3.1.-.-]
+            5515  PPP2CA; protein phosphatase 2 catalytic subunit alpha [KO:K04382] [EC:3.1.3.16]
+            5516  PPP2CB; protein phosphatase 2 catalytic subunit beta [KO:K04382] [EC:3.1.3.16]
+            5519  PPP2R1B; protein phosphatase 2 regulatory subunit A, beta [KO:K03456]
+            5518  PPP2R1A; protein phosphatase 2 regulatory subunit A, alpha [KO:K03456]
+            5520  PPP2R2A; protein phosphatase 2 regulatory subunit B, alpha [KO:K04354]
+            5521  PPP2R2B; protein phosphatase 2 regulatory subunit B, beta [KO:K04354]
+            5522  PPP2R2C; protein phosphatase 2 regulatory subunit B, gamma [KO:K04354]
+            55844  PPP2R2D; protein phosphatase 2 regulatory subunit B, delta [KO:K04354]
+            28227  PPP2R3B; protein phosphatase 2 regulatory subunit B'', beta [KO:K11583]
+            55012  PPP2R3C; protein phosphatase 2 regulatory subunit B'', gamma [KO:K11583]
+            5523  PPP2R3A; protein phosphatase 2 regulatory subunit B'', alpha [KO:K11583]
+            5526  PPP2R5B; protein phosphatase 2 regulatory subunit B', beta [KO:K11584]
+            5527  PPP2R5C; protein phosphatase 2 regulatory subunit B', gamma [KO:K11584]
+            5528  PPP2R5D; protein phosphatase 2 regulatory subunit B', delta [KO:K11584]
+            5529  PPP2R5E; protein phosphatase 2 regulatory subunit B', epsilon [KO:K11584]
+            5525  PPP2R5A; protein phosphatase 2 regulatory subunit B', alpha [KO:K11584]
+            10767  HBS1L; HBS1 like translational GTPase [KO:K14416]
+            53918  PELO; pelota homolog (Drosophila) [KO:K06965]
+REFERENCE   PMID:15040442
+  AUTHORS   Maquat LE
+  TITLE     Nonsense-mediated mRNA decay: splicing, translation and mRNP dynamics.
+  JOURNAL   Nat Rev Mol Cell Biol 5:89-99 (2004)
+REFERENCE   PMID:16723977
+  AUTHORS   Amrani N, Sachs MS, Jacobson A
+  TITLE     Early nonsense: mRNA decay solves a translational problem.
+  JOURNAL   Nat Rev Mol Cell Biol 7:415-25 (2006)
+REFERENCE   PMID:17183357
+  AUTHORS   Eulalio A, Behm-Ansmant I, Izaurralde E
+  TITLE     P bodies: at the crossroads of post-transcriptional pathways.
+  JOURNAL   Nat Rev Mol Cell Biol 8:9-22 (2007)
+REFERENCE   PMID:18158581
+  AUTHORS   Mandel CR, Bai Y, Tong L
+  TITLE     Protein factors in pre-mRNA 3'-end processing.
+  JOURNAL   Cell Mol Life Sci 65:1099-122 (2008)
+REFERENCE   PMID:16715045
+  AUTHORS   Clement SL, Lykke-Andersen J
+  TITLE     No mercy for messages that mess with the ribosome.
+  JOURNAL   Nat Struct Mol Biol 13:299-301 (2006)
+KO_PATHWAY  ko03015
+///
+ENTRY       hsa04010                    Pathway
+NAME        MAPK signaling pathway - Homo sapiens (human)
+DESCRIPTION The mitogen-activated protein kinase (MAPK) cascade is a highly conserved module that is involved in various cellular functions, including cell proliferation, differentiation and migration. Mammals express at least four distinctly regulated groups of MAPKs, extracellular signal-related kinases (ERK)-1/2, Jun amino-terminal kinases (JNK1/2/3), p38 proteins (p38alpha/beta/gamma/delta) and ERK5, that are activated by specific MAPKKs: MEK1/2 for ERK1/2, MKK3/6 for the p38, MKK4/7 (JNKK1/2) for the JNKs, and MEK5 for ERK5. Each MAPKK, however, can be activated by more than one MAPKKK, increasing the complexity and diversity of MAPK signalling. Presumably each MAPKKK confers responsiveness to distinct stimuli. For example, activation of ERK1/2 by growth factors depends on the MAPKKK c-Raf, but other MAPKKKs may activate ERK1/2 in response to pro-inflammatory stimuli.
+CLASS       Environmental Information Processing; Signal transduction
+PATHWAY_MAP hsa04010  MAPK signaling pathway
+MODULE      hsa_M00687  MAPK (ERK1/2) signaling [PATH:hsa04010]
+            hsa_M00688  MAPK (JNK) signaling [PATH:hsa04010]
+            hsa_M00689  MAPK (p38) signaling [PATH:hsa04010]
+            hsa_M00690  MAPK (ERK5) signaling [PATH:hsa04010]
+DISEASE     H00078  Frontotemporal lobar degeneration (FTLD)
+            H00265  Hereditary sensory and autonomic neuropathy (HSAN)
+            H00484  Other brachydactylies
+            H00523  Noonan syndrome and related disorders
+            H00532  RASA1-related disorders
+            H00539  PTEN hamartoma tumor syndrome (PHTS)
+            H00540  Osteoporosis, lymphedema, anhydrotic ectodermal dysplasia with immunodeficiency (OLEDAID)
+            H00574  Coffin-Lowry syndrome (CLS)
+            H00577  Syndromic X-linked mental retardation with epilepsy or seizures
+            H00595  Myofibrillar myopathies (MFM)
+            H00642  Lacrimo-auriculo-dento-digital syndrome (LADD)
+            H00645  Incontinentia pigmenti
+            H00677  Aplasia of lacrimal and salivary glands
+            H00728  Brugada syndrome (BRS)
+            H00746  Hypokalemic periodic paralysis (HypoPP)
+            H00749  Episodic ataxias
+            H00775  Familial or sporadic hemiplegic migraine
+            H00787  Congenital stationary night blindness (CSNB)
+            H00800  Loeys-Dietz syndrome (LDS)
+            H00801  Familial thoracic aortic aneurysm and dissection (TAAD)
+            H00808  Idiopathic generalized epilepsies (IGEs)
+            H00856  Distal hereditary motor neuropathies (dHMN)
+            H00881  Li-Fraumeni syndrome
+            H00882  Cocoon syndrome
+            H00894  FG syndrome (FGS)
+            H00912  Tumor necrosis factor receptor-associated periodic syndrome (TRAPS)
+            H00916  Congenital central hypoventilation syndrome (CCHS)
+            H00997  CATSHL syndrome
+            H01007  Choroid plexus papilloma
+            H01193  Familial tumoral calcinosis (FTC)
+            H01207  Trigonocephaly
+            H01250  Hereditary gingival fibromatosis (HGF)
+            H01276  X-linked chronic idiopathic intestinal pseudo-obstruction
+            H01385  Rienhoff syndrome
+            H01437  Neurofibromatosis type 1
+            H01512  Langerhans cell histiocytosis
+DRUG        D00304  Divalproex sodium (USP)
+            D00319  Felodipine (JAN/USP/INN)
+            D00332  Gabapentin (JAN/USAN/INN)
+            D00349  Isradipine (USP/INN)
+            D00399  Valproic acid (USP)
+            D00437  Nifedipine (JP17/USP/INN)
+            D00438  Nimodipine (USAN/INN)
+            D00538  Zonisamide (JAN/USAN/INN)
+            D00539  Ethosuximide (JP17/USP/INN)
+            D00615  Amlodipine besilate (JP17)
+            D00616  Diltiazem hydrochloride (JP17/USP)
+            D00617  Nicardipine hydrochloride (JP17/USAN)
+            D00618  Nisoldipine (JAN/USAN/INN)
+            D00619  Verapamil hydrochloride (JP17/USP)
+            D00629  Nitrendipine (JP17/USAN/INN)
+            D00631  Bepridil hydrochloride hydrate (JAN)
+            D00710  Sodium valproate (JP17)
+            D00742  Etanercept (genetical recombination) (JAN)
+            D01104  Barnidipine hydrochloride (JAN)
+            D01145  Azelnidipine (JP17/INN)
+            D01173  Cilnidipine (JP17/INN)
+            D01303  Flunarizine hydrochloride (JAN/USAN)
+            D01441  Imatinib mesylate (USAN)
+            D01553  Manidipine hydrochloride (JP17)
+            D01562  Aranidipine (JAN/INN)
+            D01604  Efonidipine hydrochloride ethanolate (JAN)
+            D01908  Nilvadipine (JP17/USAN/INN)
+            D01969  Gallopamil hydrochloride (JAN)
+            D01977  Gefitinib (JAN/USAN/INN)
+            D02045  Benidipine hydrochloride (JP17)
+            D02356  Verapamil (USAN/INN)
+            D02537  Dronedarone (INN)
+            D02597  Adalimumab (genetical recombination) (JAN)
+            D02598  Infliximab (genetical recombination) (JAN)
+            D02630  Penfluridol (USAN/INN)
+            D02716  Pregabalin (JAN/USAN/INN)
+            D02914  Amlodipine maleate (USAN)
+            D02934  Anakinra (USAN/INN)
+            D03065  Becaplermin (USAN/INN)
+            D03218  Axitinib (JAN/USAN)
+            D03350  Canertinib dihydrochloride (USAN)
+            D03441  Certolizumab pegol (genetical recombination) (JAN)
+            D03455  Cetuximab (genetical recombination) (JAN)
+            D03655  Darodipine (USAN/INN)
+            D03658  Dasatinib (INN)
+            D03736  Doramapimod (USAN/INN)
+            D03830  Diltiazem malate (USAN)
+            D03914  Dronedarone hydrochloride (USAN)
+            D04023  Erlotinib hydrochloride (JAN/USAN)
+            D04024  Lapatinib tosilate hydrate (JAN)
+            D04358  Golimumab (genetical recombination) (JAN)
+            D04657  Lacidipine (USAN/INN)
+            D04696  Lestaurtinib (USAN/INN)
+            D05024  Mibefradil dihydrochloride (USAN)
+            D05029  Midostaurin (USAN/INN)
+            D05146  Nerelimomab (USAN/INN)
+            D05263  Onercept (USAN/INN)
+            D05350  Panitumumab (genetical recombination) (JAN)
+            D05380  Pazopanib hydrochloride (JAN/USAN)
+            D05393  Pegsunercept (USAN)
+            D05399  Pelitinib (USAN/INN)
+            D06005  Tandutinib (USAN/INN)
+            D06272  Sorafenib tosilate (JAN)
+            D06285  Vatalanib (USAN/INN)
+            D06402  Sunitinib malate (JAN/USAN)
+            D06407  Vandetanib (JAN/USAN/INN)
+            D06413  Nilotinib hydrochloride hydrate (JAN)
+            D06414  Dasatinib hydrate (JAN)
+            D06635  Rilonacept (USAN/INN)
+            D06678  Motesanib
+            D07185  Fendiline (INN)
+            D07436  Afelimomab (INN)
+            D07450  Amlodipine (USAN/INN)
+            D07494  Barnidipine (INN)
+            D07509  Benidipine (INN)
+            D07520  Bepridil (INN)
+            D07845  Diltiazem (INN)
+            D07886  Efonidipine (INN)
+            D07907  Erlotinib (INN)
+            D07971  Flunarizine (INN)
+            D08009  Gallopamil (INN)
+            D08066  Imatinib (INN)
+            D08108  Lapatinib (INN)
+            D08155  Manidipine (INN)
+            D08217  Mibefradil (INN)
+            D08270  Nicardipine (INN)
+            D08503  Toceranib (USAN)
+            D08524  Sorafenib (USAN/INN)
+            D08544  Toceranib phosphate (USAN)
+            D08552  Sunitinib (INN)
+            D08667  Calcium valproate
+            D08878  Brivanib alaninate (JAN/USAN/INN)
+            D08881  Cediranib (USAN/INN)
+            D08883  Cediranib maleate (JAN/USAN)
+            D08907  Dovitinib lactate hydrate (JAN)
+            D08947  Motesanib phosphate (JAN)
+            D08950  Neratinib (INN/USAN)
+            D08953  Nilotinib (USAN/INN)
+            D08963  Pamapimod (INN/USAN)
+            D09315  Canakinumab (genetical recombination) (JAN)
+            D09386  Talmapimod (USAN/INN)
+            D09387  Tanezumab (USAN/INN)
+            D09539  Gabapentin enacarbil (JAN/USAN/INN)
+            D09589  Brivanib (USAN)
+            D09602  Dilmapimod (USAN/INN)
+            D09603  Dilmapimod tosylate (USAN)
+            D09620  Fresolimumab (USAN/INN)
+            D09635  Linifanib (USAN/INN)
+            D09666  Selumetinib (USAN/INN)
+            D09689  Varlitinib (USAN/INN)
+            D09690  Varlitinib tosylate (USAN)
+            D09724  Afatinib (USAN/INN)
+            D09733  Afatinib maleate (JAN)
+            D09907  Fulranumab (USAN/INN)
+            D09911  Gevokizumab (USAN/INN)
+            D09919  Lenvatinib (USAN/INN)
+            D09920  Lenvatinib mesilate (JAN)
+            D09939  Olaratumab (USAN/INN)
+            D09944  Ozoralizumab (USAN)
+            D10018  Necitumumab (USAN/INN)
+            D10024  Selumetinib sulfate (JAN/USAN)
+            D10031  Zalutumumab (USAN/INN)
+            D10062  Cabozantinib (USAN)
+            D10064  Dabrafenib (USAN)
+            D10102  Crenolanib (USAN)
+            D10103  Crenolanib besylate (USAN)
+            D10104  Dabrafenib mesilate (JAN)
+            D10137  Regorafenib hydrate (JAN)
+            D10138  Regorafenib (USAN/INN)
+            D10175  Trametinib (USAN)
+            D10176  Trametinib dimethyl sulfoxide (JAN/USAN)
+            D10405  Cobimetinib (USAN/INN)
+            D10426  Pimasertib (USAN/INN)
+            D10486  Pimasertib hydrochloride (USAN)
+            D10615  Cobimetinib fumarate (USAN)
+DBLINKS     GO: 0000165
+ORGANISM    Homo sapiens (human) [GN:hsa]
+GENE        773  CACNA1A; calcium voltage-gated channel subunit alpha1 A [KO:K04344]
+            774  CACNA1B; calcium voltage-gated channel subunit alpha1 B [KO:K04849]
+            775  CACNA1C; calcium voltage-gated channel subunit alpha1 C [KO:K04850]
+            776  CACNA1D; calcium voltage-gated channel subunit alpha1 D [KO:K04851]
+            777  CACNA1E; calcium voltage-gated channel subunit alpha1 E [KO:K04852]
+            778  CACNA1F; calcium voltage-gated channel subunit alpha1 F [KO:K04853]
+            8913  CACNA1G; calcium voltage-gated channel subunit alpha1 G [KO:K04854]
+            8912  CACNA1H; calcium voltage-gated channel subunit alpha1 H [KO:K04855]
+            8911  CACNA1I; calcium voltage-gated channel subunit alpha1 I [KO:K04856]
+            779  CACNA1S; calcium voltage-gated channel subunit alpha1 S [KO:K04857]
+            781  CACNA2D1; calcium voltage-gated channel auxiliary subunit alpha2delta 1 [KO:K04858]
+            9254  CACNA2D2; calcium voltage-gated channel auxiliary subunit alpha2delta 2 [KO:K04859]
+            55799  CACNA2D3; calcium voltage-gated channel auxiliary subunit alpha2delta 3 [KO:K04860]
+            93589  CACNA2D4; calcium voltage-gated channel auxiliary subunit alpha2delta 4 [KO:K04861]
+            782  CACNB1; calcium voltage-gated channel auxiliary subunit beta 1 [KO:K04862]
+            783  CACNB2; calcium voltage-gated channel auxiliary subunit beta 2 [KO:K04863]
+            784  CACNB3; calcium voltage-gated channel auxiliary subunit beta 3 [KO:K04864]
+            785  CACNB4; calcium voltage-gated channel auxiliary subunit beta 4 [KO:K04865]
+            786  CACNG1; calcium voltage-gated channel auxiliary subunit gamma 1 [KO:K04866]
+            10369  CACNG2; calcium voltage-gated channel auxiliary subunit gamma 2 [KO:K04867]
+            10368  CACNG3; calcium voltage-gated channel auxiliary subunit gamma 3 [KO:K04868]
+            27092  CACNG4; calcium voltage-gated channel auxiliary subunit gamma 4 [KO:K04869]
+            27091  CACNG5; calcium voltage-gated channel auxiliary subunit gamma 5 [KO:K04870]
+            59285  CACNG6; calcium voltage-gated channel auxiliary subunit gamma 6 [KO:K04871]
+            59284  CACNG7; calcium voltage-gated channel auxiliary subunit gamma 7 [KO:K04872]
+            59283  CACNG8; calcium voltage-gated channel auxiliary subunit gamma 8 [KO:K04873]
+            5566  PRKACA; protein kinase cAMP-activated catalytic subunit alpha [KO:K04345] [EC:2.7.11.11]
+            5567  PRKACB; protein kinase cAMP-activated catalytic subunit beta [KO:K04345] [EC:2.7.11.11]
+            5568  PRKACG; protein kinase cAMP-activated catalytic subunit gamma [KO:K04345] [EC:2.7.11.11]
+            5578  PRKCA; protein kinase C alpha [KO:K02677] [EC:2.7.11.13]
+            5579  PRKCB; protein kinase C beta [KO:K19662] [EC:2.7.11.13]
+            5582  PRKCG; protein kinase C gamma [KO:K19663] [EC:2.7.11.13]
+            2768  GNA12; G protein subunit alpha 12 [KO:K04346]
+            55970  GNG12; G protein subunit gamma 12 [KO:K04347]
+            5530  PPP3CA; protein phosphatase 3 catalytic subunit alpha [KO:K04348] [EC:3.1.3.16]
+            5532  PPP3CB; protein phosphatase 3 catalytic subunit beta [KO:K04348] [EC:3.1.3.16]
+            5533  PPP3CC; protein phosphatase 3 catalytic subunit gamma [KO:K04348] [EC:3.1.3.16]
+            5534  PPP3R1; protein phosphatase 3 regulatory subunit B, alpha [KO:K06268]
+            5535  PPP3R2; protein phosphatase 3 regulatory subunit B, beta [KO:K06268]
+            5923  RASGRF1; Ras protein specific guanine nucleotide releasing factor 1 [KO:K04349]
+            5924  RASGRF2; Ras protein specific guanine nucleotide releasing factor 2 [KO:K12326]
+            10125  RASGRP1; RAS guanyl releasing protein 1 [KO:K04350]
+            10235  RASGRP2; RAS guanyl releasing protein 2 [KO:K12361]
+            25780  RASGRP3; RAS guanyl releasing protein 3 [KO:K12362]
+            115727  RASGRP4; RAS guanyl releasing protein 4 [KO:K12363]
+            9693  RAPGEF2; Rap guanine nucleotide exchange factor 2 [KO:K08018]
+            4763  NF1; neurofibromin 1 [KO:K08052]
+            5921  RASA1; RAS p21 protein activator 1 [KO:K04352]
+            5922  RASA2; RAS p21 protein activator 2 [KO:K08053]
+            5906  RAP1A; RAP1A, member of RAS oncogene family [KO:K04353]
+            5908  RAP1B; RAP1B, member of RAS oncogene family [KO:K07836]
+            4803  NGF; nerve growth factor [KO:K02582]
+            627  BDNF; brain-derived neurotrophic factor [KO:K04355]
+            4908  NTF3; neurotrophin 3 [KO:K04356]
+            4909  NTF4; neurotrophin 4 [KO:K12457]
+            1950  EGF; epidermal growth factor [KO:K04357]
+            2246  FGF1; fibroblast growth factor 1 [KO:K18496]
+            2247  FGF2; fibroblast growth factor 2 [KO:K18497]
+            2248  FGF3; fibroblast growth factor 3 [KO:K04358]
+            2249  FGF4; fibroblast growth factor 4 [KO:K04358]
+            8822  FGF17; fibroblast growth factor 17 [KO:K04358]
+            2251  FGF6; fibroblast growth factor 6 [KO:K04358]
+            2252  FGF7; fibroblast growth factor 7 [KO:K04358]
+            2253  FGF8; fibroblast growth factor 8 [KO:K04358]
+            2254  FGF9; fibroblast growth factor 9 [KO:K04358]
+            2255  FGF10; fibroblast growth factor 10 [KO:K04358]
+            2256  FGF11; fibroblast growth factor 11 [KO:K04358]
+            2257  FGF12; fibroblast growth factor 12 [KO:K04358]
+            2258  FGF13; fibroblast growth factor 13 [KO:K04358]
+            2259  FGF14; fibroblast growth factor 14 [KO:K04358]
+            8823  FGF16; fibroblast growth factor 16 [KO:K04358]
+            2250  FGF5; fibroblast growth factor 5 [KO:K04358]
+            8817  FGF18; fibroblast growth factor 18 [KO:K04358]
+            9965  FGF19; fibroblast growth factor 19 [KO:K04358]
+            26281  FGF20; fibroblast growth factor 20 [KO:K04358]
+            26291  FGF21; fibroblast growth factor 21 [KO:K04358]
+            27006  FGF22; fibroblast growth factor 22 [KO:K04358]
+            8074  FGF23; fibroblast growth factor 23 [KO:K04358]
+            5154  PDGFA; platelet derived growth factor subunit A [KO:K04359]
+            5155  PDGFB; platelet derived growth factor subunit B [KO:K17386]
+            4914  NTRK1; neurotrophic tyrosine kinase, receptor, type 1 [KO:K03176] [EC:2.7.10.1]
+            4915  NTRK2; neurotrophic tyrosine kinase receptor type 2 [KO:K04360] [EC:2.7.10.1]
+            1956  EGFR; epidermal growth factor receptor [KO:K04361] [EC:2.7.10.1]
+            2260  FGFR1; fibroblast growth factor receptor 1 [KO:K04362] [EC:2.7.10.1]
+            2263  FGFR2; fibroblast growth factor receptor 2 [KO:K05093] [EC:2.7.10.1]
+            2261  FGFR3; fibroblast growth factor receptor 3 [KO:K05094] [EC:2.7.10.1]
+            2264  FGFR4; fibroblast growth factor receptor 4 [KO:K05095] [EC:2.7.10.1]
+            5156  PDGFRA; platelet derived growth factor receptor alpha [KO:K04363] [EC:2.7.10.1]
+            5159  PDGFRB; platelet derived growth factor receptor beta [KO:K05089] [EC:2.7.10.1]
+            2885  GRB2; growth factor receptor bound protein 2 [KO:K04364]
+            6654  SOS1; SOS Ras/Rac guanine nucleotide exchange factor 1 [KO:K03099]
+            6655  SOS2; SOS Ras/Rho guanine nucleotide exchange factor 2 [KO:K03099]
+            3265  HRAS; Harvey rat sarcoma viral oncogene homolog [KO:K02833]
+            3845  KRAS; Kirsten rat sarcoma viral oncogene homolog [KO:K07827]
+            4893  NRAS; neuroblastoma RAS viral (v-ras) oncogene homolog [KO:K07828]
+            6237  RRAS; related RAS viral (r-ras) oncogene homolog [KO:K07829]
+            22800  RRAS2; related RAS viral (r-ras) oncogene homolog 2 [KO:K07830]
+            22808  MRAS; muscle RAS oncogene homolog [KO:K07831]
+            673  BRAF; B-Raf proto-oncogene, serine/threonine kinase [KO:K04365] [EC:2.7.11.1]
+            5894  RAF1; Raf-1 proto-oncogene, serine/threonine kinase [KO:K04366] [EC:2.7.11.1]
+            4342  MOS; v-mos Moloney murine sarcoma viral oncogene homolog [KO:K04367] [EC:2.7.11.1]
+            5604  MAP2K1; mitogen-activated protein kinase kinase 1 [KO:K04368] [EC:2.7.12.2]
+            5605  MAP2K2; mitogen-activated protein kinase kinase 2 [KO:K04369] [EC:2.7.12.2]
+            8649  LAMTOR3; late endosomal/lysosomal adaptor, MAPK and MTOR activator 3 [KO:K04370]
+            5594  MAPK1; mitogen-activated protein kinase 1 [KO:K04371] [EC:2.7.11.24]
+            5595  MAPK3; mitogen-activated protein kinase 3 [KO:K04371] [EC:2.7.11.24]
+            8569  MKNK1; MAP kinase interacting serine/threonine kinase 1 [KO:K04372] [EC:2.7.11.1]
+            2872  MKNK2; MAP kinase interacting serine/threonine kinase 2 [KO:K04372] [EC:2.7.11.1]
+            6197  RPS6KA3; ribosomal protein S6 kinase A3 [KO:K04373] [EC:2.7.11.1]
+            6195  RPS6KA1; ribosomal protein S6 kinase A1 [KO:K04373] [EC:2.7.11.1]
+            6196  RPS6KA2; ribosomal protein S6 kinase A2 [KO:K04373] [EC:2.7.11.1]
+            27330  RPS6KA6; ribosomal protein S6 kinase A6 [KO:K04373] [EC:2.7.11.1]
+            468  ATF4; activating transcription factor 4 [KO:K04374]
+            2002  ELK1; ELK1, ETS transcription factor [KO:K04375]
+            2005  ELK4; ELK4, ETS transcription factor [KO:K04376]
+            4609  MYC; v-myc avian myelocytomatosis viral oncogene homolog [KO:K04377]
+            6722  SRF; serum response factor [KO:K04378]
+            2353  FOS; FBJ murine osteosarcoma viral oncogene homolog [KO:K04379]
+            4137  MAPT; microtubule associated protein tau [KO:K04380]
+            3925  STMN1; stathmin 1 [KO:K04381]
+            123745  PLA2G4E; phospholipase A2 group IVE [KO:K16342] [EC:3.1.1.4]
+            5321  PLA2G4A; phospholipase A2 group IVA [KO:K16342] [EC:3.1.1.4]
+            8681  JMJD7-PLA2G4B; JMJD7-PLA2G4B readthrough [KO:K16342] [EC:3.1.1.4]
+            100137049  PLA2G4B; phospholipase A2 group IVB [KO:K16342] [EC:3.1.1.4]
+            8605  PLA2G4C; phospholipase A2 group IVC [KO:K16342] [EC:3.1.1.4]
+            283748  PLA2G4D; phospholipase A2 group IVD [KO:K16342] [EC:3.1.1.4]
+            255189  PLA2G4F; phospholipase A2 group IVF [KO:K16342] [EC:3.1.1.4]
+            7124  TNF; tumor necrosis factor [KO:K03156]
+            3552  IL1A; interleukin 1 alpha [KO:K04383]
+            3553  IL1B; interleukin 1 beta [KO:K04519]
+            7040  TGFB1; transforming growth factor beta 1 [KO:K13375]
+            7042  TGFB2; transforming growth factor beta 2 [KO:K13376]
+            7043  TGFB3; transforming growth factor beta 3 [KO:K13377]
+            7132  TNFRSF1A; tumor necrosis factor receptor superfamily member 1A [KO:K03158]
+            3554  IL1R1; interleukin 1 receptor type 1 [KO:K04386]
+            7850  IL1R2; interleukin 1 receptor type 2 [KO:K04387]
+            7046  TGFBR1; transforming growth factor beta receptor I [KO:K04674] [EC:2.7.11.30]
+            7048  TGFBR2; transforming growth factor beta receptor II [KO:K04388] [EC:2.7.11.30]
+            356  FASLG; Fas ligand [KO:K04389]
+            355  FAS; Fas cell surface death receptor [KO:K04390]
+            929  CD14; CD14 molecule [KO:K04391]
+            5879  RAC1; ras-related C3 botulinum toxin substrate 1 (rho family, small GTP binding protein Rac1) [KO:K04392]
+            5880  RAC2; ras-related C3 botulinum toxin substrate 2 (rho family, small GTP binding protein Rac2) [KO:K07860]
+            5881  RAC3; ras-related C3 botulinum toxin substrate 3 (rho family, small GTP binding protein Rac3) [KO:K07861]
+            998  CDC42; cell division cycle 42 [KO:K04393]
+            836  CASP3; caspase 3 [KO:K02187] [EC:3.4.22.56]
+            7186  TRAF2; TNF receptor associated factor 2 [KO:K03173] [EC:2.3.2.27]
+            1616  DAXX; death-domain associated protein [KO:K02308]
+            7189  TRAF6; TNF receptor associated factor 6 [KO:K03175] [EC:2.3.2.27]
+            1647  GADD45A; growth arrest and DNA damage inducible alpha [KO:K04402]
+            4616  GADD45B; growth arrest and DNA damage inducible beta [KO:K04402]
+            10912  GADD45G; growth arrest and DNA damage inducible gamma [KO:K04402]
+            10454  TAB1; TGF-beta activated kinase 1/MAP3K7 binding protein 1 [KO:K04403]
+            23118  TAB2; TGF-beta activated kinase 1/MAP3K7 binding protein 2 [KO:K04404]
+            51295  ECSIT; ECSIT signalling integrator [KO:K04405]
+            8491  MAP4K3; mitogen-activated protein kinase kinase kinase kinase 3 [KO:K04406] [EC:2.7.11.1]
+            9448  MAP4K4; mitogen-activated protein kinase kinase kinase kinase 4 [KO:K04407] [EC:2.7.11.1]
+            11184  MAP4K1; mitogen-activated protein kinase kinase kinase kinase 1 [KO:K04408] [EC:2.7.11.1]
+            5058  PAK1; p21 protein (Cdc42/Rac)-activated kinase 1 [KO:K04409] [EC:2.7.11.1]
+            5062  PAK2; p21 protein (Cdc42/Rac)-activated kinase 2 [KO:K04410] [EC:2.7.11.1]
+            6789  STK4; serine/threonine kinase 4 [KO:K04411]
+            6788  STK3; serine/threonine kinase 3 [KO:K04412]
+            5871  MAP4K2; mitogen-activated protein kinase kinase kinase kinase 2 [KO:K04414] [EC:2.7.11.1]
+            1326  MAP3K8; mitogen-activated protein kinase kinase kinase 8 [KO:K04415] [EC:2.7.11.25]
+            4214  MAP3K1; mitogen-activated protein kinase kinase kinase 1 [KO:K04416] [EC:2.7.11.25]
+            4296  MAP3K11; mitogen-activated protein kinase kinase kinase 11 [KO:K04419] [EC:2.7.11.25]
+            10746  MAP3K2; mitogen-activated protein kinase kinase kinase 2 [KO:K04420] [EC:2.7.11.25]
+            4215  MAP3K3; mitogen-activated protein kinase kinase kinase 3 [KO:K04421] [EC:2.7.11.25]
+            9175  MAP3K13; mitogen-activated protein kinase kinase kinase 13 [KO:K04422] [EC:2.7.11.25]
+            7786  MAP3K12; mitogen-activated protein kinase kinase kinase 12 [KO:K04423] [EC:2.7.11.25]
+            51776  ZAK; sterile alpha motif and leucine zipper containing kinase AZK [KO:K04424] [EC:2.7.11.25]
+            9064  MAP3K6; mitogen-activated protein kinase kinase kinase 6 [KO:K04425] [EC:2.7.11.25]
+            4217  MAP3K5; mitogen-activated protein kinase kinase kinase 5 [KO:K04426] [EC:2.7.11.25]
+            6885  MAP3K7; mitogen-activated protein kinase kinase kinase 7 [KO:K04427] [EC:2.7.11.25]
+            4216  MAP3K4; mitogen-activated protein kinase kinase kinase 4 [KO:K04428] [EC:2.7.11.25]
+            9344  TAOK2; TAO kinase 2 [KO:K04429] [EC:2.7.11.1]
+            51347  TAOK3; TAO kinase 3 [KO:K04429] [EC:2.7.11.1]
+            57551  TAOK1; TAO kinase 1 [KO:K04429] [EC:2.7.11.1]
+            6416  MAP2K4; mitogen-activated protein kinase kinase 4 [KO:K04430] [EC:2.7.12.2]
+            5609  MAP2K7; mitogen-activated protein kinase kinase 7 [KO:K04431] [EC:2.7.12.2]
+            5606  MAP2K3; mitogen-activated protein kinase kinase 3 [KO:K04432] [EC:2.7.12.2]
+            5608  MAP2K6; mitogen-activated protein kinase kinase 6 [KO:K04433] [EC:2.7.12.2]
+            9479  MAPK8IP1; mitogen-activated protein kinase 8 interacting protein 1 [KO:K04434]
+            23542  MAPK8IP2; mitogen-activated protein kinase 8 interacting protein 2 [KO:K04435]
+            23162  MAPK8IP3; mitogen-activated protein kinase 8 interacting protein 3 [KO:K04436]
+            2316  FLNA; filamin A [KO:K04437]
+            2318  FLNC; filamin C [KO:K04437]
+            2317  FLNB; filamin B [KO:K04437]
+            1398  CRK; v-crk avian sarcoma virus CT10 oncogene homolog [KO:K04438]
+            1399  CRKL; v-crk avian sarcoma virus CT10 oncogene homolog-like [KO:K04438]
+            408  ARRB1; arrestin, beta 1 [KO:K04439]
+            409  ARRB2; arrestin, beta 2 [KO:K04439]
+            5599  MAPK8; mitogen-activated protein kinase 8 [KO:K04440] [EC:2.7.11.24]
+            5602  MAPK10; mitogen-activated protein kinase 10 [KO:K04440] [EC:2.7.11.24]
+            5601  MAPK9; mitogen-activated protein kinase 9 [KO:K04440] [EC:2.7.11.24]
+            5600  MAPK11; mitogen-activated protein kinase 11 [KO:K04441] [EC:2.7.11.24]
+            6300  MAPK12; mitogen-activated protein kinase 12 [KO:K04441] [EC:2.7.11.24]
+            5603  MAPK13; mitogen-activated protein kinase 13 [KO:K04441] [EC:2.7.11.24]
+            1432  MAPK14; mitogen-activated protein kinase 14 [KO:K04441] [EC:2.7.11.24]
+            8550  MAPKAPK5; mitogen-activated protein kinase-activated protein kinase 5 [KO:K04442] [EC:2.7.11.1]
+            9261  MAPKAPK2; mitogen-activated protein kinase-activated protein kinase 2 [KO:K04443] [EC:2.7.11.1]
+            7867  MAPKAPK3; mitogen-activated protein kinase-activated protein kinase 3 [KO:K04444] [EC:2.7.11.1]
+            9252  RPS6KA5; ribosomal protein S6 kinase A5 [KO:K04445] [EC:2.7.11.1]
+            8986  RPS6KA4; ribosomal protein S6 kinase A4 [KO:K16510] [EC:2.7.11.1]
+            994  CDC25B; cell division cycle 25B [KO:K05866] [EC:3.1.3.48]
+            4772  NFATC1; nuclear factor of activated T-cells 1 [KO:K04446]
+            4775  NFATC3; nuclear factor of activated T-cells 3 [KO:K17333]
+            3725  JUN; jun proto-oncogene [KO:K04448]
+            3727  JUND; jun D proto-oncogene [KO:K04449]
+            1386  ATF2; activating transcription factor 2 [KO:K04450]
+            7157  TP53; tumor protein p53 [KO:K04451]
+            1649  DDIT3; DNA damage inducible transcript 3 [KO:K04452]
+            4149  MAX; MYC associated factor X [KO:K04453]
+            4208  MEF2C; myocyte enhancer factor 2C [KO:K04454]
+            3315  HSPB1; heat shock protein family B (small) member 1 [KO:K04455]
+            207  AKT1; v-akt murine thymoma viral oncogene homolog 1 [KO:K04456] [EC:2.7.11.1]
+            208  AKT2; v-akt murine thymoma viral oncogene homolog 2 [KO:K04456] [EC:2.7.11.1]
+            10000  AKT3; v-akt murine thymoma viral oncogene homolog 3 [KO:K04456] [EC:2.7.11.1]
+            5494  PPM1A; protein phosphatase, Mg2+/Mn2+ dependent 1A [KO:K04457] [EC:3.1.3.16]
+            5801  PTPRR; protein tyrosine phosphatase, receptor type R [KO:K04458] [EC:3.1.3.48]
+            84867  PTPN5; protein tyrosine phosphatase, non-receptor type 5 [KO:K18018] [EC:3.1.3.48]
+            5778  PTPN7; protein tyrosine phosphatase, non-receptor type 7 [KO:K18019] [EC:3.1.3.48]
+            1843  DUSP1; dual specificity phosphatase 1 [KO:K04459] [EC:3.1.3.48 3.1.3.16]
+            1846  DUSP4; dual specificity phosphatase 4 [KO:K04459] [EC:3.1.3.48 3.1.3.16]
+            1844  DUSP2; dual specificity phosphatase 2 [KO:K04459] [EC:3.1.3.48 3.1.3.16]
+            1849  DUSP7; dual specificity phosphatase 7 [KO:K04459] [EC:3.1.3.48 3.1.3.16]
+            1850  DUSP8; dual specificity phosphatase 8 [KO:K04459] [EC:3.1.3.48 3.1.3.16]
+            1847  DUSP5; dual specificity phosphatase 5 [KO:K04459] [EC:3.1.3.48 3.1.3.16]
+            1848  DUSP6; dual specificity phosphatase 6 [KO:K04459] [EC:3.1.3.48 3.1.3.16]
+            80824  DUSP16; dual specificity phosphatase 16 [KO:K04459] [EC:3.1.3.48 3.1.3.16]
+            1852  DUSP9; dual specificity phosphatase 9 [KO:K18498] [EC:3.1.3.48 3.1.3.16]
+            11221  DUSP10; dual specificity phosphatase 10 [KO:K20216] [EC:3.1.3.48 3.1.3.16]
+            1845  DUSP3; dual specificity phosphatase 3 [KO:K17614] [EC:3.1.3.48 3.1.3.16]
+            5536  PPP5C; protein phosphatase 5 catalytic subunit [KO:K04460] [EC:3.1.3.16]
+            100506012  PPP5D1; PPP5 tetratricopeptide repeat domain containing 1 [KO:K04460] [EC:3.1.3.16]
+            5495  PPM1B; protein phosphatase, Mg2+/Mn2+ dependent 1B [KO:K04461] [EC:3.1.3.16]
+            3312  HSPA8; heat shock protein family A (Hsp70) member 8 [KO:K03283]
+            3303  HSPA1A; heat shock protein family A (Hsp70) member 1A [KO:K03283]
+            3306  HSPA2; heat shock protein family A (Hsp70) member 2 [KO:K03283]
+            3305  HSPA1L; heat shock protein family A (Hsp70) member 1 like [KO:K03283]
+            3304  HSPA1B; heat shock protein family A (Hsp70) member 1B [KO:K03283]
+            3310  HSPA6; heat shock protein family A (Hsp70) member 6 [KO:K03283]
+            2122  MECOM; MDS1 and EVI1 complex locus [KO:K04462]
+            5607  MAP2K5; mitogen-activated protein kinase kinase 5 [KO:K04463] [EC:2.7.12.2]
+            5598  MAPK7; mitogen-activated protein kinase 7 [KO:K04464] [EC:2.7.11.24]
+            3164  NR4A1; nuclear receptor subfamily 4 group A member 1 [KO:K04465]
+            9020  MAP3K14; mitogen-activated protein kinase kinase kinase 14 [KO:K04466] [EC:2.7.11.25]
+            1147  CHUK; conserved helix-loop-helix ubiquitous kinase [KO:K04467] [EC:2.7.11.10]
+            3551  IKBKB; inhibitor of kappa light polypeptide gene enhancer in B-cells, kinase beta [KO:K07209] [EC:2.7.11.10]
+            8517  IKBKG; inhibitor of kappa light polypeptide gene enhancer in B-cells, kinase gamma [KO:K07210]
+            51701  NLK; nemo-like kinase [KO:K04468] [EC:2.7.11.24]
+            4790  NFKB1; nuclear factor of kappa light polypeptide gene enhancer in B-cells 1 [KO:K02580]
+            4791  NFKB2; nuclear factor of kappa light polypeptide gene enhancer in B-cells 2 [KO:K04469]
+            5970  RELA; v-rel avian reticuloendotheliosis viral oncogene homolog A [KO:K04735]
+            5971  RELB; v-rel avian reticuloendotheliosis viral oncogene homolog B [KO:K09253]
+COMPOUND    C00076  Calcium cation
+            C00165  Diacylglycerol
+            C00338  Lipopolysaccharide
+            C00575  3',5'-Cyclic AMP
+            C01245  D-myo-Inositol 1,4,5-trisphosphate
+REFERENCE   PMID:11749383
+  AUTHORS   Chen Z, Gibson TB, Robinson F, Silvestro L, Pearson G, Xu B, Wright A, Vanderbilt C, Cobb MH.
+  TITLE     MAP kinases.
+  JOURNAL   Chem Rev 101:2449-76 (2001)
+REFERENCE   PMID:12191611
+  AUTHORS   Tanoue T, Nishida E.
+  TITLE     Docking interactions in the mitogen-activated protein kinase cascades.
+  JOURNAL   Pharmacol Ther 93:193-202 (2002)
+REFERENCE   PMID:12947395
+  AUTHORS   Dent P, Yacoub A, Fisher PB, Hagan MP, Grant S.
+  TITLE     MAPK pathways in radiation responses.
+  JOURNAL   Oncogene 22:5885-96 (2003)
+REFERENCE   PMID:12676795
+  AUTHORS   Huang EJ, Reichardt LF.
+  TITLE     Trk receptors: roles in neuronal signal transduction.
+  JOURNAL   Annu Rev Biochem 72:609-42 (2003)
+REFERENCE   PMID:11369511
+  AUTHORS   Harper SJ, LoGrasso P.
+  TITLE     Signalling for survival and death in neurones: the role of stress-activated kinases, JNK and p38.
+  JOURNAL   Cell Signal 13:299-310 (2001)
+REFERENCE   PMID:12390245
+  AUTHORS   Takeda K, Ichijo H
+  TITLE     Neuronal p38 MAPK signalling: an emerging regulator of cell fate and function in the nervous system.
+  JOURNAL   Genes Cells 7:1099-111 (2002)
+REFERENCE   PMID:14597384
+  AUTHORS   Yang SH, Sharrocks AD, Whitmarsh AJ.
+  TITLE     Transcriptional regulation by the MAP kinase signaling cascades.
+  JOURNAL   Gene 320:3-21 (2003)
+REFERENCE   PMID:12566928
+  AUTHORS   Zhu X, Lee HG, Raina AK, Perry G, Smith MA.
+  TITLE     The role of mitogen-activated protein kinase pathways in Alzheimer's disease.
+  JOURNAL   Neurosignals 11:270-81 (2002)
+REFERENCE   PMID:12849693
+  AUTHORS   Cho H, Lee J, Kwak NJ, Lee KH, Rha S, Kim YH, Cho YY, Yang KH, Kim K, Lim Y.
+  TITLE     Silica induces nuclear factor-kappaB activation through TAK1 and NIK in Rat2 cell line.
+  JOURNAL   Toxicol Lett 143:323-30 (2003)
+KO_PATHWAY  ko04010
+///
+ENTRY       hsa04012                    Pathway
+NAME        ErbB signaling pathway - Homo sapiens (human)
+DESCRIPTION The ErbB family of receptor tyrosine kinases (RTKs) couples binding of extracellular growth factor ligands to intracellular signaling pathways regulating diverse biologic responses, including proliferation, differentiation, cell motility, and survival. Ligand binding to the four closely related members of this RTK family -epidermal growth factor receptor (EGFR, also known as ErbB-1 or HER1), ErbB-2 (HER2), ErbB-3 (HER3), and ErbB-4 (HER4)-induces the formation of receptor homo- and heterodimers and the activation of the intrinsic kinase domain, resulting in phosphorylation on specific tyrosine residues (pY) within the cytoplasmic tail. Signaling effectors containing binding pockets for pY-containing peptides are recruited to activated receptors and induce the various signaling pathways. The Shc- and/or Grb2-activated mitogen-activated protein kinase (MAPK) pathway is a common target downstream of all ErbB receptors. Similarly, the phosphatidylinositol-3-kinase (PI-3K) pathway is directly or indirectly activated by most ErbBs. Several cytoplasmic docking proteins appear to be recruited by specific ErbB receptors and less exploited by others. These include the adaptors Crk, Nck, the phospholipase C gamma (PLCgamma), the intracellular tyrosine kinase Src, or the Cbl E3 ubiquitin protein ligase.
+CLASS       Environmental Information Processing; Signal transduction
+PATHWAY_MAP hsa04012  ErbB signaling pathway
+DISEASE     H00539  PTEN hamartoma tumor syndrome (PHTS)
+            H00865  Lethal congenital contractural syndrome (LCCS)
+            H00931  Growth hormone insensitivity with immunodeficiency
+            H01102  Pituitary adenomas
+DRUG        D01977  Gefitinib (JAN/USAN/INN)
+            D03252  Bosutinib (USAN)
+            D03257  Trastuzumab (genetical recombination) (JAN)
+            D03350  Canertinib dihydrochloride (USAN)
+            D03455  Cetuximab (genetical recombination) (JAN)
+            D03658  Dasatinib (INN)
+            D04023  Erlotinib hydrochloride (JAN/USAN)
+            D04024  Lapatinib tosilate hydrate (JAN)
+            D04025  Mubritinib (USAN/INN)
+            D05350  Panitumumab (genetical recombination) (JAN)
+            D05399  Pelitinib (USAN/INN)
+            D05446  Pertuzumab (genetical recombination) (JAN)
+            D06068  Temsirolimus (JAN/USAN/INN)
+            D06272  Sorafenib tosilate (JAN)
+            D06407  Vandetanib (JAN/USAN/INN)
+            D06413  Nilotinib hydrochloride hydrate (JAN)
+            D06414  Dasatinib hydrate (JAN)
+            D07907  Erlotinib (INN)
+            D08108  Lapatinib (INN)
+            D08524  Sorafenib (USAN/INN)
+            D08950  Neratinib (INN/USAN)
+            D08953  Nilotinib (USAN/INN)
+            D09664  Saracatinib (USAN/INN)
+            D09665  Saracatinib difumarate (USAN)
+            D09666  Selumetinib (USAN/INN)
+            D09689  Varlitinib (USAN/INN)
+            D09690  Varlitinib tosylate (USAN)
+            D09724  Afatinib (USAN/INN)
+            D09728  Bosutinib hydrate (JAN)
+            D09733  Afatinib maleate (JAN)
+            D09883  Dacomitinib (USAN/INN)
+            D09980  Trastuzumab emtansine (genetical recombination) (JAN)
+            D10018  Necitumumab (USAN/INN)
+            D10024  Selumetinib sulfate (JAN/USAN)
+            D10031  Zalutumumab (USAN/INN)
+            D10064  Dabrafenib (USAN)
+            D10104  Dabrafenib mesilate (JAN)
+            D10175  Trametinib (USAN)
+            D10176  Trametinib dimethyl sulfoxide (JAN/USAN)
+            D10426  Pimasertib (USAN/INN)
+            D10486  Pimasertib hydrochloride (USAN)
+            D10514  Dacomitinib hydrate (JAN)
+ORGANISM    Homo sapiens (human) [GN:hsa]
+GENE        1950  EGF; epidermal growth factor [KO:K04357]
+            7039  TGFA; transforming growth factor alpha [KO:K08774]
+            374  AREG; amphiregulin [KO:K09782]
+            1956  EGFR; epidermal growth factor receptor [KO:K04361] [EC:2.7.10.1]
+            2064  ERBB2; erb-b2 receptor tyrosine kinase 2 [KO:K05083] [EC:2.7.10.1]
+            5335  PLCG1; phospholipase C gamma 1 [KO:K01116] [EC:3.1.4.11]
+            5336  PLCG2; phospholipase C gamma 2 [KO:K05859] [EC:3.1.4.11]
+            815  CAMK2A; calcium/calmodulin-dependent protein kinase II alpha [KO:K04515] [EC:2.7.11.17]
+            817  CAMK2D; calcium/calmodulin-dependent protein kinase II delta [KO:K04515] [EC:2.7.11.17]
+            816  CAMK2B; calcium/calmodulin-dependent protein kinase II beta [KO:K04515] [EC:2.7.11.17]
+            818  CAMK2G; calcium/calmodulin-dependent protein kinase II gamma [KO:K04515] [EC:2.7.11.17]
+            5578  PRKCA; protein kinase C alpha [KO:K02677] [EC:2.7.11.13]
+            5579  PRKCB; protein kinase C beta [KO:K19662] [EC:2.7.11.13]
+            5582  PRKCG; protein kinase C gamma [KO:K19663] [EC:2.7.11.13]
+            23624  CBLC; Cbl proto-oncogene C, E3 ubiquitin protein ligase [KO:K04707] [EC:2.3.2.27]
+            867  CBL; Cbl proto-oncogene, E3 ubiquitin protein ligase [KO:K04707] [EC:2.3.2.27]
+            868  CBLB; Cbl proto-oncogene B, E3 ubiquitin protein ligase [KO:K04707] [EC:2.3.2.27]
+            6776  STAT5A; signal transducer and activator of transcription 5A [KO:K11223]
+            6777  STAT5B; signal transducer and activator of transcription 5B [KO:K11224]
+            6714  SRC; SRC proto-oncogene, non-receptor tyrosine kinase [KO:K05704] [EC:2.7.10.2]
+            5747  PTK2; protein tyrosine kinase 2 [KO:K05725] [EC:2.7.10.2]
+            1398  CRK; v-crk avian sarcoma virus CT10 oncogene homolog [KO:K04438]
+            1399  CRKL; v-crk avian sarcoma virus CT10 oncogene homolog-like [KO:K04438]
+            25  ABL1; ABL proto-oncogene 1, non-receptor tyrosine kinase [KO:K06619] [EC:2.7.10.2]
+            27  ABL2; ABL proto-oncogene 2, non-receptor tyrosine kinase [KO:K08887] [EC:2.7.10.2]
+            4690  NCK1; NCK adaptor protein 1 [KO:K07365]
+            8440  NCK2; NCK adaptor protein 2 [KO:K19862]
+            5058  PAK1; p21 protein (Cdc42/Rac)-activated kinase 1 [KO:K04409] [EC:2.7.11.1]
+            5062  PAK2; p21 protein (Cdc42/Rac)-activated kinase 2 [KO:K04410] [EC:2.7.11.1]
+            5063  PAK3; p21 protein (Cdc42/Rac)-activated kinase 3 [KO:K05733] [EC:2.7.11.1]
+            10298  PAK4; p21 protein (Cdc42/Rac)-activated kinase 4 [KO:K05734] [EC:2.7.11.1]
+            56924  PAK6; p21 protein (Cdc42/Rac)-activated kinase 6 [KO:K05735] [EC:2.7.11.1]
+            57144  PAK7; p21 protein (Cdc42/Rac)-activated kinase 7 [KO:K05736] [EC:2.7.11.1]
+            6416  MAP2K4; mitogen-activated protein kinase kinase 4 [KO:K04430] [EC:2.7.12.2]
+            5609  MAP2K7; mitogen-activated protein kinase kinase 7 [KO:K04431] [EC:2.7.12.2]
+            5599  MAPK8; mitogen-activated protein kinase 8 [KO:K04440] [EC:2.7.11.24]
+            5602  MAPK10; mitogen-activated protein kinase 10 [KO:K04440] [EC:2.7.11.24]
+            5601  MAPK9; mitogen-activated protein kinase 9 [KO:K04440] [EC:2.7.11.24]
+            3725  JUN; jun proto-oncogene [KO:K04448]
+            2002  ELK1; ELK1, ETS transcription factor [KO:K04375]
+            685  BTC; betacellulin [KO:K09783]
+            1839  HBEGF; heparin binding EGF like growth factor [KO:K08523]
+            2069  EREG; epiregulin [KO:K09784]
+            2065  ERBB3; erb-b2 receptor tyrosine kinase 3 [KO:K05084] [EC:2.7.10.1]
+            3084  NRG1; neuregulin 1 [KO:K05455]
+            9542  NRG2; neuregulin 2 [KO:K05456]
+            2066  ERBB4; erb-b2 receptor tyrosine kinase 4 [KO:K05085] [EC:2.7.10.1]
+            6464  SHC1; SHC (Src homology 2 domain containing) transforming protein 1 [KO:K06279]
+            25759  SHC2; SHC (Src homology 2 domain containing) transforming protein 2 [KO:K17447]
+            53358  SHC3; SHC (Src homology 2 domain containing) transforming protein 3 [KO:K17448]
+            399694  SHC4; SHC (Src homology 2 domain containing) family member 4 [KO:K17449]
+            2885  GRB2; growth factor receptor bound protein 2 [KO:K04364]
+            6654  SOS1; SOS Ras/Rac guanine nucleotide exchange factor 1 [KO:K03099]
+            6655  SOS2; SOS Ras/Rho guanine nucleotide exchange factor 2 [KO:K03099]
+            3265  HRAS; Harvey rat sarcoma viral oncogene homolog [KO:K02833]
+            3845  KRAS; Kirsten rat sarcoma viral oncogene homolog [KO:K07827]
+            4893  NRAS; neuroblastoma RAS viral (v-ras) oncogene homolog [KO:K07828]
+            369  ARAF; A-Raf proto-oncogene, serine/threonine kinase [KO:K08845] [EC:2.7.11.1]
+            673  BRAF; B-Raf proto-oncogene, serine/threonine kinase [KO:K04365] [EC:2.7.11.1]
+            5894  RAF1; Raf-1 proto-oncogene, serine/threonine kinase [KO:K04366] [EC:2.7.11.1]
+            5604  MAP2K1; mitogen-activated protein kinase kinase 1 [KO:K04368] [EC:2.7.12.2]
+            5605  MAP2K2; mitogen-activated protein kinase kinase 2 [KO:K04369] [EC:2.7.12.2]
+            5594  MAPK1; mitogen-activated protein kinase 1 [KO:K04371] [EC:2.7.11.24]
+            5595  MAPK3; mitogen-activated protein kinase 3 [KO:K04371] [EC:2.7.11.24]
+            4609  MYC; v-myc avian myelocytomatosis viral oncogene homolog [KO:K04377]
+            2549  GAB1; GRB2 associated binding protein 1 [KO:K09593]
+            10718  NRG3; neuregulin 3 [KO:K05457]
+            145957  NRG4; neuregulin 4 [KO:K05458]
+            5290  PIK3CA; phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha [KO:K00922] [EC:2.7.1.153]
+            5293  PIK3CD; phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit delta [KO:K00922] [EC:2.7.1.153]
+            5291  PIK3CB; phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit beta [KO:K00922] [EC:2.7.1.153]
+            5294  PIK3CG; phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit gamma [KO:K00922] [EC:2.7.1.153]
+            5295  PIK3R1; phosphoinositide-3-kinase regulatory subunit 1 [KO:K02649]
+            23533  PIK3R5; phosphoinositide-3-kinase regulatory subunit 5 [KO:K02649]
+            5296  PIK3R2; phosphoinositide-3-kinase regulatory subunit 2 [KO:K02649]
+            8503  PIK3R3; phosphoinositide-3-kinase regulatory subunit 3 [KO:K02649]
+            207  AKT1; v-akt murine thymoma viral oncogene homolog 1 [KO:K04456] [EC:2.7.11.1]
+            208  AKT2; v-akt murine thymoma viral oncogene homolog 2 [KO:K04456] [EC:2.7.11.1]
+            10000  AKT3; v-akt murine thymoma viral oncogene homolog 3 [KO:K04456] [EC:2.7.11.1]
+            2475  MTOR; mechanistic target of rapamycin [KO:K07203] [EC:2.7.11.1]
+            6198  RPS6KB1; ribosomal protein S6 kinase B1 [KO:K04688] [EC:2.7.11.1]
+            6199  RPS6KB2; ribosomal protein S6 kinase B2 [KO:K04688] [EC:2.7.11.1]
+            1978  EIF4EBP1; eukaryotic translation initiation factor 4E binding protein 1 [KO:K07205]
+            572  BAD; BCL2 associated agonist of cell death [KO:K02158]
+            2932  GSK3B; glycogen synthase kinase 3 beta [KO:K03083] [EC:2.7.11.26]
+            1027  CDKN1B; cyclin-dependent kinase inhibitor 1B [KO:K06624]
+            1026  CDKN1A; cyclin-dependent kinase inhibitor 1A [KO:K06625]
+COMPOUND    C00076  Calcium cation
+            C00165  Diacylglycerol
+            C01245  D-myo-Inositol 1,4,5-trisphosphate
+            C05981  Phosphatidylinositol-3,4,5-trisphosphate
+REFERENCE   PMID:14967450
+  AUTHORS   Marmor MD, Skaria KB, Yarden Y.
+  TITLE     Signal transduction and oncogenesis by ErbB/HER receptors.
+  JOURNAL   Int J Radiat Oncol Biol Phys 58:903-13 (2004)
+REFERENCE   PMID:11252954
+  AUTHORS   Yarden Y, Sliwkowski MX.
+  TITLE     Untangling the ErbB signalling network.
+  JOURNAL   Nat Rev Mol Cell Biol 2:127-37 (2001)
+REFERENCE   PMID:16829981
+  AUTHORS   Citri A, Yarden Y.
+  TITLE     EGF-ERBB signalling: towards the systems level.
+  JOURNAL   Nat Rev Mol Cell Biol 7:505-16 (2006)
+REFERENCE   PMID:17000658
+  AUTHORS   Scaltriti M, Baselga J.
+  TITLE     The epidermal growth factor receptor pathway: a model for targeted therapy.
+  JOURNAL   Clin Cancer Res 12:5268-72 (2006)
+REFERENCE   PMID:16377102
+  AUTHORS   Normanno N, De Luca A, Bianco C, Strizzi L, Mancino M, Maiello MR, Carotenuto A, De Feo G, Caponigro F, Salomon DS.
+  TITLE     Epidermal growth factor receptor (EGFR) signaling in cancer.
+  JOURNAL   Gene 366:2-16 (2006)
+REFERENCE   PMID:14744244
+  AUTHORS   Holbro T, Hynes NE.
+  TITLE     ErbB receptors: directing key signaling networks throughout life.
+  JOURNAL   Annu Rev Pharmacol Toxicol 44:195-217 (2004)
+REFERENCE   PMID:12851486
+  AUTHORS   Liang J, Slingerland JM.
+  TITLE     Multiple roles of the PI3K/PKB (Akt) pathway in cell cycle progression.
+  JOURNAL   Cell Cycle 2:339-45 (2003)
+REFERENCE   PMID:15864276
+  AUTHORS   Hynes NE, Lane HA.
+  TITLE     ERBB receptors and cancer: the complexity of targeted inhibitors.
+  JOURNAL   Nat Rev Cancer 5:341-54 (2005)
+REFERENCE   PMID:16729045
+  AUTHORS   Oda K, Matsuoka Y, Funahashi A, Kitano H.
+  TITLE     A comprehensive pathway map of epidermal growth factor receptor signaling.
+  JOURNAL   Mol Syst Biol 1:2005.0010 (2005)
+REFERENCE   PMID:16729043
+  AUTHORS   Schulze WX, Deng L, Mann M.
+  TITLE     Phosphotyrosine interactome of the ErbB-receptor kinase family.
+  JOURNAL   Mol Syst Biol 1:2005.0008 (2005)
+REFERENCE   PMID:10880430
+  AUTHORS   Olayioye MA, Neve RM, Lane HA, Hynes NE.
+  TITLE     The ErbB signaling network: receptor heterodimerization in development and cancer.
+  JOURNAL   EMBO J 19:3159-67 (2000)
+REFERENCE   PMID:9872057
+  AUTHORS   McCarty JH.
+  TITLE     The Nck SH2/SH3 adaptor protein: a regulator of multiple intracellular signal transduction events.
+  JOURNAL   Bioessays 20:913-21 (1998)
+REFERENCE   PMID:15863494
+  AUTHORS   Clark DE, Williams CC, Duplessis TT, Moring KL, Notwick AR, Long W, Lane WS, Beuvink I, Hynes NE, Jones FE.
+  TITLE     ERBB4/HER4 potentiates STAT5A transcriptional activity by regulating novel STAT5A serine phosphorylation events.
+  JOURNAL   J Biol Chem 280:24175-80 (2005)
+REFERENCE   PMID:10490623
+  AUTHORS   Muthuswamy SK, Gilman M, Brugge JS.
+  TITLE     Controlled dimerization of ErbB receptors provides evidence for differential signaling by homo- and heterodimers.
+  JOURNAL   Mol Cell Biol 19:6845-57 (1999)
+REFERENCE   PMID:9642287
+  AUTHORS   Hashimoto Y, Katayama H, Kiyokawa E, Ota S, Kurata T, Gotoh N, Otsuka N, Shibata M, Matsuda M.
+  TITLE     Phosphorylation of CrkII adaptor protein at tyrosine 221 by epidermal growth factor receptor.
+  JOURNAL   J Biol Chem 273:17186-91 (1998)
+KO_PATHWAY  ko04012
+///

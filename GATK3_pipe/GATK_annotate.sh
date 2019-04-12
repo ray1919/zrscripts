@@ -33,7 +33,7 @@ snpeff_dir=/home/zhaorui/ct208/tool/SnpEff/snpEff
 ##-------------
 ##Step0-2: References
 ##-------------
-DBSNP=/opt/data/db/snp/gatk/hg38/dbsnp_146.hg38.vcf.gz
+DBSNP=/opt/data/db/snp/gatk/hg38/dbsnp_146.hg38.vcf
 # dbNSFP v3.5
 DBNSFP=/opt/data/db/snp/dbNSFP/dbNSFP.gz
 GWASCATALOG=/opt/data/db/snp/gwascatalog/gwascatalog.txt
@@ -97,7 +97,7 @@ while test $# -gt 0 ; do
                 -o|--out-file)
                         shift
 						out_file=$1
-						out_dir=$( echo $1 | sed 's/\/[^\/]*$//')/.
+						# out_dir=$( echo $1 | sed 's/\/[^\/]*$//')/.
                         shift
                         ;;
 				-r|--replace)
@@ -119,9 +119,9 @@ done
 ##-------------
 ##Step0-5: Default Value Setting
 ##-------------
-if [[ ! -v out_dir ]] ; then
-		out_dir=$( pwd )
-fi
+#if [[ ! -v out_dir ]] ; then
+		# out_dir=$( pwd )
+#fi
 if [[ ! -v out_file ]] ; then
 		out_file=$( echo ${in_file} | sed 's/.vcf$/_annotated.vcf/' )
 fi
@@ -180,7 +180,7 @@ fi
 ##-------------
 ##Step0-8: Output Folder Creation
 ##-------------
-mkdir -p ${out_dir}
+# mkdir -p ${out_dir}
 cp ${in_file} ${out_file}
 
 
@@ -192,6 +192,7 @@ echo '1/6 dbSNP Annotation Started'
 java -Xmx${java_mem} -jar ${snpeff_dir}/SnpSift.jar annotate ${DBSNP} ${out_file} > ${out_file}.temp.vcf
 mv ${out_file}.temp.vcf ${out_file}
 echo '1/6 dbSNP Annotation Completed'
+exit
 
 
 

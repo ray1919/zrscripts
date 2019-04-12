@@ -24,11 +24,11 @@
 ##-------------
 ##Step0-1: Directories
 ##-------------
-project_dir=/opt/data/db/sra/16s_pku
+project_dir=$(pwd -P)
 ref_dir=/home/zhaorui/ct208/db/genome/gatk/hg38
 resource_dir=$ref_dir
 gatk_dir=/home/zhaorui/ct208/tool/GATK
-out_dir=${project_dir}/gatk
+out_dir=${project_dir}/gatk3
 
 ##-------------
 ##Step0-2: References
@@ -36,8 +36,8 @@ out_dir=${project_dir}/gatk
 ref_genome=${ref_dir}/Homo_sapiens_assembly38.fasta
 indel_1=${ref_dir}/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz
 indel_2=${ref_dir}/1000G_phase1.snps.high_confidence.hg38.vcf.gz
-DBSNP=${ref_dir}/dbsnp_146.hg38.vcf.gz
-exon_bed=${project_dir}/kidney.gene.intervals
+DBSNP=${ref_dir}/dbsnp_146.hg38.vcf
+exon_bed=${project_dir}/memo/target.interval_list.bed
 
 ##-------------
 ##Step0-3: Other Parametres
@@ -143,10 +143,10 @@ done
 ##Step0-6: Input Verification
 ##-------------
 for sample_name in ${sample_list[*]} ; do
-		if [[ ! -e ${out_dir}/${sample_name}/GVCF/${sample_name}_GATK.g.vcf ]] ; then
+		if [[ ! -e ${out_dir}/${sample_name}/GVCF/${sample_name}_GATK.g.vcf.gz ]] ; then
 				echo
 				echo 'Invalid SAMPLE NAME: '${sample_name}
-				echo ${out_dir}/${sample_name}/GVCF/${sample_name}_GATK.g.vcf not found.
+				echo ${out_dir}/${sample_name}/GVCF/${sample_name}_GATK.g.vcf.gz not found.
 				echo 'Terminated.'
 				echo
 				exit 1
@@ -207,7 +207,7 @@ cat <<EOL > ${out_dir}/${joint_name}/Script/1_${joint_name}_combine_vcfs.sh
 ##-------------
 ##Step1-0: Create Variant Arguments
 ##-------------
-samples_argument="$( echo ${sample_list[*]} | sed 's/ /\n/g' | sed 's/^\(.*\)/-V \1\/GVCF\/\1_GATK.g.vcf \\/g' )
+samples_argument="$( echo ${sample_list[*]} | sed 's/ /\n/g' | sed 's/^\(.*\)/-V \1\/GVCF\/\1_GATK.g.vcf.gz \\/g' )
 "
 
 ##-------------
@@ -220,7 +220,7 @@ java -Xmx${java_mem} -jar ${gatk_dir}/GenomeAnalysisTK.jar \
 -R ${ref_genome} \
 \${samples_argument} \
 --disable_auto_index_creation_and_locking_when_reading_rods \
--o ${out_dir}/${joint_name}/GVCF/${joint_name}_GATK.g.vcf \
+-o ${out_dir}/${joint_name}/GVCF/${joint_name}_GATK.g.vcf.gz \
 -log ${out_dir}/${joint_name}/LOG/1_combine_gvcfs.log
 cd \${present_dir}
 
@@ -239,7 +239,7 @@ cat <<EOL > ${out_dir}/${joint_name}/Script/2_${joint_name}_joint_genotype.sh
 java -Xmx${java_mem} -jar ${gatk_dir}/GenomeAnalysisTK.jar \
 -T GenotypeGVCFs \
 -R ${ref_genome} \
---variant ${out_dir}/${joint_name}/GVCF/${joint_name}_GATK.g.vcf \
+--variant ${out_dir}/${joint_name}/GVCF/${joint_name}_GATK.g.vcf.gz \
 -nt 8 \
 ${bed_argument} \
 --disable_auto_index_creation_and_locking_when_reading_rods \

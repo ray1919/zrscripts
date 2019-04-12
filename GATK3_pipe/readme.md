@@ -27,6 +27,9 @@
 ./GATK_individual.sh -e -g "NPHS1 NPHS2 WT1" -a ATAPTER1 -A ATAPTER2 Sample1
 ```
 
+根据GATK的帖子，靶向片段测序可以略过deduplication这一步，所以添加跳过deduplication的参数，并比较下两者结果的差异。
+[原帖地址]<https://gatkforums.broadinstitute.org/gatk/discussion/5847/remove-duplicates-from-targetted-sequencing-using-amplicon-approach>
+
 2.2 [GATK_QC.sh]: 单个样本质控
 这个步骤不影响后续步骤，需要提供测序的target和bait区域位置bed文件。
 

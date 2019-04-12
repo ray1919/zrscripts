@@ -23,13 +23,13 @@
 ##Step0-1: Directories
 ##-------------
 CPUS=8
-project_dir=`pwd`
+project_dir=$(pwd -P)
 ref_dir=/home/zhaorui/ct208/db/genome/gatk/hg38
 bwa_dir=/home/zhaorui/ct208/tool/bwa/bwa-0.7.15
 picard=/home/zhaorui/ct208/tool/picard/2.17.0/picard.jar
 gatk_dir=/home/zhaorui/ct208/tool/GATK
 fastq_dir=${project_dir}/data
-out_dir=${project_dir}/gatk
+out_dir=${project_dir}/gatk3_jss
 
 ##-------------
 ##Step0-2: References
@@ -41,7 +41,7 @@ indel_1=${ref_dir}/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz
 indel_2=${ref_dir}/1000G_phase1.snps.high_confidence.hg38.vcf.gz
 DBSNP=${ref_dir}/dbsnp_146.hg38.vcf.gz
 # Use this option to perform the analysis over only part of the genome. This argument can be specified multiple times. You can use samtools-style intervals either explicitly on the command line (e.g. -L chr1 or -L chr1:100-200) or by loading in a file containing a list of intervals (e.g. -L myFile.intervals).
-gene_bed=kidney.gene.intervals
+gene_bed=memo/gene.intervals
 
 ##-------------
 ##Step0-3: Other Parametres

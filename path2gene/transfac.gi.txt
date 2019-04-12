@@ -1,0 +1,1 @@
+../../transfac/transfac.gi.txt
