@@ -1,0 +1,2 @@
+ftp://ftp.ncbi.nlm.nih.gov/pub/clinvar/xml/ClinVarFullRelease_2018-09.xml.gz
+ftp://ftp.ncbi.nlm.nih.gov/pub/clinvar/xml/ClinVarFullRelease_2018-09.xml.gz.md5
