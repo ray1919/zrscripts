@@ -1,0 +1,230 @@
+# ~/.bashrc: executed by bash(1) for non-login shells.
+# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+# for examples
+
+# If not running interactively, don't do anything
+[ -z "$PS1" ] && return
+
+# don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+HISTCONTROL=ignoreboth
+
+# append to the history file, don't overwrite it
+shopt -s histappend
+
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
+
+# If set, the pattern "**" used in a pathname expansion context will
+# match all files and zero or more directories and subdirectories.
+#shopt -s globstar
+
+# make less more friendly for non-text input files, see lesspipe(1)
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+
+# set variable identifying the chroot you work in (used in the prompt below)
+if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
+    debian_chroot=$(cat /etc/debian_chroot)
+fi
+
+# set a fancy prompt (non-color, unless we know we "want" color)
+case "$TERM" in
+    xterm-color) color_prompt=yes;;
+esac
+
+# uncomment for a colored prompt, if the terminal has the capability; turned
+# off by default to not distract the user: the focus in a terminal window
+# should be on the output of commands, not on the prompt
+force_color_prompt=yes
+
+if [ -n "$force_color_prompt" ]; then
+    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
+	# We have color support; assume it's compliant with Ecma-48
+	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+	# a case would tend to support setf rather than setaf.)
+	color_prompt=yes
+    else
+	color_prompt=
+    fi
+fi
+
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\033[01;31m\$\033[00m '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u:\w\$ '
+fi
+unset color_prompt force_color_prompt
+
+# If this is an xterm set the title to user@host:dir
+case "$TERM" in
+xterm*|rxvt*)
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    ;;
+*)
+    ;;
+esac
+
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+# some more ls aliases
+alias ll='ls -lFh'
+alias la='ls -A'
+alias l='ls -sFh'
+
+# alias vi='vim'
+alias bc='bc -ql'
+alias rm='rm -i'
+alias mv='mv -i'
+alias du='du -h'
+alias df='df -h'
+alias cp='cp -i -p -a'
+# alias make='make -j8'
+alias R='R --silent'
+alias wget='wget -N -c'
+alias dstat='dstat -cdnm'
+alias tree='tree -sh'
+
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+    . /etc/bash_completion
+fi
+
+export PATH=/home/zhaorui/bin:/home/zhaorui/bin/ucsc_tools:$PATH
+
+umask 002
+
+# added by Anaconda2 2.4.1 installer
+export ascp_home=/home/zhaorui/.aspera/connect
+# export PATH="/home/zhaorui/ct208/software/anaconda/anaconda2/bin:$ascp_home/bin:$PATH"
+
+
+# export PATH="/home/zhaorui/ct208/tmp/2015/2015-12-07_rna_seq/supp_2016-07-29_web/jre1.8.0_101/bin:/usr/local/AMOS/bin:/home/zhaorui/.config/composer/vendor/bin/:$PATH"
+export trimmomatic="/home/zhaorui/ct208/tool/Trimmomatic/Trimmomatic-0.36/trimmomatic-0.36.jar"
+
+export GIT_SSL_NO_VERIFY=1
+
+export LD_LIBRARY_PATH=/usr/local/lib
+# . /home/zhaorui/ct208/software/torch/install/bin/torch-activate
+
+# >>>>>>>>>>>>>>>>>>>>>>> Enabling Biopieces if installed <<<<<<<<<<<<<<<<<<<<<<<
+
+# Modify the below paths according to your settings.
+
+export BP_DIR="$HOME/ct208/tool/biopieces"  # Directory where biopieces are installed
+export BP_DATA="$HOME/ct208/tool/biopieces/BP_DATA"   # Contains genomic data etc.
+export BP_TMP="$HOME/ct208/tool/biopieces/tmp"        # Required temporary directory.
+export BP_LOG="$HOME/ct208/tool/biopieces/BP_LOG"     # Required log directory.
+
+if [ -f "$BP_DIR/config/bashrc" ]; then
+    source "$BP_DIR/config/bashrc"
+fi
+
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+export PATH="/home/zhaorui/ct208/website/magento/bin:$PATH"
+
+PERL5LIB=/home/zhaorui/perl5/perlbrew/perls/perl-5.22.3/lib/site_perl/5.22.3:/home/zhaorui/perl5/lib/perl5
+PERL5LIB=${PERL5LIB}:${HOME}/src/bioperl-1.6.1
+PERL5LIB=${PERL5LIB}:${HOME}/ct208/perl/ensembl/modules
+PERL5LIB=${PERL5LIB}:${HOME}/ct208/perl/ensembl-compara/modules
+PERL5LIB=${PERL5LIB}:${HOME}/ct208/perl/ensembl-variation/modules
+PERL5LIB=${PERL5LIB}:${HOME}/ct208/perl/ensembl-funcgen/modules
+PERL5LIB=${PERL5LIB}:/home/zhaorui/ct208/tool/vcftools-vcftools-490848f/src/perl
+export PERL5LIB
+
+export PATH="/home/zhaorui/ct208/tool/SPAdes/SPAdes-3.11.1-Linux/bin:$PATH"
+export PATH="/home/zhaorui/bin/x86_64:$PATH"
+export PATH="/home/zhaorui/ct208/tool/barrnap/bin:$PATH"
+export PATH="/home/zhaorui/ct208/tool/prokka/bin:$PATH"
+export PATH="/home/zhaorui/ct208/software/phylip/phylip-3.696/exe:$PATH"
+export LD_PRELOAD="/usr/lib/libtcmalloc_minimal.so.4"
+export PATH="/home/zhaorui/ct208/tool/snippy/bin:$PATH"
+export PATH="/home/zhaorui/ct208/tool/SnpEff/snpEff/scripts/:$PATH"
+export PATH="$HOME/ct208/tool/Tuxedo/hisat2-2.1.0:$PATH"
+export PATH="/home/zhaorui/ct208/tool/rnacocktail/velvet:$PATH"
+export PATH="/home/zhaorui/ct208/tool/rnacocktail/LoRDEC-0.5.3-Linux/bin:$PATH"
+export PATH="/home/zhaorui/ct208/tool/STAR/bin/Linux_x86_64:$PATH"
+# export PATH="/home/zhaorui/ct208/tool/Tuxedo/bowtie2-2.3.2:$PATH"
+export PATH="/home/zhaorui/ct208/tool/rnacocktail/SpliceMap3352_linux-64/bin:$PATH"
+export PATH="/home/zhaorui/ct208/tool/rnacocktail/giremi:$PATH"
+export PATH="/home/zhaorui/ct208/tool/Tuxedo/bowtie-1.2.2-linux-x86_64:$PATH"
+export PATH="/home/zhaorui/ct208/tool/kraken_ebi/bin:$PATH"
+export PATH="/home/zhaorui/ct208/tool/kraken_ebi/seqimp-17-087/bin:$PATH"
+export PATH="/home/zhaorui/ct208/tool/BBMap/bbmap:$PATH"
+export PATH="/home/zhaorui/ct208/software/novoalign/novocraft:$PATH"
+# export PATH="/home/zhaorui/ct208/tool/mirpro/mirPRo.1.1.4/bin:$PATH"
+export PATH="/home/zhaorui/ct208/tool/mirdeep2/mirdeep2_0_0_8/bin:$PATH"
+export PATH="/home/zhaorui/ct208/tool/mirdeep/miRDeep:$PATH"
+export PATH="/home/zhaorui/ct208/tool/bedops/bin:$PATH"
+export OMP_NUM_THREADS=4
+
+export PRIMUX_DIR=$HOME/ct208/tool/primux/primux
+export LD_LIBRARY_PATH=$PRIMUX_DIR/bin
+export UNAFOLDDAT=$PRIMUX_DIR/src/unafold_data
+export BLASTDB=$HOME/ct208/db/blastdb/db
+export PATH="/home/zhaorui/ct208/tool/mirpro/mirPRo.1.1.4/bin:$PATH"
+export PATH="/home/zhaorui/ct208/tool/GATK/current:$PATH"
+
+export RSTUDIO_WHICH_R=`which R`
+export PATH="/home/zhaorui/ct208/tool/Bismark:$PATH"
+export PATH="/home/zhaorui/ct208/tool/walt/bin:$PATH"
+export PATH="/home/zhaorui/ct208/tool/methpipe/bin:$PATH"
+export PATH="/home/zhaorui/perl5/bin:$PATH"
+export PATH="/home/zhaorui/ct208/tool/Tuxedo/bowtie2-2.3.4.2:$PATH"
+export PATH="/home/zhaorui/ct208/tool/lobstr/lobSTR-bin-Linux-x86_64-4.0.6/bin:$PATH"
+export PATH="/home/zhaorui/ct208/tool/Bismark:$PATH"
+export PATH="/home/zhaorui/ct208/tool/annovar/annovar:$PATH"
+export PATH="/home/zhaorui/ct208/tool/Nimbus/bin:$PATH"
+export PATH="/home/zhaorui/ct208/tool/strelka/strelka-2.9.7.centos6_x86_64/bin:$PATH"
+export PATH="/home/zhaorui/ct208/tool/Isaac4/bin:$PATH"
+export PATH="/home/zhaorui/ct208/tool/jvarkit/dist:$PATH"
+export PATH="/home/zhaorui/bin/dotnet:$PATH"
+export PATH="/home/zhaorui/ct208/tool/vcflib/bin:$PATH"
+export PATH="/home/zhaorui/ct208/tool/nodejs/node-v8.11.3-linux-x64/bin:$PATH"
+export PATH="/home/zhaorui/ct208/tool/plink:$PATH"
+export PATH="/home/zhaorui/ct208/tool/manta/manta-1.4.0.centos6_x86_64/bin:$PATH"
+export PATH="$HOME/.linuxbrew/bin:$PATH"
+export MANPATH="$(brew --prefix)/share/man:$MANPATH"
+export INFOPATH="$(brew --prefix)/share/info:$INFOPATH"
+export PATH="/home/zhaorui/ct208/tool/GATK/gatk4/gatk-4.0.10.1:$PATH"
+# export PATH="/home/zhaorui/ct208/tool/fermikit/fermi.kit:$PATH"
+
+JAVA_HOME=/usr/lib/jvm/default-java
+export PATH="$PATH:$JAVA_HOME/bin"
+export R_LIBS_USER=~/R/x86_64-pc-linux-gnu-library/3.5
+export RSTUDIO_WHICH_R=/usr/bin/R
+export PATH="/home/zhaorui/.local/bin:$PATH"
+
+# added by Miniconda3 installer
+# export PATH="/home/zhaorui/miniconda3/bin:$PATH"

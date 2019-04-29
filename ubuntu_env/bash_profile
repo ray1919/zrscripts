@@ -1,0 +1,29 @@
+#
+# tuxingsun.net
+#
+function start_tuproxy {
+#    export http_proxy='lion.3.141592.in:15867'
+#    export HTTPS_PROXY='lion.3.141592.in:15867'
+    export http_proxy='127.0.0.1:1080'
+    export HTTPS_PROXY='127.0.0.1:1080'
+}
+
+function stop_tuproxy {
+    export http_proxy=
+    export HTTPS_PROXY=
+}
+
+if [ -f ~/.bashrc ];then
+  . ~/.bashrc
+fi
+
+source ~/perl5/perlbrew/etc/bashrc
+
+PERL_MB_OPT="--install_base /home/zhaorui/perl5";export PERL_MB_OPT
+PERL_MM_OPT="INSTALL_BASE=/home/zhaorui/perl5";export PERL_MM_OPT
+# export PATH=$PATH:/home/zhaorui/ct208/tool/mirdeep2/mirdeep2_0_0_8/bin
+# export PERL5LIB=$PERL5LIB:/home/zhaorui/ct208/tool/mirdeep2/mirdeep2_0_0_8/lib/perl5
+
+export PATH=$PATH:/home/zhaorui/ct208/tool/mirdeep2/mirdeep2-0.1.0/bin
+export PERL5LIB=$PERL5LIB:/home/zhaorui/ct208/tool/mirdeep2/mirdeep2-0.1.0/lib/perl5
+
