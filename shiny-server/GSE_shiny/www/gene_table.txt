@@ -1,0 +1,11 @@
+Symbol	GeneID	description	Species	chromosome	type_of_gene
+ABCA12	26154	ATP binding cassette subfamily A member 12	Homo sapiens	2	protein-coding
+ALOX12B	242	arachidonate 12-lipoxygenase, 12R type	Homo sapiens	17	protein-coding
+ALOXE3	59344	arachidonate lipoxygenase 3	Homo sapiens	17	protein-coding
+CERS3	204219	ceramide synthase 3	Homo sapiens	15	protein-coding
+CYP4F22	126410	cytochrome P450 family 4 subfamily F member 22	Homo sapiens	19	protein-coding
+LIPN	643418	lipase family member N	Homo sapiens	10	protein-coding
+NIPAL4	348938	NIPA like domain containing 4	Homo sapiens	5	protein-coding
+ST14	6768	suppression of tumorigenicity 14	Homo sapiens	11	protein-coding
+STS	412	steroid sulfatase	Homo sapiens	X	protein-coding
+TGM1	7051	transglutaminase 1	Homo sapiens	14	protein-coding

@@ -1,0 +1,4 @@
+Source	Term	Desc	Target_Cnt	Gene_Set_Size	Intersection_Size	Intersection_Genes	P_Value	FDR
+KEGG	mmu04060	Cytokine-cytokine receptor interaction	8	270	6	Ccl22, Ccl3, Cxcl13, Cxcl5, Il11, Xcr1	1	1
+KEGG	mmu04062	Chemokine signaling pathway	8	192	5	Ccl22, Ccl3, Cxcl13, Cxcl5, Xcr1	1	1
+KEGG	mmu05323	Rheumatoid arthritis	8	83	3	Ccl3, Cxcl5, Il11	0.111292092741991	0.333876278225973
