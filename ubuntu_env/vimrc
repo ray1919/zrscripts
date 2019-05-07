@@ -1,0 +1,90 @@
+behave mswin
+
+
+
+set diffexpr=MyDiff()
+
+function MyDiff()
+
+  let opt = '-a --binary '
+
+  if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
+
+  if &diffopt =~ 'iwhite' | let opt = opt . '-b ' | endif
+
+  let arg1 = v:fname_in
+
+  if arg1 =~ ' ' | let arg1 = '"' . arg1 . '"' | endif
+
+  let arg2 = v:fname_new
+
+  if arg2 =~ ' ' | let arg2 = '"' . arg2 . '"' | endif
+
+  let arg3 = v:fname_out
+
+  if arg3 =~ ' ' | let arg3 = '"' . arg3 . '"' | endif
+
+  let eq = ''
+
+  if $VIMRUNTIME =~ ' '
+
+    if &sh =~ '\<cmd'
+
+      let cmd = '""' . $VIMRUNTIME . '\diff"'
+
+      let eq = '"'
+
+    else
+
+      let cmd = substitute($VIMRUNTIME, ' ', '" ', '') . '\diff"'
+
+    endif
+
+  else
+
+    let cmd = $VIMRUNTIME . '\diff'
+
+  endif
+
+  silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
+
+endfunction
+
+syntax enable
+
+set tabstop=4
+
+set softtabstop=4
+
+set shiftwidth=4
+
+set autoindent
+
+set cindent
+
+set cinoptions={0,1s,t0,n-2,p2s,(03s,=.5s,>1s,=1s,:1s
+
+set nu
+
+colo freya
+
+set guifont=Bitstream_Vera_Sans_Mono:h10:cANSI
+
+set listchars=tab:>-,trail:-
+
+set list
+
+set nobackup
+
+set et
+set mouse=a
+set hlsearch
+
+set encoding=utf-8
+set termencoding=utf-8
+set fileencoding=utf-8
+set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+
+execute pathogen#infect()
+
+au BufRead,BufNewFile *.ts   setfiletype typescript
